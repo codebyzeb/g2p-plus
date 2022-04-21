@@ -1,0 +1,977 @@
+,id,gloss,stem,actual_phonology,model_phonology,type,language,num_morphemes,num_tokens,utterance_order,corpus_name,part_of_speech,speaker_code,speaker_name,speaker_role,target_child_name,target_child_age,target_child_sex,media_start,media_end,media_unit,collection_name,collection_id,corpus_id,speaker_id,target_child_id,transcript_id
+459787,8709810,there it is,there it be,,,declarative,eng,4,3,1,Manchester,adv pro:per cop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+459801,8709824,it's gone now,it go now,,,declarative,eng,5,3,2,Manchester,pro:per part adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+459814,8709837,oh,oh,,,declarative,eng,1,1,3,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+459827,8709850,is it a boy or a girl,be it a boy or a girl,,,question,eng,8,7,4,Manchester,aux pro:per det:art n coord det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+459843,8709866,a a boy,a boy,,,declarative,eng,2,3,5,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+459858,8709881,a boy,a boy,,,declarative,eng,2,2,6,Manchester,det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+459868,8709891,and what's he called,and what he call,,,question,eng,6,4,7,Manchester,coord pro:int pro:sub v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+459881,8709904,has he got a name,have he get a name,,,question,eng,7,5,8,Manchester,v pro:sub v det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+459895,8709918,no,no,,,question,eng,1,1,9,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+459908,8709931,that's okay,that okay,,,declarative,eng,3,2,10,Manchester,pro:dem adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+459920,8709943,yeah,yeah,,,declarative,eng,1,1,11,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+459934,8709957,Kate,Kate,,,declarative,eng,1,1,12,Manchester,n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+459947,8709970,Kate,Kate,,,declarative,eng,1,1,13,Manchester,n:prop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+459961,8709984,that's nice,that nice,,,declarative,eng,3,2,14,Manchester,pro:dem adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+459976,8709999,I I just seen Kate,I just see Kate,,,declarative,eng,5,5,15,Manchester,pro:sub adv part n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+459987,8710010,mhm,mhm,,,declarative,eng,1,1,16,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+459994,8710017,at my school,at my school,,,declarative,eng,3,3,17,Manchester,prep det:poss n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460006,8710029,yes,yes,,,declarative,eng,1,1,18,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460017,8710040,she's your friend isn't she,she your friend be she,,,question,eng,8,5,19,Manchester,pro:sub det:poss n cop pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460030,8710053,she is,she be,,,declarative,eng,3,2,20,Manchester,pro:sub cop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460042,8710065,oh you're getting fatter and fatter aren't you,oh you get fat and fat be you,,,question,eng,14,8,21,Manchester,co pro:per part adj coord adj aux pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460056,8710079,yeah,yeah,,,declarative,eng,1,1,22,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460069,8710092,I am,I be,,,declarative,eng,3,2,23,Manchester,pro:sub cop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460078,8710101,I just kicked my dolly,I just kick my doll,,,declarative,eng,7,5,24,Manchester,pro:sub adv v det:poss n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460096,8710119,oh dear,oh dear,,,declarative,eng,2,2,25,Manchester,co co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460107,8710130,so when's your baby going to be born Liz,so when your baby go to be born Liz,,,question,eng,11,9,26,Manchester,adv pro:rel det:poss n part inf cop adj n:prop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460118,8710141,er Friday,Friday,,,declarative,eng,1,2,27,Manchester,n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460133,8710156,Thursday,Thursday,,,question,eng,1,1,28,Manchester,n:prop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460152,8710175,Friday,Friday,,,declarative,eng,1,1,29,Manchester,n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460166,8710189,Friday,Friday,,,declarative,eng,1,1,30,Manchester,n:prop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460179,8710202,you've not got long to wait then eh,you not get long to wait then,,,declarative,eng,9,8,31,Manchester,pro:per neg part adv inf v adv:tem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460194,8710217,are you getting tired sometimes,be you get tire sometimes,,,question,eng,8,5,32,Manchester,cop pro:per part part adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460207,8710230,yeah,yeah,,,declarative,eng,1,1,33,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460217,8710240,yeah,yeah,,,declarative,eng,1,1,34,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460229,8710252,he is,he be,,,declarative,eng,3,2,35,Manchester,pro:sub cop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460243,8710266,he is is he,he be be he,,,question,eng,6,4,36,Manchester,pro:sub cop aux pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460261,8710284,there he is,there he be,,,declarative,eng,4,3,37,Manchester,adv pro:sub cop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460275,8710298,hello Liz's baby,hello Liz baby,,,declarative,eng,5,3,38,Manchester,co adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460291,8710314,I got my farm out today,I get my farm out today,,,declarative,eng,7,6,39,Manchester,pro:sub v co n prep adv:tem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460305,8710328,I just got my this out today,I just get this out today,,,declarative,eng,7,7,40,Manchester,pro:sub adv v det:dem prep adv:tem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460319,8710342,yeah,yeah,,,declarative,eng,1,1,41,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460331,8710354,I got this out today Anna,I get this out today Anna,,,declarative,eng,7,6,42,Manchester,pro:sub v det:dem prep adv:tem n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460343,8710366,I just got this together,I just get this together,,,declarative,eng,6,5,43,Manchester,pro:sub adv part pro:dem adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460349,8710372,a strawberry,a strawberry,,,declarative,eng,2,2,44,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460356,8710379,a strawberry,a strawberry,,,declarative,eng,2,2,45,Manchester,det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460362,8710385,strawberry,strawberry,,,declarative,eng,1,1,46,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460369,8710392,strawberry,strawberry,,,declarative,eng,1,1,47,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460376,8710399,oh yeah,oh yeah,,,declarative,eng,2,2,48,Manchester,co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+460383,8710406,I going to put xxx,I go to put,,,declarative,eng,6,5,49,Manchester,pro:sub part inf v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460391,8710414,that that bit of play+dough might have got a bit dry sweetheart because I didn't know it was in there,that bit of might have get a bit dry because I do know it be in there,,,declarative,eng,22,20,50,Manchester,det:dem n prep mod aux part det:art n adj conj pro:sub mod v pro:per cop prep n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460401,8710424,has it got dry,have it get dry,,,question,eng,6,4,51,Manchester,aux pro:per v adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460407,8710430,yeah,yeah,,,declarative,eng,1,1,52,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460411,8710434,I didn't know it was in there so I didn't put it away did I,I do know it be in there so I do put it away do I,,,question,eng,23,15,53,Manchester,pro:sub mod v pro:per cop prep n adv pro:sub mod v pro:per adv mod pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460419,8710442,use another piece,use another piece,,,declarative,eng,3,3,54,Manchester,v qn n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460455,8710478,mhm,mhm,,,declarative,eng,1,1,55,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460470,8710493,one is big,one be big,,,declarative,eng,4,3,56,Manchester,pro:indef cop adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460486,8710509,this one this one's big,this one big,,,declarative,eng,4,5,57,Manchester,pro:dem pro:indef adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460501,8710524,yeah,yeah,,,declarative,eng,1,1,58,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460513,8710536,you'll hafta use that one won't you,you have use that one will you,,,question,eng,10,7,59,Manchester,pro:per mod v det:dem pro:indef mod pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460524,8710547,this one's big now,this one big now,,,declarative,eng,5,4,60,Manchester,pro:dem pro:indef adj adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460536,8710559,big,big,,,declarative,eng,1,1,61,Manchester,adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460546,8710569,big,big,,,declarative,eng,1,1,62,Manchester,adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460558,8710581,bless you love,bless you love,,,declarative,eng,3,3,63,Manchester,v pro:per v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460573,8710596,that's not dry,that not dry,,,declarative,eng,4,3,64,Manchester,pro:dem neg adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460599,8710622,no,no,,,declarative,eng,1,1,65,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460611,8710634,that bit okay is it,that bit okay be it,,,question,eng,6,5,66,Manchester,det:dem n adj aux pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460622,8710645,is is the nana today,be the nana today,,,declarative,eng,5,5,67,Manchester,cop det:art n adv:tem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460635,8710658,yeah,yeah,,,declarative,eng,1,1,68,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460648,8710671,can you manage that,can you manage that,,,question,eng,4,4,69,Manchester,mod pro:per v pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460662,8710685,um no,no,,,declarative,eng,1,2,70,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460673,8710696,can you help me,can you help me,,,question,eng,4,4,71,Manchester,mod pro:per v pro:obj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460687,8710710,mhm,mhm,,,declarative,eng,1,1,72,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460699,8710722,can't do it,can do it,,,declarative,eng,4,3,73,Manchester,mod v pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460710,8710733,right,right,,,declarative,eng,1,1,74,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460716,8710739,put it in like that,put it in like that,,,declarative,eng,6,5,75,Manchester,v pro:per prep prep pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460732,8710755,those four holes there,those four hole there,,,declarative,eng,5,4,76,Manchester,det:dem det:num n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460743,8710766,and now you can squeeze it together can't you,and now you can squeeze it together can you,,,question,eng,10,9,77,Manchester,coord adv pro:per mod v pro:per adv mod pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460752,8710775,is a nana there,be a nana there,,,declarative,eng,5,4,78,Manchester,cop det:art n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460767,8710790,yeah but it you're gonna make a strawberry now,yeah but you go to make a strawberry now,,,declarative,eng,11,9,79,Manchester,co conj pro:per part inf v det:art n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460782,8710805,do you wanna make a nana,do you want make a nana,,,question,eng,7,6,80,Manchester,mod pro:per v v det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460795,8710818,is it the nana you wanna make,be it the nana you want make,,,question,eng,9,7,81,Manchester,aux pro:per det:art n pro:per v v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460815,8710838,yeah,yeah,,,declarative,eng,1,1,82,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460826,8710849,oh right,oh right,,,declarative,eng,2,2,83,Manchester,co co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460838,8710861,well let's just er just make this into a bit of a,well let just make this into a bit of a,,,self interruption,eng,11,12,84,Manchester,co v adv v det:dem prep det:art n prep det:art,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460854,8710877,oh excuse me,oh excuse me,,,declarative,eng,3,3,85,Manchester,co v pro:obj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460866,8710889,a lump,a lump,,,declarative,eng,2,2,86,Manchester,det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460881,8710904,that's right,that right,,,declarative,eng,3,2,87,Manchester,pro:dem co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460890,8710913,you hafta move it along don't you,you have move it along do you,,,question,eng,9,7,88,Manchester,pro:per mod v pro:per adv mod pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460901,8710924,that's it,that it,,,declarative,eng,3,2,89,Manchester,pro:dem pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460912,8710935,now close it,now close it,,,declarative,eng,3,3,90,Manchester,adv v pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460924,8710947,I squeeze it,I squeeze it,,,declarative,eng,3,3,91,Manchester,pro:sub v pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460935,8710958,squeeze it and squeeze it,squeeze it and squeeze it,,,declarative,eng,5,5,92,Manchester,v pro:per coord v pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460937,8710960,squeeze squeeze squeeze,squeeze,,,declarative,eng,1,3,93,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+460950,8710973,yeah,yeah,,,declarative,eng,1,1,94,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460960,8710983,can you squeeze it,can you squeeze it,,,question,eng,4,4,95,Manchester,mod pro:per v pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460973,8710996,oh tight tight,oh tight tight,,,declarative,eng,3,3,96,Manchester,co adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+460985,8711008,oh,oh,,,declarative,eng,1,1,97,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461025,8711048,think that will have done it,think that will have do it,,,question,eng,7,6,98,Manchester,v pro:dem mod aux part pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461044,8711067,yeah,yeah,,,declarative,eng,1,1,99,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461053,8711076,has it,have it,,,question,eng,3,2,100,Manchester,aux pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461067,8711090,no,no,,,declarative,eng,1,1,101,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461077,8711100,yeah,yeah,,,declarative,eng,1,1,102,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461092,8711115,look,look,,,declarative,eng,1,1,103,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461104,8711127,there's your banana,there your banana,,,declarative,eng,4,3,104,Manchester,pro:exist det:poss n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461115,8711138,I haven't done,I have do,,,declarative,eng,5,3,105,Manchester,pro:sub aux part,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461123,8711146,shall we do a a strawberry now,shall we do a strawberry now,,,question,eng,6,7,106,Manchester,mod pro:sub v det:art n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461134,8711157,yeah,yeah,,,declarative,eng,1,1,107,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461146,8711169,I hafta do this,I have do this,,,declarative,eng,5,4,108,Manchester,pro:sub mod v pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461160,8711183,that's it,that it,,,declarative,eng,3,2,109,Manchester,pro:dem pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461172,8711195,just take your time,just take your time,,,declarative,eng,4,4,110,Manchester,adv v det:poss n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461185,8711208,and those four holes hafta go on those four dots there,and those four hole have go on those four dot there,,,declarative,eng,14,11,111,Manchester,coord det:dem det:num n mod v prep det:dem det:num n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461202,8711225,yeah,yeah,,,question,eng,1,1,112,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461212,8711235,there you go,there you go,,,declarative,eng,3,3,113,Manchester,adv pro:per v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461219,8711242,no,no,,,declarative,eng,1,1,114,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461231,8711254,squeeze it together,squeeze it together,,,declarative,eng,3,3,115,Manchester,v pro:per adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461243,8711266,oh that's a good strawberry isn't it,oh that a good strawberry be it,,,question,eng,10,7,116,Manchester,co pro:dem det:art adj n cop pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461256,8711279,a strawberry,a strawberry,,,declarative,eng,2,2,117,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461269,8711292,a strawberry,a strawberry,,,declarative,eng,2,2,118,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461280,8711303,I going to do it again,I go to do it again,,,declarative,eng,7,6,119,Manchester,pro:sub part inf v pro:per adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461293,8711316,there's a strawberry,there a strawberry,,,declarative,eng,4,3,120,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461303,8711326,a oh a circle,oh a circle,,,declarative,eng,3,4,121,Manchester,co det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461317,8711340,whoops,whoops,,,declarative,eng,1,1,122,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461327,8711350,there's a strawberry,there a strawberry,,,declarative,eng,4,3,123,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461341,8711364,yeah,yeah,,,declarative,eng,1,1,124,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461348,8711371,and I wanna do a aeroplane,and I want do a aeroplane,,,declarative,eng,7,6,125,Manchester,coord pro:sub v v det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461359,8711382,yes,yes,,,declarative,eng,1,1,126,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461370,8711393,I wanna I wanna do this please,I want do this please,,,declarative,eng,6,7,127,Manchester,pro:sub v v det:dem co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461394,8711417,is there one of those with an aeroplane in,be there one of those with a aeroplane in,,,question,eng,10,9,128,Manchester,cop adv pro:indef prep pro:dem prep det:art n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461408,8711431,yeah,yeah,,,declarative,eng,1,1,129,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461420,8711443,bring it here then and we'll find it,bring it here then and we find it,,,declarative,eng,9,8,130,Manchester,v pro:per adv adv:tem coord pro:sub v pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461433,8711456,okay,okay,,,declarative,eng,1,1,131,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461443,8711466,can you manage,can you manage,,,question,eng,3,3,132,Manchester,mod pro:per v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461461,8711484,oh excuse me,oh excuse me,,,declarative,eng,3,3,133,Manchester,co v pro:obj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461476,8711499,it's heavy,it heavy,,,declarative,eng,3,2,134,Manchester,pro:per adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461488,8711511,is it heavy,be it heavy,,,question,eng,4,3,135,Manchester,aux pro:per adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461500,8711523,oh dear,oh dear,,,declarative,eng,2,2,136,Manchester,co co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461511,8711534,are you_all right there,be you_all right there,,,question,eng,5,4,137,Manchester,cop pro:per adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461522,8711545,yeah,yeah,,,declarative,eng,1,1,138,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461531,8711554,right then,right then,,,declarative,eng,2,2,139,Manchester,adv adv:tem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461540,8711563,let's have a look,let have a look,,,declarative,eng,5,4,140,Manchester,v v det:art co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461552,8711575,now you're saying there's one of these with an aeroplane is there,now you say there one of these with a aeroplane be there,,,question,eng,16,12,141,Manchester,adv pro:per n:gerund pro:exist det:num prep det:dem prep det:art n aux adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461569,8711592,I don't know why they are so stiff in,I do know why they be so stiff in,,,declarative,eng,11,9,142,Manchester,pro:sub mod v pro:int pro:sub cop adv adj adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461585,8711608,oh there you are,oh there you be,,,declarative,eng,5,4,143,Manchester,co adv pro:per cop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461597,8711620,there it is on the orange one,there it be on the orange one,,,declarative,eng,8,7,144,Manchester,adv pro:per cop prep det:art n pro:indef,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461610,8711633,thank_you very much,thank_you very much,,,declarative,eng,3,3,145,Manchester,co adv adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461621,8711644,that's okay sweetheart,that okay,,,declarative,eng,3,3,146,Manchester,pro:dem adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461637,8711660,and you've left have you left the purple bit over there now,and have you leave the purple bit over there now,,,question,eng,11,12,147,Manchester,coord v pro:per v det:art n n prep n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461651,8711674,yeah,yeah,,,declarative,eng,1,1,148,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461664,8711687,have you,have you,,,question,eng,2,2,149,Manchester,v pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461673,8711696,yeah,yeah,,,declarative,eng,1,1,150,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461684,8711707,because it's not here,because it not here,,,declarative,eng,5,4,151,Manchester,conj pro:per neg adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461703,8711726,no,no,,,declarative,eng,1,1,152,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461713,8711736,where's it gone,where it go,,,question,eng,5,3,153,Manchester,pro:int pro:per part,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461728,8711751,did you take it over there with you,do you take it over there with you,,,question,eng,9,8,154,Manchester,mod pro:per v pro:per prep n prep pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461745,8711768,yes you did,yes you do,,,declarative,eng,4,3,155,Manchester,co pro:per v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461757,8711780,it's by your table love,it by your table love,,,declarative,eng,6,5,156,Manchester,pro:per adv det:poss n n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461771,8711794,I can see it on the floor by your table,I can see it on the floor by your table,,,declarative,eng,10,10,157,Manchester,pro:sub mod v pro:per prep det:art n prep det:poss n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461786,8711809,right,right,,,declarative,eng,1,1,158,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461796,8711819,so if you wanna do the aeroplane how do you put it in here,so if you want do the aeroplane how do you put it in here,,,question,eng,16,14,159,Manchester,co conj pro:per v v det:art n pro:rel mod pro:per v pro:per prep n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461812,8711835,that's right,that right,,,declarative,eng,3,2,160,Manchester,pro:dem co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461826,8711849,and you get those dots over those those holes over those dots don't you,and you get those hole over those dot do you,,,question,eng,13,14,161,Manchester,coord pro:per v det:dem n adv det:dem n mod pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461839,8711862,put it on top of those four little dots,put it on top of those four little dot,,,declarative,eng,11,9,162,Manchester,v pro:per prep n prep det:dem det:num adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461854,8711877,like that yeah,like that yeah,,,declarative,eng,3,3,163,Manchester,v adv co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461866,8711889,and put the play+dough in the middle,and put the in the middle,,,declarative,eng,7,7,164,Manchester,coord v det:art prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461879,8711902,oh,oh,,,declarative,eng,1,1,165,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461889,8711912,now is the bit where you squeeze isn't it,now be the bit where you squeeze be it,,,question,eng,12,9,166,Manchester,adv cop det:art n pro:rel pro:per n cop pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461901,8711924,yeah,yeah,,,question,eng,1,1,167,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461909,8711932,yeah,yeah,,,declarative,eng,1,1,168,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461924,8711947,a aeroplane,a aeroplane,,,declarative,eng,2,2,169,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461937,8711960,are you going to make an aeroplane,be you go to make a aeroplane,,,question,eng,9,7,170,Manchester,cop pro:per part inf v det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461948,8711971,there's aeroplane,there aeroplane,,,declarative,eng,3,2,171,Manchester,pro:exist n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461958,8711981,yes it is,yes it be,,,declarative,eng,4,3,172,Manchester,co pro:per cop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461971,8711994,there's a aeroplane there,there a aeroplane there,,,declarative,eng,5,4,173,Manchester,pro:exist det:art n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+461982,8712005,mhm,mhm,,,declarative,eng,1,1,174,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+461994,8712017,aeroplane,aeroplane,,,declarative,eng,1,1,175,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462005,8712028,there's a car,there a car,,,declarative,eng,4,3,176,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462023,8712046,yeah,yeah,,,declarative,eng,1,1,177,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462031,8712054,squish it,squish it,,,declarative,eng,2,2,178,Manchester,v pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462049,8712072,open,open,,,declarative,eng,1,1,179,Manchester,adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462060,8712083,oh it's stuck in hasn't it,oh it stick in have it,,,question,eng,10,6,180,Manchester,co pro:per part prep aux pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462075,8712098,oh,oh,,,declarative,eng,1,1,181,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462091,8712114,oh dear,oh dear,,,declarative,eng,2,2,182,Manchester,co co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462105,8712128,it's stuck in there,it stick in there,,,declarative,eng,6,4,183,Manchester,pro:per part prep n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462117,8712140,I tell you what we might hafta do is knock it out,I tell you what we might have do be knock it out,,,declarative,eng,14,12,184,Manchester,pro:sub v pro:per pro:int pro:sub mod mod v cop v pro:per adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462130,8712153,oh look,oh look,,,declarative,eng,2,2,185,Manchester,co co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462144,8712167,that's a good aeroplane anyway,that a good aeroplane anyway,,,declarative,eng,6,5,186,Manchester,pro:dem det:art adj n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462161,8712184,brumm,brumm,,,declarative,eng,1,1,187,Manchester,on,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462173,8712196,we need some more play+dough love,we need some more love,,,declarative,eng,5,6,188,Manchester,pro:sub v qn qn n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462188,8712211,this isn't enough to do anything else,this be enough to do anything else,,,declarative,eng,9,7,189,Manchester,pro:dem cop adv inf v pro:indef post,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462199,8712222,that one's dry,that one dry,,,declarative,eng,4,3,190,Manchester,comp pro:indef adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462211,8712234,do you wanna get another piece off the table,do you want get another piece off the table,,,question,eng,10,9,191,Manchester,mod pro:per v v qn n prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462223,8712246,yeah,yeah,,,declarative,eng,1,1,192,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462237,8712260,I can,I can,,,declarative,eng,2,2,193,Manchester,pro:sub mod,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462245,8712268,yeah,yeah,,,declarative,eng,1,1,194,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462260,8712283,I will,I will,,,declarative,eng,2,2,195,Manchester,pro:sub mod,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462266,8712289,I got this here,I get this here,,,declarative,eng,5,4,196,Manchester,pro:sub v det:dem adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462282,8712305,shall I put it in a ball,shall I put it in a ball,,,question,eng,8,7,197,Manchester,mod pro:sub v pro:per prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462295,8712318,so it'll go in properly yeah,so it go in proper yeah,,,question,eng,9,6,198,Manchester,adv pro:per v prep adv co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462309,8712332,what're you making next,what you make next,,,question,eng,6,4,199,Manchester,pro:int pro:per part adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462326,8712349,a car,a car,,,declarative,eng,2,2,200,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462336,8712359,a car,a car,,,declarative,eng,2,2,201,Manchester,det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462344,8712367,right,right,,,declarative,eng,1,1,202,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462359,8712382,see if you can put it in so you can do the car,see if you can put it in so you can do the car,,,declarative,eng,14,13,203,Manchester,v conj pro:per mod v pro:per prep co pro:per mod v det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462369,8712392,other way up darling,other way up darling,,,declarative,eng,4,4,204,Manchester,qn n adv co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462382,8712405,that's it,that it,,,declarative,eng,3,2,205,Manchester,pro:dem pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462393,8712416,now see if you can get those holes over the little sticky up bits,now see if you can get those hole over the little sticky up bit,,,declarative,eng,16,14,206,Manchester,adv v comp pro:per mod v det:dem n prep det:art adj n adv n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462405,8712428,can you see the sticky up bits there,can you see the sticky up bit there,,,question,eng,9,8,207,Manchester,mod pro:per v det:art n adv n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462418,8712441,wiggle it around,wiggle it around,,,declarative,eng,3,3,208,Manchester,v pro:per adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462429,8712452,see like that,see like that,,,declarative,eng,3,3,209,Manchester,v prep pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462442,8712465,so it clicks on,so it click on,,,declarative,eng,5,4,210,Manchester,co pro:per v adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462457,8712480,yeah,yeah,,,question,eng,1,1,211,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462467,8712490,yeah,yeah,,,declarative,eng,1,1,212,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462479,8712502,right,right,,,declarative,eng,1,1,213,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462491,8712514,go on,go on,,,declarative,eng,2,2,214,Manchester,v adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462503,8712526,there's a car,there a car,,,declarative,eng,4,3,215,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462514,8712537,yeah,yeah,,,declarative,eng,1,1,216,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462523,8712546,oh that's a smashing car that,oh that a smash car that,,,declarative,eng,8,6,217,Manchester,co pro:dem det:art n:gerund n pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462527,8712550,look at that,look at that,,,declarative,eng,3,3,218,Manchester,v prep pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462528,8712551,take these excess bits off,take these excess bit off,,,declarative,eng,6,5,219,Manchester,v det:dem adj n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462529,8712552,wow,wow,,,declarative,eng,1,1,220,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462530,8712553,look at this favorite car I made,look at this favorite car I make,,,declarative,eng,8,7,221,Manchester,v prep det:dem adj n pro:sub v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462532,8712555,oh let's have a look,oh let have a look,,,declarative,eng,6,5,222,Manchester,co v v det:art co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462533,8712556,oh that's great,oh that great,,,declarative,eng,4,3,223,Manchester,co pro:dem adj,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462534,8712557,I going to do a train now,I go to do a train now,,,declarative,eng,8,7,224,Manchester,pro:sub part inf v det:art n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462535,8712558,right okay,right okay,,,declarative,eng,2,2,225,Manchester,adv adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462536,8712559,you needta move your stick along don't you,you need move your stick along do you,,,question,eng,10,8,226,Manchester,pro:per v v det:poss n adv mod pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462537,8712560,see if you can put it on the four things,see if you can put it on the four thing,,,declarative,eng,12,10,227,Manchester,v conj pro:per mod v pro:per prep det:art det:num n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462538,8712561,that's it,that it,,,declarative,eng,3,2,228,Manchester,pro:dem pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462539,8712562,and put this there,and put this there,,,declarative,eng,5,4,229,Manchester,coord v pro:dem adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462540,8712563,whoops,whoops,,,declarative,eng,1,1,230,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462541,8712564,whoops,whoops,,,declarative,eng,1,1,231,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462542,8712565,fell off then didn't it,fall off then do it,,,question,eng,8,5,232,Manchester,v adv adv:tem mod pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462543,8712566,come on,come on,,,declarative,eng,2,2,233,Manchester,v adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462544,8712567,it won't go in the mould if you do it squashed like that,it will go in the mould if you do it squash like that,,,declarative,eng,15,13,234,Manchester,pro:per mod v prep det:art n conj pro:per v pro:per part co pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462545,8712568,that's it,that it,,,declarative,eng,3,2,235,Manchester,pro:dem pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462546,8712569,that's it,that it,,,declarative,eng,3,2,236,Manchester,pro:dem pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462547,8712570,there's a train,there a train,,,declarative,eng,4,3,237,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462548,8712571,yeah,yeah,,,declarative,eng,1,1,238,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462549,8712572,give it a good squeeze,give it a good squeeze,,,declarative,eng,5,5,239,Manchester,v pro:per det:art adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462550,8712573,I done the aeroplane and the car,I do the aeroplane and the car,,,declarative,eng,8,7,240,Manchester,pro:sub part det:art n coord det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462551,8712574,you did yeah,you do yeah,,,declarative,eng,4,3,241,Manchester,pro:per v co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462553,8712576,I done that car,I do that car,,,declarative,eng,5,4,242,Manchester,pro:sub part pro:dem n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462554,8712577,that aeroplane,that aeroplane,,,declarative,eng,2,2,243,Manchester,det:dem n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462556,8712579,yeah,yeah,,,declarative,eng,1,1,244,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462557,8712580,are you squeezing,be you squeeze,,,question,eng,5,3,245,Manchester,cop pro:per part,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462558,8712581,no,no,,,declarative,eng,1,1,246,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462559,8712582,oh,oh,,,declarative,eng,1,1,247,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462560,8712583,oh,oh,,,declarative,eng,1,1,248,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462561,8712584,oh well that's got all the extra bits off hasn't it,oh well that get all the extra bit off have it,,,question,eng,16,11,249,Manchester,co n pro:rel part qn det:art n n adv aux pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462562,8712585,you'll have you'll hafta take the whole thing out and shake it in your hand,you have take the whole thing out and shake it in your hand,,,declarative,eng,15,15,250,Manchester,pro:per mod v det:art adj n adv coord v pro:per prep det:poss n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462563,8712586,oh,oh,,,declarative,eng,1,1,251,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462564,8712587,has it not come out yet,have it not come out yet,,,question,eng,7,6,252,Manchester,aux pro:per neg v adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462565,8712588,is it stuck,be it stick,,,question,eng,5,3,253,Manchester,aux pro:per v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462566,8712589,let's shake it from this end,let shake it from this end,,,declarative,eng,7,6,254,Manchester,v v pro:per prep det:dem n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462567,8712590,there it goes,there it go,,,declarative,eng,4,3,255,Manchester,adv pro:per v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462568,8712591,oh that's a good train,oh that a good train,,,declarative,eng,6,5,256,Manchester,co pro:dem det:art adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462569,8712592,isn't it good,be it good,,,question,eng,5,3,257,Manchester,cop pro:per adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462570,8712593,look what I made,look what I make,,,declarative,eng,5,4,258,Manchester,v pro:int pro:sub v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462571,8712594,oh yeah,oh yeah,,,declarative,eng,2,2,259,Manchester,co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462572,8712595,a train,a train,,,declarative,eng,2,2,260,Manchester,det:art n,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462573,8712596,that's good,that good,,,declarative,eng,3,2,261,Manchester,pro:dem adj,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462574,8712597,so now we've got an aeroplane a car and a train,so now we get a aeroplane a car and a train,,,declarative,eng,13,11,262,Manchester,adv adv pro:sub part det:art n det:art n coord det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462575,8712598,,,,,declarative,eng,-2147483648,0,263,Manchester,,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462576,8712599,excuse me,excuse me,,,declarative,eng,2,2,264,Manchester,v pro:obj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462577,8712600,bless you,bless you,,,declarative,eng,2,2,265,Manchester,v pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462578,8712601,aeroplane,aeroplane,,,declarative,eng,1,1,266,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462579,8712602,a car,a car,,,declarative,eng,2,2,267,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462580,8712603,a train,a train,,,declarative,eng,2,2,268,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462581,8712604,and shall we get a,and shall we get a,,,trail off,eng,5,5,269,Manchester,coord mod pro:sub v det:art,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462582,8712605,another one out,another one out,,,question,eng,3,3,270,Manchester,qn pro:indef adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462583,8712606,yeah,yeah,,,declarative,eng,1,1,271,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462584,8712607,yeah,yeah,,,declarative,eng,1,1,272,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462585,8712608,yeah,yeah,,,declarative,eng,1,1,273,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462586,8712609,yeah,yeah,,,declarative,eng,1,1,274,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462587,8712610,the yellow one,the yellow one,,,declarative,eng,3,3,275,Manchester,det:art n pro:indef,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462588,8712611,the yellow one,the yellow one,,,declarative,eng,3,3,276,Manchester,det:art n pro:indef,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462589,8712612,there you go,there you go,,,declarative,eng,3,3,277,Manchester,adv pro:per v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462590,8712613,you'll needta get some more play+dough won't you,you need get some more will you,,,question,eng,10,8,278,Manchester,pro:per v v qn qn mod pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462591,8712614,I hafta,I have,,,declarative,eng,3,2,279,Manchester,pro:sub mod,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462592,8712615,I hafta get some more play+dough,I have get some more,,,declarative,eng,6,6,280,Manchester,pro:sub mod v qn qn,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462593,8712616,blue,blue,,,declarative,eng,1,1,281,Manchester,adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462594,8712617,I can't get the lid off,I can get the lid off,,,declarative,eng,7,6,282,Manchester,pro:sub mod v det:art n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462595,8712618,okay,okay,,,declarative,eng,1,1,283,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462596,8712619,bring it over here,bring it over here,,,declarative,eng,4,4,284,Manchester,v pro:per prep n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462597,8712620,I can't get the blue play+dough,I can get the blue,,,declarative,eng,6,6,285,Manchester,pro:sub mod v det:art adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462598,8712621,we're doing these in blue are we,we do these in blue be we,,,question,eng,10,7,286,Manchester,pro:sub part det:dem prep n cop pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462599,8712622,are you bringing your yellow your yellow thing yellow stick,be you bring your yellow stick,,,question,eng,8,10,287,Manchester,cop pro:per part det:poss adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462600,8712623,I going to do a sheep today,I go to do a sheep today,,,declarative,eng,8,7,288,Manchester,pro:sub part inf v det:art n adv:tem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462601,8712624,a sheep,a sheep,,,question,eng,2,2,289,Manchester,det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462602,8712625,sheep,sheep,,,declarative,eng,1,1,290,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462603,8712626,oh,oh,,,declarative,eng,1,1,291,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462604,8712627,and here's a little ball I roll,and here a little ball I roll,,,declarative,eng,8,7,292,Manchester,coord pro:exist det:art adj n pro:sub v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462605,8712628,that's too small that sweetheart,that too small that,,,declarative,eng,5,5,293,Manchester,pro:dem adv adj comp,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462606,8712629,we won't get a sheep out_of that,we will get a sheep out_of that,,,declarative,eng,8,7,294,Manchester,pro:sub mod v det:art n prep pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462607,8712630,here you are,here you be,,,declarative,eng,4,3,295,Manchester,adv pro:per cop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462608,8712631,I'm doing you a blue one,I do you a blue one,,,declarative,eng,8,6,296,Manchester,pro:sub part pro:per det:art n pro:indef,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462609,8712632,do you wanna put the sheep in there then,do you want put the sheep in there then,,,question,eng,11,9,297,Manchester,mod pro:per v v det:art n prep n adv:tem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462610,8712633,put the yellow stick in,put the yellow stick in,,,declarative,eng,6,5,298,Manchester,v det:art adj n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462611,8712634,other way up,other way up,,,declarative,eng,3,3,299,Manchester,pro:indef adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462612,8712635,and that's the sheep isn't it,and that the sheep be it,,,question,eng,9,6,300,Manchester,coord pro:dem det:art n cop pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462613,8712636,do you wanna do the sheep first,do you want do the sheep first,,,question,eng,8,7,301,Manchester,mod pro:per v v det:art n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462614,8712637,do you,do you,,,question,eng,2,2,302,Manchester,mod pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462615,8712638,that's it,that it,,,declarative,eng,3,2,303,Manchester,pro:dem pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462616,8712639,let's get it on those four posts,let get it on those four post,,,declarative,eng,9,7,304,Manchester,v aux pro:per prep det:dem det:num n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462617,8712640,there,there,,,declarative,eng,1,1,305,Manchester,adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462618,8712641,okay,okay,,,question,eng,1,1,306,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462619,8712642,I squeeze it,I squeeze it,,,declarative,eng,3,3,307,Manchester,pro:sub v pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462620,8712643,yeah,yeah,,,declarative,eng,1,1,308,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462621,8712644,wow,wow,,,declarative,eng,1,1,309,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462622,8712645,a little sheep,a little sheep,,,declarative,eng,3,3,310,Manchester,det:art adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462623,8712646,this,this,,,declarative,eng,1,1,311,Manchester,pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462624,8712647,look what I made,look what I make,,,declarative,eng,5,4,312,Manchester,v pro:int pro:sub v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462625,8712648,a sheep is it,a sheep be it,,,question,eng,5,4,313,Manchester,det:art n aux pro:per,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462626,8712649,yeah,yeah,,,declarative,eng,1,1,314,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462627,8712650,a little sheep I made,a little sheep I make,,,declarative,eng,6,5,315,Manchester,det:art adj n pro:sub v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462628,8712651,oh yeah,oh yeah,,,declarative,eng,2,2,316,Manchester,co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462629,8712652,it's a blue sheep isn't it Mummy,it a blue sheep be it Mummy,,,question,eng,10,7,317,Manchester,pro:per det:art adj n cop pro:per n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462630,8712653,it is love,it be love,,,declarative,eng,4,3,318,Manchester,pro:per cop v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462631,8712654,yeah,yeah,,,declarative,eng,1,1,319,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462632,8712655,I wanna do a horse,I want do a horse,,,declarative,eng,6,5,320,Manchester,pro:sub v v det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462633,8712656,you're doing a horse,you do a horse,,,declarative,eng,6,4,321,Manchester,pro:per part det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462634,8712657,that's right,that right,,,declarative,eng,3,2,322,Manchester,pro:dem co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462635,8712658,oh well done,oh well do,,,declarative,eng,4,3,323,Manchester,co adv part,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462636,8712659,just wiggle it round a bit,just wiggle it round a bit,,,declarative,eng,6,6,324,Manchester,adv v pro:per adv det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462637,8712660,yeah,yeah,,,declarative,eng,1,1,325,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462638,8712661,put some play+dough in,put some in,,,declarative,eng,4,4,326,Manchester,v qn adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462639,8712662,and I squeeze it,and I squeeze it,,,declarative,eng,4,4,327,Manchester,coord pro:sub v pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462640,8712663,yeah,yeah,,,declarative,eng,1,1,328,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462641,8712664,there's a horsie,there a horse,,,declarative,eng,5,3,329,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462642,8712665,mhm,mhm,,,declarative,eng,1,1,330,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462643,8712666,oh he's nice,oh he nice,,,declarative,eng,4,3,331,Manchester,co pro:sub adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462644,8712667,taking those bits off,take those bit off,,,declarative,eng,6,4,332,Manchester,part det:dem n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462645,8712668,ta,to,,,declarative,eng,1,1,333,Manchester,inf,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462646,8712669,thank_you,thank_you,,,declarative,eng,1,1,334,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462647,8712670,whoops,whoops,,,declarative,eng,1,1,335,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462648,8712671,what's that,what that,,,question,eng,3,2,336,Manchester,pro:int pro:dem,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462649,8712672,horse,horse,,,declarative,eng,1,1,337,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462650,8712673,oh,oh,,,declarative,eng,1,1,338,Manchester,co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462651,8712674,shall we do er this,shall we do this,,,question,eng,4,5,339,Manchester,mod pro:sub v pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462652,8712675,the chicken,the chicken,,,question,eng,2,2,340,Manchester,det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462653,8712676,yes,yes,,,declarative,eng,1,1,341,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462654,8712677,see if you can get those four little purple things through the holes,see if you can get those four little purple thing through the hole,,,declarative,eng,15,13,342,Manchester,v conj pro:per mod v det:dem det:num adj n n adj det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462655,8712678,yeah,yeah,,,declarative,eng,1,1,343,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462656,8712679,have you done it,have you do it,,,question,eng,5,4,344,Manchester,v pro:per part pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462657,8712680,well done,well do,,,declarative,eng,3,2,345,Manchester,co part,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462658,8712681,put that on there,put that on there,,,declarative,eng,5,4,346,Manchester,v pro:dem prep n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462659,8712682,okay,okay,,,declarative,eng,1,1,347,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462660,8712683,whoops,whoops,,,declarative,eng,1,1,348,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462661,8712684,whoops,whoops,,,declarative,eng,1,1,349,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462662,8712685,there's a chicken,there a chicken,,,declarative,eng,4,3,350,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462663,8712686,mhm,mhm,,,declarative,eng,1,1,351,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462664,8712687,there he is,there he be,,,declarative,eng,4,3,352,Manchester,adv pro:sub cop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462665,8712688,look what I made,look what I make,,,declarative,eng,5,4,353,Manchester,v pro:int pro:sub v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462666,8712689,a chicken,a chicken,,,declarative,eng,2,2,354,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462667,8712690,oh yeah,oh yeah,,,declarative,eng,2,2,355,Manchester,co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462668,8712691,that's great,that great,,,declarative,eng,3,2,356,Manchester,pro:dem adj,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462669,8712692,have you got some toys in your bag,have you get some toy in your bag,,,question,eng,10,8,357,Manchester,aux pro:per v qn n prep det:poss n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462670,8712693,um sort of,sort of,,,declarative,eng,2,3,358,Manchester,n prep,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462671,8712694,yeah,yeah,,,declarative,eng,1,1,359,Manchester,co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462672,8712695,I'm going to put these bits with my Mummy,I go to put these bit with my Mummy,,,declarative,eng,13,9,360,Manchester,pro:sub part inf v det:dem n prep det:poss n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462673,8712696,and look,and look,,,declarative,eng,2,2,361,Manchester,coord v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462674,8712697,I wanna have a look in your bag,I want have a look in your bag,,,declarative,eng,9,8,362,Manchester,pro:sub v v det:art v prep det:poss n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462675,8712698,we'll look in my bag a little bit later,we look in my bag a little bit later,,,declarative,eng,10,9,363,Manchester,pro:sub v prep det:poss n det:art adj n adv,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462676,8712699,okay,okay,,,question,eng,1,1,364,Manchester,co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462677,8712700,in a little while Liz,in a little while Liz,,,declarative,eng,5,5,365,Manchester,prep det:art adj n n:prop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462678,8712701,a few minutes I think,a few minute I think,,,declarative,eng,6,5,366,Manchester,det:art n n pro:sub v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462679,8712702,I'm opening the windows and the doors,I open the window and the door,,,declarative,eng,11,7,367,Manchester,pro:sub part det:art n coord det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462680,8712703,oh,oh,,,declarative,eng,1,1,368,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462681,8712704,one door's open,one door open,,,declarative,eng,5,3,369,Manchester,det:num adj adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462682,8712705,two xxx,two,,,declarative,eng,1,2,370,Manchester,det:num,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462683,8712706,dancing,dance,,,question,eng,2,1,371,Manchester,part,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462684,8712707,what you doing,what you do,,,question,eng,4,3,372,Manchester,pro:int pro:per part,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462685,8712708,I'm doing a ladybird,I do a ladybird,,,declarative,eng,6,4,373,Manchester,pro:sub part det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462686,8712709,you doing the ladybird,you do the ladybird,,,question,eng,5,4,374,Manchester,pro:per part det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462687,8712710,you doing the ladybird,you do the ladybird,,,question,eng,5,4,375,Manchester,pro:per part det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462688,8712711,yeah,yeah,,,declarative,eng,1,1,376,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462689,8712712,my Mummy doing the ladybird,my Mummy do the ladybird,,,declarative,eng,6,5,377,Manchester,det:poss n:prop part det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462690,8712713,is she,be she,,,question,eng,3,2,378,Manchester,cop pro:sub,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462691,8712714,can I do the ladybird,can I do the ladybird,,,question,eng,5,5,379,Manchester,mod pro:sub v det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462692,8712715,yeah,yeah,,,declarative,eng,1,1,380,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462693,8712716,have you done a flower as_well,have you do a flower as_well,,,question,eng,7,6,381,Manchester,v pro:per part det:art n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462694,8712717,this,this,,,question,eng,1,1,382,Manchester,pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462695,8712718,yeah,yeah,,,declarative,eng,1,1,383,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462696,8712719,I just did the flower,I just do the flower,,,declarative,eng,6,5,384,Manchester,pro:sub adv v det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462697,8712720,and this,and this,,,declarative,eng,2,2,385,Manchester,coord pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462698,8712721,did you done this,do you do this,,,question,eng,6,4,386,Manchester,mod pro:per part pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462699,8712722,no,no,,,declarative,eng,1,1,387,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462700,8712723,I haven't done that yet,I have do that yet,,,declarative,eng,7,5,388,Manchester,pro:sub aux part pro:dem adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462701,8712724,the butterfly,the,,,declarative,eng,1,2,389,Manchester,det:art,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462702,8712725,did you wanna do the ladybird did you say,do you want do the ladybird do you say,,,question,eng,12,9,390,Manchester,mod pro:per v v det:art n mod pro:per v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462703,8712726,yeah,yeah,,,declarative,eng,1,1,391,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462704,8712727,and the butterfly,and the,,,declarative,eng,2,3,392,Manchester,coord det:art,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462705,8712728,and this,and this,,,declarative,eng,2,2,393,Manchester,coord pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462706,8712729,and this,and this,,,declarative,eng,2,2,394,Manchester,coord pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462707,8712730,and this,and this,,,declarative,eng,2,2,395,Manchester,coord pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462708,8712731,and this,and this,,,declarative,eng,2,2,396,Manchester,coord pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462709,8712732,oh you did all those didn't you,oh you do all those do you,,,question,eng,10,7,397,Manchester,co pro:per v qn det:dem mod pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462710,8712733,and this,and this,,,declarative,eng,2,2,398,Manchester,coord pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462711,8712734,and this,and this,,,declarative,eng,2,2,399,Manchester,coord pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462712,8712735,and this,and this,,,declarative,eng,2,2,400,Manchester,coord pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462713,8712736,and this,and this,,,declarative,eng,2,2,401,Manchester,coord pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462714,8712737,do you wanna squeeze then for the ladybird,do you want squeeze then for the ladybird,,,question,eng,9,8,402,Manchester,mod pro:per v v adv:tem prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462715,8712738,oh,oh,,,declarative,eng,1,1,403,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462716,8712739,there he is,there he be,,,declarative,eng,4,3,404,Manchester,adv pro:sub cop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462717,8712740,I will take the bits off here,I will take the bit off here,,,declarative,eng,8,7,405,Manchester,pro:sub mod v det:art n prep n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462718,8712741,okay,okay,,,declarative,eng,1,1,406,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462719,8712742,and here's a ladybird,and here a ladybird,,,declarative,eng,5,4,407,Manchester,coord pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462720,8712743,look,look,,,declarative,eng,1,1,408,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462721,8712744,oh yeah,oh yeah,,,declarative,eng,2,2,409,Manchester,co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462722,8712745,that's good,that good,,,declarative,eng,3,2,410,Manchester,pro:dem adj,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462723,8712746,I wanna do this one now,I want do this one now,,,declarative,eng,7,6,411,Manchester,pro:sub v v det:dem det:num adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462724,8712747,the flower,the flower,,,declarative,eng,2,2,412,Manchester,det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462725,8712748,the flower,the flower,,,declarative,eng,2,2,413,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462726,8712749,right,right,,,declarative,eng,1,1,414,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462727,8712750,well let's put some more play+dough in then,well let put some more in then,,,declarative,eng,9,8,415,Manchester,co v v qn qn prep adv:tem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462728,8712751,thank_you,thank_you,,,declarative,eng,1,1,416,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462729,8712752,okay,okay,,,declarative,eng,1,1,417,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462730,8712753,oh that's a good flower isn't it,oh that a good flower be it,,,question,eng,10,7,418,Manchester,co pro:dem det:art adj n cop pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462731,8712754,it's got all the little petals on,it get all the little petal on,,,declarative,eng,10,7,419,Manchester,pro:per part qn det:art adj n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462732,8712755,stick,stick,,,declarative,eng,1,1,420,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462733,8712756,ta,to,,,declarative,eng,1,1,421,Manchester,inf,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462734,8712757,thank_you,thank_you,,,declarative,eng,1,1,422,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462735,8712758,see,see,,,declarative,eng,1,1,423,Manchester,v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462736,8712759,see,see,,,declarative,eng,1,1,424,Manchester,v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462737,8712760,see,see,,,declarative,eng,1,1,425,Manchester,v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462738,8712761,thank_you love,thank_you love,,,declarative,eng,2,2,426,Manchester,co n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462739,8712762,a flower,a flower,,,declarative,eng,2,2,427,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462740,8712763,a flower I made,a flower I make,,,declarative,eng,5,4,428,Manchester,det:art n pro:sub v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462741,8712764,oh a little flower,oh a little flower,,,declarative,eng,4,4,429,Manchester,co det:art adj n,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462742,8712765,a little flower,a little flower,,,declarative,eng,3,3,430,Manchester,det:art adj n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462743,8712766,do you want some juice Anna,do you want some juice Anna,,,question,eng,6,6,431,Manchester,mod pro:per v qn n n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462744,8712767,no thank_you,no thank_you,,,declarative,eng,2,2,432,Manchester,qn n,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462745,8712768,I'm all right,I all right,,,declarative,eng,4,3,433,Manchester,pro:sub adv co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462746,8712769,I'll have a drink sweetheart,I have a drink,,,declarative,eng,5,5,434,Manchester,pro:sub v det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462747,8712770,do you like a cup of tea,do you like a cup of tea,,,question,eng,7,7,435,Manchester,mod pro:per conj det:art n prep n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462748,8712771,yes please,yes please,,,declarative,eng,2,2,436,Manchester,co co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462749,8712772,and do you want a cup of tea,and do you want a cup of tea,,,question,eng,8,8,437,Manchester,coord v pro:per v det:art n prep n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462750,8712773,oh yes please,oh yes please,,,declarative,eng,3,3,438,Manchester,co co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462751,8712774,okay,okay,,,declarative,eng,1,1,439,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462752,8712775,I put some in,I put some in,,,declarative,eng,5,4,440,Manchester,pro:sub v qn adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462753,8712776,you want a plate,you want a plate,,,question,eng,4,4,441,Manchester,pro:per v det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462754,8712777,um yes okay,yes okay,,,declarative,eng,2,3,442,Manchester,co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462755,8712778,tea,tea,,,declarative,eng,1,1,443,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462756,8712779,cup of coffee,cup of coffee,,,declarative,eng,3,3,444,Manchester,n prep n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462757,8712780,there you are Anna,there you be Anna,,,declarative,eng,5,4,445,Manchester,adv pro:per cop n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462758,8712781,there's your cup of tea,there your cup of tea,,,declarative,eng,6,5,446,Manchester,pro:exist det:poss n prep n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462759,8712782,thank_you very much,thank_you very much,,,declarative,eng,3,3,447,Manchester,co adv adv,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462760,8712783,that's a cup of coffee,that a cup of coffee,,,declarative,eng,6,5,448,Manchester,pro:dem det:art n prep n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462761,8712784,cup of coffee is it,cup of coffee be it,,,question,eng,6,5,449,Manchester,n prep n aux pro:per,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462762,8712785,drink it,drink it,,,declarative,eng,2,2,450,Manchester,v pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462763,8712786,okay,okay,,,declarative,eng,1,1,451,Manchester,co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462764,8712787,mm,,,,declarative,eng,-2147483648,1,452,Manchester,,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462765,8712788,that's nice,that nice,,,declarative,eng,3,2,453,Manchester,pro:dem adj,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462766,8712789,do you want some more,do you want some more,,,question,eng,5,5,454,Manchester,mod pro:per v qn pro:indef,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462767,8712790,um I could have a bit more yeah,I could have a bit more yeah,,,declarative,eng,7,8,455,Manchester,pro:sub mod v det:art n adv co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462768,8712791,whoops,whoops,,,declarative,eng,1,1,456,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462769,8712792,whoops,whoops,,,declarative,eng,1,1,457,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462770,8712793,happy_birthday to you,happy_birthday to you,,,declarative,eng,3,3,458,Manchester,co prep pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462771,8712794,happy_birthday to Mummy,happy_birthday to Mummy,,,declarative,eng,3,3,459,Manchester,co prep n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462772,8712795,happy_birthday to you,happy_birthday to you,,,declarative,eng,3,3,460,Manchester,co prep pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462773,8712796,blow the candles out Mummy,blow the candle out Mummy,,,declarative,eng,6,5,461,Manchester,v det:art n adv n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462774,8712797,thank_you sweetheart,thank_you,,,declarative,eng,1,2,462,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462775,8712798,happy_birthday to Anna,happy_birthday to Anna,,,declarative,eng,3,3,463,Manchester,co prep n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462776,8712799,happy_birthday to you,happy_birthday to you,,,declarative,eng,3,3,464,Manchester,co prep pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462777,8712800,oh,oh,,,declarative,eng,1,1,465,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462778,8712801,Anna's birthday cake on the floor,Anna cake on the floor,,,declarative,eng,7,6,466,Manchester,adj n prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462779,8712802,can you do it,can you do it,,,question,eng,4,4,467,Manchester,mod pro:per v pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462780,8712803,well wait a minute because there's things there you're gonna land on isn't there,well wait a minute because there thing there you go to land on be there,,,question,eng,21,14,468,Manchester,co v det:art adj conj pro:exist n adv pro:per part prep n adv cop adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462781,8712804,you don't wanna land on those because they'll hurt you,you do want land on those because they hurt you,,,declarative,eng,14,10,469,Manchester,pro:per mod v v prep pro:dem conj pro:sub v pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462782,8712805,yeah,yeah,,,declarative,eng,1,1,470,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462783,8712806,they will hurt me,they will hurt me,,,declarative,eng,5,4,471,Manchester,pro:sub mod v pro:obj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462784,8712807,okay,okay,,,declarative,eng,1,1,472,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462785,8712808,okay,okay,,,declarative,eng,1,1,473,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462786,8712809,tuck your head in,tuck your head in,,,declarative,eng,4,4,474,Manchester,v det:poss n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462787,8712810,again,again,,,declarative,eng,1,1,475,Manchester,adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462788,8712811,right,right,,,declarative,eng,1,1,476,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462789,8712812,stand up,stand up,,,declarative,eng,2,2,477,Manchester,v adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462790,8712813,that's it and tuck,that it and tuck,,,self interruption,eng,5,4,478,Manchester,pro:dem pro:per coord v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462791,8712814,stand up on your feet with me,stand up on your foot with me,,,declarative,eng,8,7,479,Manchester,v adv prep det:poss n prep pro:obj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462792,8712815,no Liz,no Liz,,,declarative,eng,2,2,480,Manchester,co n:prop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462793,8712816,bring your head up off the floor,bring your head up off the floor,,,declarative,eng,7,7,481,Manchester,v det:poss n adv prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462794,8712817,and and stand up,and stand up,,,declarative,eng,3,4,482,Manchester,coord v adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462795,8712818,right,right,,,declarative,eng,1,1,483,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462796,8712819,now you put your head down,now you put your head down,,,declarative,eng,7,6,484,Manchester,adv pro:per v det:poss n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462797,8712820,right down,right down,,,declarative,eng,2,2,485,Manchester,adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462798,8712821,that's it,that it,,,declarative,eng,3,2,486,Manchester,pro:dem pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462799,8712822,right down,right down,,,declarative,eng,2,2,487,Manchester,adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462800,8712823,tuck it in like that,tuck it in like that,,,declarative,eng,5,5,488,Manchester,v pro:per prep prep pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462801,8712824,there we go,there we go,,,declarative,eng,3,3,489,Manchester,adv pro:sub v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462802,8712825,is that better,be that good,,,question,eng,5,3,490,Manchester,cop comp adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462803,8712826,yeah,yeah,,,declarative,eng,1,1,491,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462804,8712827,again,again,,,declarative,eng,1,1,492,Manchester,adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462805,8712828,oh,oh,,,declarative,eng,1,1,493,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462806,8712829,right,right,,,declarative,eng,1,1,494,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462807,8712830,tuck it put your head down,put your head down,,,declarative,eng,5,6,495,Manchester,v det:poss n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462808,8712831,right down,right down,,,declarative,eng,2,2,496,Manchester,adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462809,8712832,whee,whee,,,declarative,eng,1,1,497,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462810,8712833,we are playing games aren't we,we be play game be we,,,question,eng,11,6,498,Manchester,pro:sub aux part n aux pro:sub,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462811,8712834,yes we are,yes we be,,,declarative,eng,4,3,499,Manchester,co pro:sub cop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462812,8712835,again,again,,,declarative,eng,1,1,500,Manchester,adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462813,8712836,okay,okay,,,declarative,eng,1,1,501,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462814,8712837,tuck your head down,tuck your head down,,,declarative,eng,4,4,502,Manchester,v det:poss n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462815,8712838,right down,right down,,,declarative,eng,2,2,503,Manchester,adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462816,8712839,whoo,whoo,,,declarative,eng,1,1,504,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462817,8712840,I think I'm gonna hafta go to the loo actually Liz,I think I go to have go to the loo actual Liz,,,declarative,eng,17,11,505,Manchester,pro:sub v pro:sub part inf mod v prep det:art n adv n:prop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462818,8712841,again,again,,,declarative,eng,1,1,506,Manchester,adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462819,8712842,one more and then I'll hafta go to the toilet,one more and then I have go to the toilet,,,declarative,eng,12,10,507,Manchester,det:num adv coord adv:tem pro:sub mod v prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462820,8712843,okay,okay,,,declarative,eng,1,1,508,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462821,8712844,head down,head down,,,declarative,eng,2,2,509,Manchester,n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462822,8712845,whee,whee,,,declarative,eng,1,1,510,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462823,8712846,I'll be back in a minute,I be back in a minute,,,declarative,eng,7,6,511,Manchester,pro:sub cop adv prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+462824,8712847,there,there,,,declarative,eng,1,1,512,Manchester,adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462825,8712848,what's that for,what that for,,,question,eng,4,3,513,Manchester,pro:int pro:dem prep,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462826,8712849,I got something in here for me,I get something in here for me,,,declarative,eng,8,7,514,Manchester,pro:sub v pro:indef prep n prep pro:obj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462827,8712850,have you,have you,,,question,eng,2,2,515,Manchester,v pro:per,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462828,8712851,look,look,,,declarative,eng,1,1,516,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462829,8712852,I got something,I get something,,,declarative,eng,4,3,517,Manchester,pro:sub v pro:indef,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462830,8712853,it's heavy,it heavy,,,declarative,eng,3,2,518,Manchester,pro:per adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462831,8712854,can you manage it,can you manage it,,,question,eng,4,4,519,Manchester,mod pro:per v pro:per,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462832,8712855,okay,okay,,,declarative,eng,1,1,520,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462833,8712856,what's inside,what inside,,,question,eng,3,2,521,Manchester,pro:int adv,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462834,8712857,animals,animal,,,declarative,eng,2,1,522,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462835,8712858,oh all sorts of animals,oh all sort of animal,,,declarative,eng,7,5,523,Manchester,co qn n prep n,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462836,8712859,yeah,yeah,,,declarative,eng,1,1,524,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462837,8712860,sort of animals,sort of animal,,,declarative,eng,4,3,525,Manchester,n prep n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462838,8712861,and there my froggie,and there my frog,,,declarative,eng,5,4,526,Manchester,coord adv co n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462839,8712862,look Anna,look Anna,,,declarative,eng,2,2,527,Manchester,v n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462851,8712874,froggie,frog,,,declarative,eng,2,1,528,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462862,8712885,oh yeah,oh yeah,,,declarative,eng,2,2,529,Manchester,co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462872,8712895,to clip his tail,to clip his tail,,,declarative,eng,4,4,530,Manchester,inf v det:poss n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462881,8712904,my froggie do clip his tail don't he,my frog do clip his tail do he,,,question,eng,10,8,531,Manchester,det:poss n mod v det:poss n mod pro:sub,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462892,8712915,oh I see,oh I see,,,declarative,eng,3,3,532,Manchester,co pro:sub v,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462904,8712927,see,see,,,declarative,eng,1,1,533,Manchester,v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462917,8712940,yeah,yeah,,,declarative,eng,1,1,534,Manchester,co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462930,8712953,that's good,that good,,,declarative,eng,3,2,535,Manchester,pro:dem adj,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+462945,8712968,it is good,it be good,,,declarative,eng,4,3,536,Manchester,pro:per cop adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462956,8712979,he didn't clip his tail off though,he do clip his tail off though,,,declarative,eng,9,7,537,Manchester,pro:sub mod v det:poss n adv adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462971,8712994,it stays on,it stay on,,,declarative,eng,4,3,538,Manchester,pro:per v adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462982,8713005,green,green,,,declarative,eng,1,1,539,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+462992,8713015,oh yeah,oh yeah,,,declarative,eng,2,2,540,Manchester,co co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463004,8713027,what is it,what be it,,,question,eng,4,3,541,Manchester,pro:int cop pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463017,8713040,green,green,,,declarative,eng,1,1,542,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463029,8713052,it's green,it green,,,declarative,eng,3,2,543,Manchester,pro:per adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463045,8713068,green pear,green pear,,,declarative,eng,2,2,544,Manchester,n n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463059,8713082,a green pear,a green pear,,,declarative,eng,3,3,545,Manchester,det:art adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463073,8713096,I see,I see,,,declarative,eng,2,2,546,Manchester,pro:sub v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463088,8713111,it really sticky,it real sticky,,,declarative,eng,5,3,547,Manchester,pro:per adv n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463103,8713126,yeah,yeah,,,question,eng,1,1,548,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463117,8713140,a little bit more green,a little bit more green,,,declarative,eng,5,5,549,Manchester,det:art adj n adv adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463133,8713156,mhm,mhm,,,declarative,eng,1,1,550,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463145,8713168,a little bit more green,a little bit more green,,,declarative,eng,5,5,551,Manchester,det:art adj n adv adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463173,8713196,a bit more green,a bit more green,,,declarative,eng,4,4,552,Manchester,det:art n adv adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463184,8713207,and look,and look,,,declarative,eng,2,2,553,Manchester,coord v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463200,8713223,that looks lovely,that look love,,,declarative,eng,6,3,554,Manchester,pro:rel v adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463212,8713235,a green pear,a green pear,,,declarative,eng,3,3,555,Manchester,det:art adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463225,8713248,what's that at the top,what that at the top,,,question,eng,6,5,556,Manchester,pro:int pro:dem prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463236,8713259,that round one,that round one,,,declarative,eng,3,3,557,Manchester,det:dem adj pro:indef,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463250,8713273,orange,orange,,,declarative,eng,1,1,558,Manchester,adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463258,8713281,an orange is it,a orange be it,,,question,eng,5,4,559,Manchester,det:art n aux pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463273,8713296,ah,,,,declarative,eng,-2147483648,1,560,Manchester,,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463285,8713308,and circle grapes,and circle grape,,,declarative,eng,4,3,561,Manchester,coord n n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463298,8713321,mhm,mhm,,,declarative,eng,1,1,562,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463307,8713330,I will do the orange first,I will do the orange first,,,declarative,eng,6,6,563,Manchester,pro:sub mod v det:art n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463320,8713343,right,right,,,declarative,eng,1,1,564,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463330,8713353,orange,orange,,,declarative,eng,1,1,565,Manchester,adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463344,8713367,oh,oh,,,declarative,eng,1,1,566,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463357,8713380,usually only get green and blue in those books,usual only get green and blue in those book,,,declarative,eng,12,9,567,Manchester,adv adv v n coord adj prep det:dem n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463367,8713390,we only get blue and yellow and red and green and I'm going to do blue there,we only get blue and yellow and red and green and I go to do blue there,,,declarative,eng,19,17,568,Manchester,pro:sub adv v n coord n coord adj coord n coord pro:sub part inf v n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463382,8713405,mhm,mhm,,,declarative,eng,1,1,569,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463394,8713417,blue,blue,,,declarative,eng,1,1,570,Manchester,adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463409,8713432,purple,purple,,,declarative,eng,1,1,571,Manchester,adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463421,8713444,they're purple are they,they purple be they,,,question,eng,6,4,572,Manchester,pro:sub n cop pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463434,8713457,is that the grapes,be that the grape,,,question,eng,6,4,573,Manchester,cop comp det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463445,8713468,a little bit more purple,a little bit more purple,,,declarative,eng,5,5,574,Manchester,det:art adj n qn n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463469,8713492,green leaf,green leaf,,,declarative,eng,2,2,575,Manchester,adj n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463481,8713504,mhm,mhm,,,declarative,eng,1,1,576,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463502,8713525,that looks nice,that look nice,,,declarative,eng,4,3,577,Manchester,adv v adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463515,8713538,it does yeah,it do yeah,,,declarative,eng,4,3,578,Manchester,pro:per mod co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463533,8713556,those grapes look very nice,those grape look very nice,,,declarative,eng,6,5,579,Manchester,det:dem n co adv adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463546,8713569,that orange looks very nice,that orange look very nice,,,declarative,eng,6,5,580,Manchester,det:dem adj cop adv adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463558,8713581,that lemon looks very nice,that lemon look very nice,,,declarative,eng,6,5,581,Manchester,det:dem n v adv adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463574,8713597,that pear looks very nice,that pear look very nice,,,declarative,eng,6,5,582,Manchester,det:dem n v adv adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463584,8713607,and shall we put these away then,and shall we put these away then,,,question,eng,8,7,583,Manchester,coord mod pro:sub v pro:dem adv adv:tem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463597,8713620,yeah well do you just wanna leave them on the table for now,yeah well do you just want leave them on the table for now,,,question,eng,14,13,584,Manchester,co n v pro:per adv v v pro:obj prep det:art n prep adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463612,8713635,yeah,yeah,,,question,eng,1,1,585,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463625,8713648,we'll put them away after,we put them away after,,,declarative,eng,7,5,586,Manchester,pro:sub v pro:obj adv adv:tem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463638,8713661,because Anna's getting her small animals out now,because Anna get her small animal out now,,,declarative,eng,11,8,587,Manchester,conj n:prop part det:poss adj n adv adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463651,8713674,yeah,yeah,,,declarative,eng,1,1,588,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463666,8713689,there they are over there,there they be over there,,,declarative,eng,6,5,589,Manchester,adv pro:sub cop prep n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463678,8713701,I will get these,I will get these,,,declarative,eng,4,4,590,Manchester,pro:sub mod v pro:dem,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463699,8713722,right,right,,,declarative,eng,1,1,591,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463713,8713736,and you get them,and you get them,,,declarative,eng,4,4,592,Manchester,coord pro:per v pro:obj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463732,8713755,okay,okay,,,declarative,eng,1,1,593,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463740,8713763,I got a handbag,I get a handbag,,,declarative,eng,5,4,594,Manchester,pro:sub v det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463754,8713777,a handbag,a handbag,,,question,eng,2,2,595,Manchester,det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463767,8713790,shall we just just get tip these out,shall we just tip these out,,,question,eng,6,8,596,Manchester,mod pro:sub adj n det:dem adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463786,8713809,go on then,go on then,,,declarative,eng,3,3,597,Manchester,v adv adv:tem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463801,8713824,oh,oh,,,declarative,eng,1,1,598,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463814,8713837,oh,oh,,,declarative,eng,1,1,599,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463829,8713852,all the food,all the food,,,declarative,eng,3,3,600,Manchester,qn det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463841,8713864,oh here's a cow,oh here a cow,,,declarative,eng,5,4,601,Manchester,co pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463855,8713878,oh what's the cow doing in there,oh what the cow do in there,,,question,eng,9,7,602,Manchester,co pro:int det:art n part prep n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463882,8713905,hm,hm,,,question,eng,1,1,603,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463895,8713918,there's a there's a cow in your bag,there a cow in your bag,,,declarative,eng,7,8,604,Manchester,pro:exist det:art n prep det:poss n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463912,8713935,I know,I know,,,declarative,eng,2,2,605,Manchester,pro:sub v,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+463927,8713950,he should be in the box shouldn't he,he should be in the box should he,,,question,eng,9,8,606,Manchester,pro:sub mod cop prep det:art n mod pro:sub,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+463940,8713963,yeah,yeah,,,declarative,eng,1,1,607,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463953,8713976,he should be in the box,he should be in the box,,,declarative,eng,6,6,608,Manchester,pro:sub mod cop prep det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463972,8713995,shouldn't he,should he,,,question,eng,3,2,609,Manchester,mod pro:sub,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+463985,8714008,there,there,,,declarative,eng,1,1,610,Manchester,adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+463995,8714018,there he goes,there he go,,,declarative,eng,4,3,611,Manchester,adv pro:sub v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464011,8714034,have you got your train,have you get your train,,,question,eng,6,5,612,Manchester,aux pro:per v det:poss n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464024,8714047,yeah,yeah,,,declarative,eng,1,1,613,Manchester,co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+464033,8714056,it's in the box somewhere yeah,it in the box somewhere yeah,,,declarative,eng,7,6,614,Manchester,pro:per prep det:art n adv co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+464049,8714072,I will find it,I will find it,,,declarative,eng,4,4,615,Manchester,pro:sub mod v pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464062,8714085,here's a horse,here a horse,,,declarative,eng,4,3,616,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464076,8714099,there's a horse for you,there a horse for you,,,declarative,eng,6,5,617,Manchester,pro:exist det:art n prep pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464092,8714115,oh that's a big horse isn't it,oh that a big horse be it,,,question,eng,10,7,618,Manchester,co pro:dem det:art adj n cop pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464108,8714131,it is,it be,,,declarative,eng,3,2,619,Manchester,pro:per cop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464132,8714155,galloping,gallop,,,declarative,eng,2,1,620,Manchester,part,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464153,8714176,galloping is it,gallop be it,,,question,eng,5,3,621,Manchester,part aux pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464164,8714187,look,look,,,declarative,eng,1,1,622,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464179,8714202,here's a cow,here a cow,,,declarative,eng,4,3,623,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464188,8714211,yeah,yeah,,,declarative,eng,1,1,624,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464202,8714225,look,look,,,declarative,eng,1,1,625,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464214,8714237,a whale,a whale,,,declarative,eng,2,2,626,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464233,8714256,yes,yes,,,declarative,eng,1,1,627,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464245,8714268,that's the big whale isn't it,that the big whale be it,,,question,eng,9,6,628,Manchester,pro:dem det:art adj n cop pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464259,8714282,and then there's a little whale somewhere as_well,and then there a little whale somewhere as_well,,,declarative,eng,9,8,629,Manchester,coord adv:tem pro:exist det:art adj n adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464277,8714300,who's this,who this,,,question,eng,3,2,630,Manchester,pro:int pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464287,8714310,elephant,elephant,,,declarative,eng,1,1,631,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464306,8714329,another cow,another cow,,,declarative,eng,2,2,632,Manchester,qn n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464322,8714345,yeah,yeah,,,declarative,eng,1,1,633,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464338,8714361,what we got now,what we get now,,,question,eng,5,4,634,Manchester,pro:int pro:sub v adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464356,8714379,lots there,lot there,,,declarative,eng,3,2,635,Manchester,n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464370,8714393,a goat,a goat,,,declarative,eng,2,2,636,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464388,8714411,a goat,a goat,,,declarative,eng,2,2,637,Manchester,det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464405,8714428,a little tiny goat,a little tiny goat,,,declarative,eng,4,4,638,Manchester,det:art adj adj n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464421,8714444,ah,,,,declarative,eng,-2147483648,1,639,Manchester,,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464435,8714458,look,look,,,declarative,eng,1,1,640,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464446,8714469,a little horse we got,a little horse we get,,,declarative,eng,6,5,641,Manchester,det:art adj n pro:sub v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464463,8714486,a tiny tiny horse,a tiny tiny horse,,,declarative,eng,4,4,642,Manchester,det:art adj adj n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464480,8714503,look,look,,,declarative,eng,1,1,643,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464493,8714516,a pig,a pig,,,declarative,eng,2,2,644,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464553,8714576,yes,yes,,,declarative,eng,1,1,645,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464567,8714590,a little pink pig,a little pink pig,,,declarative,eng,4,4,646,Manchester,det:art adj n n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464587,8714610,cow,cow,,,declarative,eng,1,1,647,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464610,8714633,oh,oh,,,declarative,eng,1,1,648,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464623,8714646,whoops_a_daisy,whoops_a_daisy,,,declarative,eng,1,1,649,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464637,8714660,oh dear,oh dear,,,declarative,eng,2,2,650,Manchester,co co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464649,8714672,has that cow fallen over,have that cow fall over,,,question,eng,7,5,651,Manchester,aux det:dem n part adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464662,8714685,yeah,yeah,,,declarative,eng,1,1,652,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464671,8714694,where's other animals,where other animal,,,question,eng,5,3,653,Manchester,pro:int qn n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464681,8714704,there's some more here,there some more here,,,declarative,eng,5,4,654,Manchester,pro:exist qn adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464689,8714712,cow and a sheep,cow and a sheep,,,declarative,eng,4,4,655,Manchester,n coord det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464699,8714722,oh,oh,,,declarative,eng,1,1,656,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464708,8714731,oh dear,oh dear,,,declarative,eng,2,2,657,Manchester,co co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464716,8714739,they've all fallen over now haven't they,they all fall over now have they,,,question,eng,10,7,658,Manchester,pro:sub adv part adv adv aux pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464727,8714750,did they fall on top of each_other,do they fall on top of each_other,,,question,eng,8,7,659,Manchester,mod pro:sub v prep n prep pro:refl,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464737,8714760,oh look,oh look,,,declarative,eng,2,2,660,Manchester,co co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464747,8714770,look,look,,,declarative,eng,1,1,661,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464755,8714778,what's he doing,what he do,,,question,eng,5,3,662,Manchester,pro:int pro:sub part,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464763,8714786,here you are,here you be,,,declarative,eng,4,3,663,Manchester,adv pro:per cop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464772,8714795,bless you darling,bless you darling,,,declarative,eng,3,3,664,Manchester,v pro:per co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464782,8714805,a cow asleep,a cow asleep,,,declarative,eng,3,3,665,Manchester,det:art n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464791,8714814,do it again,do it again,,,declarative,eng,3,3,666,Manchester,mod pro:per adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464803,8714826,there we go,there we go,,,declarative,eng,3,3,667,Manchester,adv pro:sub v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464811,8714834,a cow asleep,a cow asleep,,,declarative,eng,3,3,668,Manchester,det:art n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464822,8714845,oh,oh,,,declarative,eng,1,1,669,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464829,8714852,falls over,fall over,,,declarative,eng,3,2,670,Manchester,v adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464837,8714860,mhm,mhm,,,declarative,eng,1,1,671,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464845,8714868,that's a_lot_of animals isn't it,that a_lot_of animal be it,,,question,eng,9,5,672,Manchester,pro:dem qn n cop pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464856,8714879,oh,oh,,,declarative,eng,1,1,673,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464865,8714888,oh dear,oh dear,,,declarative,eng,2,2,674,Manchester,co co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464878,8714901,are they all drunk,be they all drunk,,,question,eng,5,4,675,Manchester,cop pro:sub post n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464886,8714909,that's it,that it,,,declarative,eng,3,2,676,Manchester,pro:dem pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464896,8714919,knock them all over,knock them all over,,,declarative,eng,4,4,677,Manchester,co pro:obj adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464904,8714927,that's the best way isn't it,that the good way be it,,,question,eng,10,6,678,Manchester,pro:dem det:art adj adv cop pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464916,8714939,yeah,yeah,,,declarative,eng,1,1,679,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464930,8714953,they can't fall now can they,they can fall now can they,,,question,eng,7,6,680,Manchester,pro:sub mod v adv mod pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464939,8714962,lie down,lie down,,,declarative,eng,2,2,681,Manchester,n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464952,8714975,yeah,yeah,,,declarative,eng,1,1,682,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464961,8714984,they're sposta lie down there,they suppose lie down there,,,declarative,eng,8,5,683,Manchester,pro:sub part n prep n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464972,8714995,mhm,mhm,,,declarative,eng,1,1,684,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+464984,8715007,monkey won't lie down,monkey will lie down,,,declarative,eng,5,4,685,Manchester,n mod v adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+464992,8715015,what love,what love,,,question,eng,2,2,686,Manchester,pro:int n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465002,8715025,I think he'll hafta lie down with his legs in the air won't he because they don't move like that,I think he have lie down with his leg in the air will he because they do move like that,,,question,eng,25,20,687,Manchester,pro:sub v pro:sub mod v adv prep det:poss n prep det:art n mod pro:sub conj pro:sub mod n prep pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465014,8715037,there we go,there we go,,,declarative,eng,3,3,688,Manchester,adv pro:sub v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465024,8715047,they're all lying down now aren't they,they all lie down now be they,,,question,eng,11,7,689,Manchester,pro:sub post part adv adv aux pro:sub,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465034,8715057,yes,yes,,,declarative,eng,1,1,690,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465042,8715065,there a_lot_of them,there a_lot_of them,,,declarative,eng,3,3,691,Manchester,adv qn pro:obj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465050,8715073,there are a lot,there be a lot,,,declarative,eng,5,4,692,Manchester,pro:exist cop det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465058,8715081,you're right,you right,,,declarative,eng,3,2,693,Manchester,pro:per co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465066,8715089,all lying down together,all lie down together,,,declarative,eng,5,4,694,Manchester,post part adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465077,8715100,all stand up,all stand up,,,declarative,eng,3,3,695,Manchester,post v adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465087,8715110,and I will put them in the oven,and I will put them in the oven,,,declarative,eng,9,8,696,Manchester,coord pro:sub mod v pro:obj prep det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465097,8715120,you're gonna cook them are you,you go to cook them be you,,,question,eng,10,6,697,Manchester,pro:per part inf v pro:obj aux pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465106,8715129,yeah,yeah,,,declarative,eng,1,1,698,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465117,8715140,all of them,all of them,,,declarative,eng,3,3,699,Manchester,pro:indef prep pro:obj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465126,8715149,all of them,all of them,,,question,eng,3,3,700,Manchester,pro:indef prep pro:obj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465135,8715158,can you put these in the oven,can you put these in the oven,,,question,eng,8,7,701,Manchester,mod pro:per v pro:dem prep det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465146,8715169,there you are,there you be,,,declarative,eng,4,3,702,Manchester,adv pro:per cop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465156,8715179,put them all in your your hands,put them all in your hand,,,declarative,eng,8,7,703,Manchester,v pro:obj adv prep det:poss n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465165,8715188,leave them all in your hands,leave them all in your hand,,,declarative,eng,7,6,704,Manchester,v pro:obj adv prep det:poss n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465177,8715200,leave them all in your hands and don't drop them,leave them all in your hand and do drop them,,,declarative,eng,12,10,705,Manchester,v pro:obj adv prep det:poss n coord mod v pro:obj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465189,8715212,right,right,,,declarative,eng,1,1,706,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465197,8715220,I'll try not to,I try not to,,,declarative,eng,5,4,707,Manchester,pro:sub v neg prep,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465208,8715231,there's a lot isn't there,there a lot be there,,,question,eng,8,5,708,Manchester,pro:exist det:art n cop adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465320,8715343,yeah,yeah,,,declarative,eng,1,1,709,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465327,8715350,you can manage those can't you,you can manage those can you,,,question,eng,7,6,710,Manchester,pro:per mod v det:dem mod pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465339,8715362,I don't know,I do know,,,declarative,eng,4,3,711,Manchester,pro:sub mod v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465347,8715370,I'll try,I try,,,declarative,eng,3,2,712,Manchester,pro:sub v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465354,8715377,I'll try,I try,,,declarative,eng,3,2,713,Manchester,pro:sub v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465363,8715386,try and just try,try and just try,,,declarative,eng,4,4,714,Manchester,v coord adv v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465370,8715393,you will try,you will try,,,declarative,eng,3,3,715,Manchester,pro:per mod v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465380,8715403,oh I will try,oh I will try,,,declarative,eng,4,4,716,Manchester,co pro:sub mod v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465390,8715413,oh,oh,,,declarative,eng,1,1,717,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465398,8715421,but there's an awful lot of them,but there a awful lot of them,,,declarative,eng,8,7,718,Manchester,conj pro:exist det:art adj n prep pro:obj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465407,8715430,oh I've dropped the chicken,oh I drop the chicken,,,declarative,eng,7,5,719,Manchester,co pro:sub part det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465421,8715444,oh thank_you,oh thank_you,,,declarative,eng,2,2,720,Manchester,co n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465431,8715454,oh,oh,,,declarative,eng,1,1,721,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465441,8715464,can you put them all in the oven,can you put them all in the oven,,,question,eng,9,8,722,Manchester,mod pro:per v pro:obj adv prep det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465452,8715475,oh I've got to get from here to there,oh I get to get from here to there,,,declarative,eng,11,9,723,Manchester,co pro:sub part inf v prep n prep n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465466,8715489,are you gonna open the oven door then,be you go to open the oven door then,,,question,eng,11,8,724,Manchester,cop pro:per part inf v det:art n n adv:tem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465476,8715499,yeah,yeah,,,declarative,eng,1,1,725,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465486,8715509,I will,I will,,,declarative,eng,2,2,726,Manchester,pro:sub mod,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465494,8715517,I get the toast out,I get the toast out,,,declarative,eng,5,5,727,Manchester,pro:sub v det:art n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465504,8715527,oh,oh,,,declarative,eng,1,1,728,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465515,8715538,how long has that toast been in there,how long have that toast be in there,,,question,eng,10,8,729,Manchester,pro:int adj aux det:dem n cop prep n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465526,8715549,oh Liz_Mulligan,oh Liz_Mulligan,,,declarative,eng,2,2,730,Manchester,co n:prop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465535,8715558,that's not this morning's,that not this morning,,,declarative,eng,6,4,731,Manchester,pro:dem neg det:dem n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465543,8715566,I know that much,I know that much,,,declarative,eng,4,4,732,Manchester,pro:sub v adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465553,8715576,you mucky pup,you muck pup,,,declarative,eng,5,3,733,Manchester,pro:per adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465563,8715586,it's not quite moldy yet,it not quite mold yet,,,declarative,eng,8,5,734,Manchester,pro:per neg adv adj adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465571,8715594,and there you are,and there you be,,,declarative,eng,5,4,735,Manchester,coord adv pro:per cop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465580,8715603,oh,oh,,,declarative,eng,1,1,736,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465587,8715610,oh,oh,,,declarative,eng,1,1,737,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465598,8715621,could be worse,could be bad,,,declarative,eng,4,3,738,Manchester,mod cop adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465606,8715629,what a mess,what a mess,,,declarative,eng,3,3,739,Manchester,pro:int det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465617,8715640,yes,yes,,,declarative,eng,1,1,740,Manchester,co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+465626,8715649,what a mess Bess,what a mess Bess,,,declarative,eng,4,4,741,Manchester,pro:int det:art n n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465637,8715660,what a mess Bess,what a mess Bess,,,declarative,eng,4,4,742,Manchester,pro:int det:art n n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465648,8715671,what a mess Bess,what a mess Bess,,,declarative,eng,4,4,743,Manchester,pro:int det:art n n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465657,8715680,on your dress Bess,on your dress Bess,,,declarative,eng,4,4,744,Manchester,prep det:poss n n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465667,8715690,what a mess Bess,what a mess Bess,,,declarative,eng,4,4,745,Manchester,pro:int det:art n n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465678,8715701,on your dress Bess,on your dress Bess,,,declarative,eng,4,4,746,Manchester,prep det:poss n n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465688,8715711,what a mess Bess,what a mess Bess,,,declarative,eng,4,4,747,Manchester,pro:int det:art n n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465700,8715723,on your dress Bess,on your dress Bess,,,declarative,eng,4,4,748,Manchester,prep det:poss n n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465712,8715735,Liz,Liz,,,declarative,eng,1,1,749,Manchester,n:prop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465720,8715743,I'm just going to the loo sweetheart,I just go to the loo,,,declarative,eng,8,7,750,Manchester,pro:sub adv part prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465735,8715758,I won't be a mo,I will be a,,,declarative,eng,5,5,751,Manchester,pro:sub mod cop det:art,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465745,8715768,whoops,whoops,,,declarative,eng,1,1,752,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465753,8715776,oh dear,oh dear,,,declarative,eng,2,2,753,Manchester,co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+465763,8715786,oh dear,oh dear,,,declarative,eng,2,2,754,Manchester,co co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465773,8715796,whoops,whoops,,,declarative,eng,1,1,755,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465783,8715806,are there too many to cook all at once,be there too many to cook all at once,,,question,eng,10,9,756,Manchester,cop adv adv qn prep n adv prep adv,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+465795,8715818,here you are,here you be,,,declarative,eng,4,3,757,Manchester,adv pro:per cop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465807,8715830,they're very cold,they very cold,,,declarative,eng,4,3,758,Manchester,pro:sub adv adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465819,8715842,they're very cold are they,they very cold be they,,,question,eng,7,5,759,Manchester,pro:sub adv adv cop pro:sub,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+465831,8715854,yeah,yeah,,,declarative,eng,1,1,760,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465840,8715863,have you not cooked them,have you not cook them,,,question,eng,6,5,761,Manchester,v pro:per neg part pro:obj,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+465850,8715873,they're hot,they hot,,,declarative,eng,3,2,762,Manchester,pro:sub adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465860,8715883,oh good,oh good,,,declarative,eng,2,2,763,Manchester,co adj,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+465867,8715890,they're very hot,they very hot,,,declarative,eng,4,3,764,Manchester,pro:sub adv adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465878,8715901,those are very hot,those be very hot,,,declarative,eng,5,4,765,Manchester,pro:dem cop adv adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465887,8715910,very hot are they now,very hot be they now,,,question,eng,6,5,766,Manchester,adv adj cop pro:sub adv,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+465898,8715921,they are,they be,,,declarative,eng,3,2,767,Manchester,pro:sub cop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465908,8715931,you hafta cool them down a bit,you have cool them down a bit,,,declarative,eng,8,7,768,Manchester,pro:per mod v pro:obj adv det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465916,8715939,you hafta cool them down a bit,you have cool them down a bit,,,declarative,eng,8,7,769,Manchester,pro:per mod v pro:obj adv det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465928,8715951,okay,okay,,,declarative,eng,1,1,770,Manchester,co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+465936,8715959,well I'll just leave them for a minute until they're cool,well I just leave them for a minute until they cool,,,declarative,eng,13,11,771,Manchester,co pro:sub adv v pro:obj prep det:art n conj pro:sub adj,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+465948,8715971,Anna's food will cool down,Anna food will cool down,,,declarative,eng,7,5,772,Manchester,adj n mod v adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465958,8715981,right okay,right okay,,,declarative,eng,2,2,773,Manchester,adv adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465968,8715991,I just want have a little play,I just want have a little play,,,declarative,eng,7,7,774,Manchester,pro:sub adv v v det:art adj n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465978,8716001,okay,okay,,,declarative,eng,1,1,775,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+465988,8716011,house,house,,,declarative,eng,1,1,776,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+465999,8716022,going to do a house,go to do a house,,,question,eng,6,5,777,Manchester,part inf v det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466008,8716031,yeah,yeah,,,declarative,eng,1,1,778,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466018,8716041,yeah,yeah,,,declarative,eng,1,1,779,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466028,8716051,house,house,,,declarative,eng,1,1,780,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466035,8716058,okay,okay,,,declarative,eng,1,1,781,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466041,8716064,see if you can put it in there,see if you can put it in there,,,declarative,eng,9,8,782,Manchester,v conj pro:per mod v pro:per prep n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466052,8716075,there's a there's a carrot,there a carrot,,,declarative,eng,4,5,783,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466064,8716087,there's a onion,there a onion,,,declarative,eng,4,3,784,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466071,8716094,there's a house,there a house,,,declarative,eng,4,3,785,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466081,8716104,yeah,yeah,,,declarative,eng,1,1,786,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466090,8716113,that's it,that it,,,declarative,eng,3,2,787,Manchester,pro:dem pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466098,8716121,well done,well do,,,declarative,eng,3,2,788,Manchester,co part,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466108,8716131,see,see,,,declarative,eng,1,1,789,Manchester,v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466119,8716142,you got the dots in there didn't you,you get the dot in there do you,,,question,eng,12,8,790,Manchester,pro:per v det:art n prep n mod pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466130,8716153,right,right,,,declarative,eng,1,1,791,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466140,8716163,come on then,come on then,,,declarative,eng,3,3,792,Manchester,v adv adv:tem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466150,8716173,whoops,whoops,,,declarative,eng,1,1,793,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466160,8716183,whoops,whoops,,,declarative,eng,1,1,794,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466168,8716191,oh onions,oh onion,,,declarative,eng,3,2,795,Manchester,co n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466177,8716200,oh wasn't it the onion you wanted,oh be it the onion you want,,,question,eng,11,7,796,Manchester,co cop pro:per det:art n pro:per v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466187,8716210,oh well done,oh well do,,,declarative,eng,4,3,797,Manchester,co adv part,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466198,8716221,you got the dots in first time then,you get the dot in first time then,,,declarative,eng,10,8,798,Manchester,pro:per v det:art n adv adj n adv:tem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466210,8716233,a little house,a little house,,,declarative,eng,3,3,799,Manchester,det:art adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466218,8716241,thank_you,thank_you,,,declarative,eng,1,1,800,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466227,8716250,ta,to,,,declarative,eng,1,1,801,Manchester,inf,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466236,8716259,thanks,thanks,,,declarative,eng,1,1,802,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466245,8716268,ta,to,,,declarative,eng,1,1,803,Manchester,inf,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466257,8716280,a little one house,a little one house,,,declarative,eng,4,4,804,Manchester,det:art adj pro:indef n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466267,8716290,yes,yes,,,declarative,eng,1,1,805,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466276,8716299,it is a little house,it be a little house,,,declarative,eng,6,5,806,Manchester,pro:per cop det:art adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466289,8716312,a little one house,a little one house,,,declarative,eng,4,4,807,Manchester,det:art adj pro:indef n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466296,8716319,a triangle,a triangle,,,declarative,eng,2,2,808,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466306,8716329,a shape shape shape shape shape,a shape,,,declarative,eng,2,6,809,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466316,8716339,shape shape shape,shape,,,declarative,eng,1,3,810,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466325,8716348,shape shape,shape,,,declarative,eng,1,2,811,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466333,8716356,shape shape shape shape,shape,,,declarative,eng,1,4,812,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466341,8716364,shape shape shapes,shape,,,declarative,eng,2,3,813,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466354,8716377,there's a_lot_of shapes in that basket,there a_lot_of shape in that basket,,,declarative,eng,8,6,814,Manchester,pro:exist qn n prep det:dem n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466366,8716389,look,look,,,declarative,eng,1,1,815,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466375,8716398,a little one house,a little one house,,,declarative,eng,4,4,816,Manchester,det:art adj pro:indef n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466387,8716410,can I make it as_well,can I make it as_well,,,question,eng,5,5,817,Manchester,mod pro:sub v pro:per adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466396,8716419,thank_you,thank_you,,,declarative,eng,1,1,818,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466405,8716428,whoops,whoops,,,declarative,eng,1,1,819,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466414,8716437,on the floor,on the floor,,,declarative,eng,3,3,820,Manchester,prep det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466425,8716448,where,where,,,question,eng,1,1,821,Manchester,pro:rel,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466435,8716458,oh,oh,,,declarative,eng,1,1,822,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466442,8716465,where's it gone,where it go,,,question,eng,5,3,823,Manchester,pro:int pro:per part,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466454,8716477,oh,oh,,,declarative,eng,1,1,824,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466463,8716486,did it roll away,do it roll away,,,question,eng,5,4,825,Manchester,mod pro:per v adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466474,8716497,have you got it,have you get it,,,question,eng,5,4,826,Manchester,aux pro:per v pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466485,8716508,yeah,yeah,,,declarative,eng,1,1,827,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466496,8716519,it did roll away,it do roll away,,,declarative,eng,5,4,828,Manchester,pro:per v n adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466506,8716529,think we'll hafta have a tidy up in here Liz today,think we have have a tidy up in here Liz today,,,declarative,eng,13,11,829,Manchester,v pro:sub mod v det:art adj adv prep adv n:prop adv:tem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466518,8716541,because there's not a_lot_of room,because there not a_lot_of room,,,declarative,eng,6,5,830,Manchester,conj pro:exist neg qn n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466529,8716552,no,no,,,declarative,eng,1,1,831,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466539,8716562,there isn't is there,there be be there,,,question,eng,7,4,832,Manchester,pro:exist cop aux adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466548,8716571,xxx is it,be it,,,question,eng,3,3,833,Manchester,aux pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466558,8716581,it's um it's that little teddy,it that little teddy,,,declarative,eng,5,6,834,Manchester,pro:per det:dem adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466569,8716592,I haven't seen that teddy done before,I have see that teddy do before,,,declarative,eng,10,7,835,Manchester,pro:sub aux part pro:dem n part adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466581,8716604,have we not done him before,have we not do him before,,,question,eng,7,6,836,Manchester,v pro:sub neg part pro:obj adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466592,8716615,no,no,,,declarative,eng,1,1,837,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466601,8716624,no,no,,,declarative,eng,1,1,838,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466611,8716634,I haven't seen him,I have see him,,,declarative,eng,6,4,839,Manchester,pro:sub aux part pro:obj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466621,8716644,right,right,,,declarative,eng,1,1,840,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466634,8716657,are you gonna squeeze really hard,be you go to squeeze real hard,,,question,eng,11,6,841,Manchester,cop pro:per part inf v adv adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466639,8716662,oh,oh,,,declarative,eng,1,1,842,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466649,8716672,it's a little sitting down teddy,it a little sit down teddy,,,declarative,eng,8,6,843,Manchester,pro:per det:art adj n:gerund adv n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466662,8716685,thank_you,thank_you,,,declarative,eng,1,1,844,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466670,8716693,ta,to,,,declarative,eng,1,1,845,Manchester,inf,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466682,8716705,his other leg is missing,his other leg be miss,,,declarative,eng,7,5,846,Manchester,det:poss qn n aux part,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466690,8716713,yeah,yeah,,,declarative,eng,1,1,847,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466699,8716722,I think there was a bit of a gap wasn't there,I think there be a bit of a gap be there,,,question,eng,16,11,848,Manchester,pro:sub v adv cop det:art n prep det:art n cop adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466710,8716733,or not enough play+dough,or not enough,,,declarative,eng,3,4,849,Manchester,coord neg adj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466721,8716744,I don't think that ball was big enough really was it to make the teddy,I do think that ball be big enough real be it to make the teddy,,,question,eng,22,15,850,Manchester,pro:sub mod v comp n cop adj adv adv cop pro:per inf v det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466731,8716754,what do you think,what do you think,,,question,eng,4,4,851,Manchester,pro:int mod pro:per v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466741,8716764,we need a bigger piece,we need a big piece,,,declarative,eng,6,5,852,Manchester,pro:sub v det:art adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466754,8716777,yeah,yeah,,,declarative,eng,1,1,853,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466762,8716785,we need a bigger,we need a big,,,declarative,eng,5,4,854,Manchester,pro:sub v det:art adj,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466773,8716796,there we go,there we go,,,declarative,eng,3,3,855,Manchester,adv pro:sub v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466780,8716803,that will be big enough for the teddy,that will be big enough for the teddy,,,declarative,eng,8,8,856,Manchester,pro:dem mod cop adj adv prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466792,8716815,yeah,yeah,,,declarative,eng,1,1,857,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466800,8716823,can you squash that,can you squash that,,,question,eng,4,4,858,Manchester,mod pro:per v pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466809,8716832,there's a teddy,there a teddy,,,declarative,eng,4,3,859,Manchester,pro:exist det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466818,8716841,hm,hm,,,declarative,eng,1,1,860,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466827,8716850,and,and,,,interruption,eng,1,1,861,Manchester,coord,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466839,8716862,give it a big squeeze,give it a big squeeze,,,declarative,eng,5,5,862,Manchester,v pro:per det:art adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466850,8716873,okay,okay,,,declarative,eng,1,1,863,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466860,8716883,oh,oh,,,declarative,eng,1,1,864,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466867,8716890,there,there,,,declarative,eng,1,1,865,Manchester,adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466878,8716901,that's better isn't it,that good be it,,,question,eng,8,4,866,Manchester,pro:dem adj cop pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466889,8716912,he's got his legs now,he get his leg now,,,declarative,eng,8,5,867,Manchester,pro:sub part det:poss n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466899,8716922,that's bigger enough,that big enough,,,declarative,eng,5,3,868,Manchester,pro:dem adj adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466906,8716929,mhm,mhm,,,declarative,eng,1,1,869,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466914,8716937,shall we leave it there with the bits,shall we leave it there with the bit,,,question,eng,9,8,870,Manchester,mod pro:sub v pro:per adv prep det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466925,8716948,okay,okay,,,declarative,eng,1,1,871,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466934,8716957,do you wanna do the onion now,do you want do the onion now,,,question,eng,8,7,872,Manchester,mod pro:per v v det:art n adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466944,8716967,yeah,yeah,,,declarative,eng,1,1,873,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466953,8716976,I don't I don't think I've seen the onion before either,I do think I see the onion before either,,,declarative,eng,12,11,874,Manchester,pro:sub mod v pro:sub part det:art n prep adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466965,8716988,no,no,,,declarative,eng,1,1,875,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466973,8716996,no,no,,,declarative,eng,1,1,876,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+466984,8717007,we hafta make another ball,we have make another ball,,,declarative,eng,6,5,877,Manchester,pro:sub mod v qn n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+466995,8717018,mhm,mhm,,,declarative,eng,1,1,878,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467005,8717028,there you go,there you go,,,declarative,eng,3,3,879,Manchester,adv pro:per v,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467014,8717037,try that,try that,,,declarative,eng,2,2,880,Manchester,v pro:dem,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467025,8717048,okay,okay,,,declarative,eng,1,1,881,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467032,8717055,oh,oh,,,declarative,eng,1,1,882,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467043,8717066,actually here's another way of doing it,actual here another way of do it,,,declarative,eng,11,7,883,Manchester,adv pro:exist qn n prep part pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467053,8717076,you can put it like that and then squash it over,you can put it like that and then squash it over,,,declarative,eng,12,11,884,Manchester,pro:per mod v pro:per co pro:dem coord adv:tem v pro:per adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467064,8717087,oh,oh,,,declarative,eng,1,1,885,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467073,8717096,excuse me,excuse me,,,declarative,eng,2,2,886,Manchester,v pro:obj,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467083,8717106,I will put all the bits on the couch,I will put all the bit on the couch,,,declarative,eng,11,9,887,Manchester,pro:sub mod v qn det:art n prep det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467091,8717114,mhm,mhm,,,declarative,eng,1,1,888,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467101,8717124,and you leave them on the couch,and you leave them on the couch,,,declarative,eng,7,7,889,Manchester,coord pro:per v pro:obj prep det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467111,8717134,well no,well no,,,declarative,eng,2,2,890,Manchester,co co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467121,8717144,we put them back in there don't we,we put them back in there do we,,,question,eng,10,8,891,Manchester,pro:sub v pro:obj adv prep n mod pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467132,8717155,otherwise they get dried up and we can't use them again,otherwise they get dry up and we can use them again,,,declarative,eng,13,11,892,Manchester,adv pro:sub aux part adv coord pro:sub mod v pro:obj adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467151,8717174,and look,and look,,,declarative,eng,2,2,893,Manchester,coord v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467165,8717188,a onion,a onion,,,declarative,eng,2,2,894,Manchester,det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467176,8717199,you've done an onion,you do a onion,,,declarative,eng,6,4,895,Manchester,pro:per part det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467187,8717210,onion,onion,,,declarative,eng,1,1,896,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467197,8717220,onion,onion,,,declarative,eng,1,1,897,Manchester,n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467207,8717230,oh yeah,oh yeah,,,declarative,eng,2,2,898,Manchester,co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+467215,8717238,oh,oh,,,declarative,eng,1,1,899,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467221,8717244,have you squashed it,have you squash it,,,question,eng,5,4,900,Manchester,aux pro:per v pro:per,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+467232,8717255,oh no,oh no,,,declarative,eng,2,2,901,Manchester,co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+467241,8717264,it's still there,it still there,,,declarative,eng,4,3,902,Manchester,pro:per adv adv,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+467253,8717276,ugh,ugh,,,declarative,eng,1,1,903,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467261,8717284,what're you doing,what you do,,,question,eng,5,3,904,Manchester,pro:int pro:per part,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467272,8717295,ugh,ugh,,,declarative,eng,1,1,905,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467283,8717306,Liz,Liz,,,declarative,eng,1,1,906,Manchester,n:prop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467290,8717313,what're you doing,what you do,,,question,eng,5,3,907,Manchester,pro:int pro:per part,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467302,8717325,I'm saying ugh,I say ugh,,,declarative,eng,5,3,908,Manchester,pro:sub part co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467311,8717334,oh you're just saying that are you,oh you just say that be you,,,question,eng,10,7,909,Manchester,co pro:per adv part adv aux pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467318,8717341,ugh,ugh,,,declarative,eng,1,1,910,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467327,8717350,ugh,ugh,,,declarative,eng,1,1,911,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467336,8717359,ugh,ugh,,,declarative,eng,1,1,912,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467344,8717367,are you just kidding,be you just kid,,,question,eng,6,4,913,Manchester,cop pro:per adv part,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467355,8717378,they're warm now,they warm now,,,declarative,eng,4,3,914,Manchester,pro:sub v adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467364,8717387,they're warm now Anna,they warm now Anna,,,declarative,eng,5,4,915,Manchester,pro:sub v adv n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467374,8717397,oh right,oh right,,,declarative,eng,2,2,916,Manchester,co co,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+467383,8717406,are they okay to eat now,be they okay to eat now,,,question,eng,7,6,917,Manchester,cop pro:sub adj inf v adv,INV,Anna,Investigator,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15453,15452,24436
+467395,8717418,yeah,yeah,,,declarative,eng,1,1,918,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467409,8717432,read it,read it,,,declarative,eng,3,2,919,Manchester,v pro:per,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467420,8717443,yeah,yeah,,,declarative,eng,1,1,920,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467431,8717454,it's a special book,it a special book,,,declarative,eng,5,4,921,Manchester,pro:per det:art adj n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467441,8717464,do you wanna read that book,do you want read that book,,,question,eng,8,6,922,Manchester,mod pro:per v v det:dem n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467449,8717472,it is,it be,,,declarative,eng,3,2,923,Manchester,pro:per cop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467458,8717481,Pingu and the kite,Pingu and the kite,,,declarative,eng,4,4,924,Manchester,n:prop coord det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467468,8717491,Pingu and the kite,Pingu and the kite,,,declarative,eng,4,4,925,Manchester,n:prop coord det:art n,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467478,8717501,www,,,,declarative,eng,-2147483648,1,926,Manchester,,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467488,8717511,he tripped up and fell over,he trip up and fall over,,,declarative,eng,8,6,927,Manchester,pro:sub v adv coord v adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467496,8717519,whoops,whoops,,,declarative,eng,1,1,928,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467505,8717528,xxx,,,,declarative,eng,-2147483648,1,929,Manchester,,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467513,8717536,pardon,pardon,,,question,eng,1,1,930,Manchester,n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467523,8717546,three,three,,,declarative,eng,1,1,931,Manchester,det:num,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467535,8717558,and I remember that number and that number,and I remember that number and that number,,,declarative,eng,8,8,932,Manchester,coord pro:sub v comp n coord pro:dem v,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467548,8717571,yeah,yeah,,,declarative,eng,1,1,933,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467555,8717578,five and four,five and four,,,declarative,eng,3,3,934,Manchester,det:num coord det:num,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467564,8717587,five and four,five and four,,,declarative,eng,3,3,935,Manchester,det:num coord det:num,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467574,8717597,Hannah Hannah's nearly four,Hannah near four,,,declarative,eng,7,4,936,Manchester,adj adv det:num,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467586,8717609,is she,be she,,,question,eng,3,2,937,Manchester,cop pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467595,8717618,yeah,yeah,,,declarative,eng,1,1,938,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467608,8717631,oh,oh,,,declarative,eng,1,1,939,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467621,8717644,www,,,,declarative,eng,-2147483648,1,940,Manchester,,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467635,8717658,what's the what's what's that done,what that do,,,question,eng,5,6,941,Manchester,pro:int adv part,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467668,8717691,which,which,,,question,eng,1,1,942,Manchester,pro:rel,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467681,8717704,the kite done,the kite do,,,question,eng,4,3,943,Manchester,det:art n part,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467696,8717719,it's got stuck on top of the igloo,it get stick on top of the igloo,,,declarative,eng,11,8,944,Manchester,pro:per aux part prep n prep det:art n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467714,8717737,the igloo's their house isn't it,the igloo their house be it,,,question,eng,10,6,945,Manchester,det:art adj det:poss n cop pro:per,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467733,8717756,www,,,,declarative,eng,-2147483648,1,946,Manchester,,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467746,8717769,it landed right on Pinga's head and knocked her over,it land right on Pinga head and knock her over,,,declarative,eng,14,10,947,Manchester,pro:per v adv prep adj n coord v pro:obj adv,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467763,8717786,whoops,whoops,,,declarative,eng,1,1,948,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467777,8717800,whoops,whoops,,,declarative,eng,1,1,949,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467788,8717811,www,,,,declarative,eng,-2147483648,1,950,Manchester,,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467807,8717830,they hadta fix another old one,they have fix another old one,,,declarative,eng,8,6,951,Manchester,pro:sub mod v qn adj pro:indef,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467826,8717849,yes,yes,,,declarative,eng,1,1,952,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467842,8717865,www,,,,declarative,eng,-2147483648,1,953,Manchester,,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467855,8717878,when Pingu and Pinga arrived at Grandpa's house,when Pingu and Pinga arrive at Grandpa house,,,interruption,eng,11,8,954,Manchester,conj n:prop coord n:prop v prep adj n,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467872,8717895,there's Granddad and there's Grandpa,there Granddad and there Grandpa,,,declarative,eng,7,5,955,Manchester,pro:exist n:prop coord pro:exist n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467888,8717911,yeah,yeah,,,declarative,eng,1,1,956,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467901,8717924,that's Granddad,that Granddad,,,declarative,eng,3,2,957,Manchester,pro:dem n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467913,8717936,yeah,yeah,,,declarative,eng,1,1,958,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467928,8717951,that's right,that right,,,declarative,eng,3,2,959,Manchester,pro:dem co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467945,8717968,www,,,,declarative,eng,-2147483648,1,960,Manchester,,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467959,8717982,I'm sorry we didn't help you mend mend your kite said Dad,I sorry we do help you mend your kite say Dad,,,declarative,eng,15,12,961,Manchester,pro:sub adj pro:sub mod v pro:per v det:poss n v n:prop,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+467977,8718000,Mummy,Mummy,,,declarative,eng,1,1,962,Manchester,n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+467994,8718017,Dad,Dad,,,declarative,eng,1,1,963,Manchester,n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+468015,8718038,Pingu,Pingu,,,declarative,eng,1,1,964,Manchester,n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+468031,8718054,Pinga,Pinga,,,declarative,eng,1,1,965,Manchester,n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+468045,8718068,Grandpa,Grandpa,,,declarative,eng,1,1,966,Manchester,n:prop,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+468063,8718086,that's right,that right,,,declarative,eng,3,2,967,Manchester,pro:dem co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+468075,8718098,and they're all flying the kite aren't they,and they all fly the kite be they,,,question,eng,12,8,968,Manchester,coord pro:sub post part det:art n aux pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+468089,8718112,www,,,,declarative,eng,-2147483648,1,969,Manchester,,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+468105,8718128,again,again,,,declarative,eng,1,1,970,Manchester,adv,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+468129,8718152,no,no,,,declarative,eng,1,1,971,Manchester,co,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+468139,8718162,we'll do a different one eh,we do a different one,,,declarative,eng,6,6,972,Manchester,pro:sub v det:art adj pro:indef,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+468152,8718175,you know what Mummy's like,you know what Mummy like,,,declarative,eng,7,5,973,Manchester,pro:per v pro:int adj prep,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+468168,8718191,I get awfully bored with the same story don't I,I get awful bore with the same story do I,,,question,eng,14,10,974,Manchester,pro:sub v adv v prep det:art adj n mod pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
+468183,8718206,yeah,yeah,,,declarative,eng,1,1,975,Manchester,co,CHI,CHI,Target_Child,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15452,15452,24436
+468194,8718217,don't I,do I,,,question,eng,3,2,976,Manchester,mod pro:sub,MOT,Mother,Mother,CHI,33.132097168319675,female,,,,Eng-UK,12,219,15460,15452,24436
