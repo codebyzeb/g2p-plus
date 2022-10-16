@@ -1,18 +1,4 @@
-aochildes @ https://github.com/UIUCLearningLanguageLab/AOCHILDES/archive/refs/tags/v2.1.1.tar.gz
-backports.zoneinfo==0.2.1
-certifi==2021.10.8
-cffi==1.15.0
+# Latest tag for AOCHILDES doesn't include the bug fix that I introduced, so we have to clone from a later commit instead
+aochildes @ https://github.com/UIUCLearningLanguageLab/AOCHILDES/archive/710c610e034fe751cf96acf16106a3baf5943494.zip
 childespy==1.0.1
-Jinja2==3.1.1
-MarkupSafe==2.1.1
-numpy==1.22.3
-pandas==1.4.2
-pycparser==2.21
-PyPrind==2.11.3
-python-dateutil==2.8.2
-pytz==2022.1
-pytz-deprecation-shim==0.1.0.post0
-rpy2==3.5.1
-six==1.16.0
-tzdata==2022.1
-tzlocal==4.2
+phonemizer==3.2.1
