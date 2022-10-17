@@ -37,7 +37,7 @@ python childes_processor.py extract -h
 
 ### Download
 
-The *download* mode allows for corpora to be downloaded from CHILDES. For example, to download the _Warren_ corpus from the _Eng-NA_ collection, run the following:
+The **download** mode allows for corpora to be downloaded from CHILDES. For example, to download the _Warren_ corpus from the _Eng-NA_ collection, run the following:
 
 ```
 python childes_processor.py download Warren Eng-NA -o childes
@@ -47,7 +47,7 @@ This will save the utterances to `childes/Eng-NA/Warren.csv`. If `-s` is used, t
 
 ### Extract
 
-The *extract* mode will process downloaded CSVs from CHILDES (those downloaded from the *download* tool) and extract the child and adult utterances, ordering them by child age. This takes advantage of the [AOCHILDES](https://github.com/UIUCLearningLanguageLab/AOCHILDES) library, which also does some basic pre-processing. For example, to extract all downloaded _Eng-NA_ corpora, run the following:
+The *extract* mode will process downloaded CSVs from CHILDES (those downloaded from the **download** tool) and extract the child and adult utterances, ordering them by child age. This takes advantage of the [AOCHILDES](https://github.com/UIUCLearningLanguageLab/AOCHILDES) library, which also does some basic pre-processing. For example, to extract all downloaded _Eng-NA_ corpora, run the following:
 
 ```
 python childes_processor.py extract childes/Eng-NA -o processed/Eng-NA
@@ -57,7 +57,7 @@ This will take all the CSVs in the `childes/Eng-NA` folder and create two text f
 
 ### Phonemize
 
-The *phonemize* mode will take a text file of utterances and convert them into phonemes using IPA. This takes advantage of the *espeak* back-end and the language to phonemize to needs to be specified. For example, to phonemize the child utterances produced by the extract tool, run the following:
+The **phonemize** mode will take a text file of utterances and convert them into phonemes using IPA. This takes advantage of the *espeak* back-end and the language to phonemize to needs to be specified. For example, to phonemize the child utterances produced by the extract tool, run the following:
 
 ```
 python childes_processor.py phonemize processed/Eng-NA/child.txt en-us -o phonemized/child.txt
