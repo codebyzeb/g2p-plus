@@ -63,4 +63,8 @@ The **phonemize** mode will take a text file of utterances and convert them into
 python childes_processor.py phonemize processed/Eng-NA/child.txt en-us -o phonemized/child.txt
 ```
 
-This will phonome the child utterances found at `processed/Eng-NA/child.txt` and phonemize them using the `en-us` backend for espeak, placing the phonemized file into `phonemized/child.txt`.
+This will phonome the child utterances found at `processed/Eng-NA/child.txt` and phonemize them using the `en-us` backend for espeak, placing the phonemized file into `phonemized/child.txt`. You can also use the `-s` option to split the utterances using a test-valid-train split of 90-5-5. When doing this, provide a directory instead of a file for the out path. For example:
+
+```
+python childes_processor.py phonemize processed/Eng-NA/child.txt en-us -o phonemized/Eng-NA -s
+```

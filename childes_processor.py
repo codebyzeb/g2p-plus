@@ -4,6 +4,7 @@ Entry point to all the scripts.
 
 import argparse
 from re import T
+from xmlrpc.client import _iso8601_format
 import pandas as pd
 import sys, shutil, os
 from pathlib import Path
@@ -106,6 +107,15 @@ def extract(args):
 def phonemize_file(args):
     """ Uses phonemizer to phonemize a text """
 
+    if args.split and not args.out_path.is_dir():
+        print('WARNING: When splitting, a directory must be provided. Using file name as directory name')
+        args.out_path = args.out_path.parent / args.out_path.stem
+        args.out_path.mkdir(exist_ok=True)
+    if not args.split and args.out_path.is_dir():
+        print('WARNING: When not splitting, output path should be a file, not a directory. Adding .txt to path.')
+        args.out_path = args.out_path.parent / (str(args.out_path.stem) + '.txt')
+        args.out_path.parent.mkdir(exist_ok=True)
+
     lines = open(args.path, 'r').readlines()
 
     phn = phonemize(
@@ -116,10 +126,30 @@ def phonemize_file(args):
         strip=True,
         preserve_punctuation=False,
         njobs=4)
+    phn = [line + ' ;eword \n' for line in phn]
 
-    # TODO: make directory if doesnt exist
-    with open(args.out_path, 'w') as f:
-        f.writelines(' ;eword \n'.join(phn))
+    if args.split:
+        train_lines = []
+        valid_lines = []
+        test_lines = []
+        # Split the lines 90-5-5 while preserving age-ordering
+        for i, line in enumerate(phn):
+            if i % 20 == 18:
+                valid_lines.append(line)
+            elif i % 20 == 19:
+                test_lines.append(line)
+            else:
+                train_lines.append(line)
+        print(f'Total lines: {len(phn)}')
+        open(args.out_path / 'train.txt', 'w').writelines(train_lines)
+        print(f'Wrote {len(train_lines)} ({round(len(train_lines)/len(phn), 3)*100}%) lines to {args.out_path / "train.txt"}')
+        open(args.out_path / 'valid.txt', 'w').writelines(valid_lines)
+        print(f'Wrote {len(valid_lines)} ({round(len(valid_lines)/len(phn), 3)*100}%) lines to {args.out_path / "valid.txt"}')
+        open(args.out_path / 'test.txt', 'w').writelines(test_lines)
+        print(f'Wrote {len(test_lines)} ({round(len(test_lines)/len(phn), 3)*100}%) lines to {args.out_path / "test.txt"}')
+    else:
+        open(args.out_path, 'w').writelines(phn)
+        print(f'Wrote {len(phn)} lines to {args.out_path}')
 
 parser = argparse.ArgumentParser(description="Childes Processor")
 subparsers = parser.add_subparsers(help='sub-command help')
@@ -139,7 +169,8 @@ parser_phonemize = subparsers.add_parser('phonemize', help='Takes a txt file of 
 parser_phonemize.add_argument('path', type=Path, help='Text file containing the utterances to phonemize')
 # TODO: limit language to certain options or test if ok
 parser_phonemize.add_argument('language', type=str, help='Language used to phonemize')
-parser_phonemize.add_argument('-o', '--out_path', default='phonemized.txt', type=Path, help='File to save utterances to')
+parser_phonemize.add_argument('-o', '--out_path', default='phonemized.txt', type=Path, help='File or directory to save utterances to')
+parser_phonemize.add_argument('-s', '--split', action='store_true', help='Produce three files according to a train-valid-test split of 90-5-5. Splitting is interleaved, not sequential.')
 parser_phonemize.set_defaults(func=phonemize_file)
 
 args = parser.parse_args()
