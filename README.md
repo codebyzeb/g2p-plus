@@ -4,12 +4,11 @@ Scripts for extracting files from [CHILDES](https://childes.talkbank.org/) and p
 
 ## Installation
 
-To run the scripts, first install the required packages in `requirements.txt` by creating a conda environment or otherwise:
+To run the scripts, first create a virtual environment for the project by running `setup.sh`.
 
 ```
-conda create --name childes_processor python=3.10 pip
-conda activate childes_processor
-pip install -r requirements.txt
+./setup.sh
+source setup.sh
 ```
 
 If you are using the `download` command, make sure you have R installed.
@@ -60,11 +59,11 @@ This will take all the CSVs in the `childes/Eng-NA` folder and create two text f
 The **phonemize** mode will take a text file of utterances and convert them into phonemes using IPA. This takes advantage of the *espeak* back-end and the language to phonemize to needs to be specified. For example, to phonemize the child utterances produced by the extract tool, run the following:
 
 ```
-python childes_processor.py phonemize processed/Eng-NA/child.txt en-us -o phonemized/child.txt
+python childes_processor.py phonemize processed/Eng-NA/adult.txt en-us -o phonemized/adult.txt
 ```
 
-This will phonome the child utterances found at `processed/Eng-NA/child.txt` and phonemize them using the `en-us` backend for espeak, placing the phonemized file into `phonemized/child.txt`. You can also use the `-s` option to split the utterances using a test-valid-train split of 90-5-5. When doing this, provide a directory instead of a file for the out path. For example:
+This will phonome the adult utterances found at `processed/Eng-NA/adult.txt` and phonemize them using the `en-us` backend for espeak, placing the phonemized file into `phonemized/adult.txt`. You can also use the `-s` option to split the utterances using a test-valid-train split of 90-5-5. When doing this, provide a directory instead of a file for the out path. For example:
 
 ```
-python childes_processor.py phonemize processed/Eng-NA/child.txt en-us -o phonemized/Eng-NA -s
+python childes_processor.py phonemize processed/Eng-NA/adult.txt en-us -o phonemized/Eng-NA -s
 ```

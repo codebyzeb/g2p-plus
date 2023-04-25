@@ -77,7 +77,7 @@ def extract(args):
 
     # Using the pre-processing from aochildes to extract child and adult utterances
     print('\n--Using AOChildes to extract adult utterances:--')
-    adult_data = AOChildesDataSet(AOChildesParams(collection_names=collection_names))
+    adult_data = AOChildesDataSet(AOChildesParams(collection_names=collection_names, max_days=24))
     adult_utterances = adult_data.load_sentences()
     print(f'--Number of adult utterances: {len(adult_utterances)}--')
 
@@ -86,11 +86,11 @@ def extract(args):
     all_but_target_child = list(all_speakers.keys()) + ['Child']
 
     print('\n--Using AOChildes to extract child utterances:--')
-    child_data = AOChildesDataSet(AOChildesParams(bad_speaker_roles=all_but_target_child, collection_names=collection_names))
+    child_data = AOChildesDataSet(AOChildesParams(bad_speaker_roles=all_but_target_child, collection_names=collection_names, max_days=24)) # AO-CHILDES calls it max_days, but it's now actually months
     child_utterances = child_data.load_sentences()
     print(f'--Number of child utterances: {len(child_utterances)}--\n')
 
-    out_path.mkdir(exist_ok=True)
+    out_path.mkdir(exist_ok=True, parents=True)
     child_out = out_path / 'child.txt'
     adult_out = out_path / 'adult.txt'
     open(child_out, 'w').writelines('\n'.join(child_utterances))
@@ -122,11 +122,11 @@ def phonemize_file(args):
         lines,
         language=args.language,
         backend='espeak',
-        separator=Separator(phone=' ', word=' ;eword ', syllable=''),
+        separator=Separator(phone=' ', word=' WORD_BOUNDARY ', syllable=''),
         strip=True,
         preserve_punctuation=False,
         njobs=4)
-    phn = [line + ' ;eword \n' for line in phn]
+    phn = [line + ' WORD_BOUNDARY \n' for line in phn]
 
     if args.split:
         train_lines = []
