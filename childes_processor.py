@@ -7,9 +7,8 @@ from re import T
 from xmlrpc.client import _iso8601_format
 import pandas as pd
 import sys, shutil, os
+import subprocess
 from pathlib import Path
-from phonemizer import phonemize
-from phonemizer.separator import Separator
 from aochildes.dataset import AOChildesDataSet
 from aochildes.params import AOChildesParams
 from aochildes.configs import Dirs
@@ -118,15 +117,35 @@ def phonemize_file(args):
 
     lines = open(args.path, 'r').readlines()
 
-    phn = phonemize(
-        lines,
-        language=args.language,
-        backend='espeak',
-        separator=Separator(phone=' ', word=' WORD_BOUNDARY ', syllable=''),
-        strip=True,
-        preserve_punctuation=False,
-        njobs=4)
-    phn = [line + ' WORD_BOUNDARY \n' for line in phn]
+    # phn = phonemize(
+    #     lines,
+    #     language=args.language,
+    #     backend='espeak',
+    #     separator=Separator(phone=' ', word=' WORD_BOUNDARY ', syllable=''),
+    #     strip=True,
+    #     preserve_punctuation=False,
+    #     language_switch='remove-utterance',
+    #     words_mismatch='remove', # Remove words that are accidentally joined by espeak
+    #     njobs=4)
+    # phn = [line + ' WORD_BOUNDARY \n' for line in phn]
+
+    print(f'Phonemizing using language "{args.language}". This may take a few minutes...')
+    phn = subprocess.check_output(['espeak', '-f', args.path, '-q', '-x', '--ipa', '-v', args.language, '--sep']).decode('utf-8').split('\n')
+    phn_filtered = []
+    dropped_lines = 0
+    for i in range(len(lines)):
+        line = phn[i]
+        if '(' in line or ')' in line or line == '':
+            dropped_lines += 1
+            continue
+        line = line.replace('  ', ' WORD_BOUNDARY ') # Set the word boundary
+        line = line.replace("ˈ", "") # Remove stress marking
+        line = line.replace("ˌ", "") # Remove secondary stress marking
+        line = line + ' WORD_BOUNDARY \n' # Add newline
+        phn_filtered.append(line)
+    phn = phn_filtered
+
+    print(f'Dropped {dropped_lines} lines due to mismatch with original text')
 
     if args.split:
         train_lines = []

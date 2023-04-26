@@ -17,7 +17,7 @@ If you are using the `phonemize` command, you will need to install the [espeak](
 
 ```
 brew install espeak
-export PHONEMIZER_ESPEAK_LIBRARY=/opt/homebrew/Cellar/espeak/1.48.04_1/lib/libespeak.dylib
+export PHONEMIZER_ESPEAK_LIBRARY=/opt/homebrew/lib/libespeak.dylib
 ```
 
 ## Usage
