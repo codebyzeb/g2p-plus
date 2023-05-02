@@ -39,20 +39,20 @@ python childes_processor.py extract -h
 The **download** mode allows for corpora to be downloaded from CHILDES. For example, to download the _Warren_ corpus from the _Eng-NA_ collection, run the following:
 
 ```
-python childes_processor.py download Warren Eng-NA -o childes
+python childes_processor.py download Warren Eng-NA -o downloaded
 ```
 
-This will save the utterances to `childes/Eng-NA/Warren.csv`. If `-s` is used, the data will be separated by speaker.
+This will save the utterances to `downloaded/Eng-NA/Warren.csv`. If `-s` is used, the data will be separated by speaker.
 
 ### Extract
 
 The *extract* mode will process downloaded CSVs from CHILDES (those downloaded from the **download** tool) and extract the child and adult utterances, ordering them by child age. This takes advantage of the [AOCHILDES](https://github.com/UIUCLearningLanguageLab/AOCHILDES) library, which also does some basic pre-processing. For example, to extract all downloaded _Eng-NA_ corpora, run the following:
 
 ```
-python childes_processor.py extract childes/Eng-NA -o processed/Eng-NA
+python childes_processor.py extract downloaded/Eng-NA -o processed/Eng-NA
 ```
 
-This will take all the CSVs in the `childes/Eng-NA` folder and create two text files, `child.txt` and `adult.txt` in the `processed/Eng-NA` folder specified. These correspond to the age-ordered child and adult utterances, respectively. If the path provided is a CSV instead of a folder, just that CSV will be processed.
+This will take all the CSVs in the `downloaded/Eng-NA` folder and create two text files, `child.txt` and `adult.txt` in the `processed/Eng-NA` folder specified. These correspond to the age-ordered child and adult utterances, respectively. If the path provided is a CSV instead of a folder, just that CSV will be processed.
 
 ### Phonemize
 
