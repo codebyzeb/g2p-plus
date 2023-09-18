@@ -2,6 +2,8 @@
 
 Scripts for extracting files from [CHILDES](https://childes.talkbank.org/) and processing them. The `/childes` folder contains example corpora downloaded from CHILDES and the `processed` folder contains example age-ordered child and adult utterances extracted from these corpora.
 
+There is also a script for extracting and phonemizing [Audio BNC](http://www.phon.ox.ac.uk/AudioBNC). Running this script will convert the Audio BNC phonemic transcriptions to IPA and split the transcriptions into utterances by aligning with the associated orthographic transcriptions.
+
 ## Installation
 
 To run the scripts, first create a virtual environment for the project by running `setup.sh`.
