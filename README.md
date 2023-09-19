@@ -1,8 +1,10 @@
-# CHILDES Processor
+# Corpus Phonemizers
 
-Scripts for extracting files from [CHILDES](https://childes.talkbank.org/) and processing them. The `/childes` folder contains example corpora downloaded from CHILDES and the `processed` folder contains example age-ordered child and adult utterances extracted from these corpora.
+This repository contains scripts for converting a series of corpora to a unified IPA format, with marked word and utterance boundaries. 
 
-There is also a script for extracting and phonemizing [Audio BNC](http://www.phon.ox.ac.uk/AudioBNC). Running this script will convert the Audio BNC phonemic transcriptions to IPA and split the transcriptions into utterances by aligning with the associated orthographic transcriptions.
+The `childes_processor.py` script allows for extracing files from [CHILDES](https://childes.talkbank.org/) and processing them. The `/childes` folder contains example corpora downloaded, processed and phonemized from CHILDES. The `/childes/CHILDES-dataset` folder is a repository hosted on Huggingface containing the dataset in an easily loadable format.
+
+The `bnc_processor.py` script extracts and phonemizes [Audio BNC](http://www.phon.ox.ac.uk/AudioBNC). Running this script will convert the Audio BNC phonemic transcriptions to IPA and split the transcriptions into utterances by aligning with the associated orthographic transcriptions. The `/bnc` folder contains example downloaded corpora. The `/bnc/BNC-dataset` folder is a repository hosted on Huggingface containing the dataset in an easily loadable format.
 
 ## Installation
 
@@ -13,16 +15,16 @@ To run the scripts, first create a virtual environment for the project by runnin
 source setup.sh
 ```
 
-If you are using the `download` command, make sure you have R installed.
+If you are using the `download` command from the CHILDES processor, make sure you have R installed.
 
-If you are using the `phonemize` command, you will need to install the [espeak](https://github.com/espeak-ng/espeak-ng) backend. Note that on mac, you may need to point you may need to find where the dylib file was installed and make sure that phonemizer can find it by doing something like:
+If you are using the `phonemize` command from the CHILDES processor, you will need to install the [espeak](https://github.com/espeak-ng/espeak-ng) backend. Note that on mac, you may need to point you may need to find where the dylib file was installed and make sure that phonemizer can find it by doing something like:
 
 ```
 brew install espeak
 export PHONEMIZER_ESPEAK_LIBRARY=/opt/homebrew/lib/libespeak.dylib
 ```
 
-## Usage
+## CHILDES Processor Usage
 
 The entry point is `childes_processor.py`, which has three modes: *download*, *extract* and *phonemize*. To bring up the help menu, simply type:
 
@@ -41,10 +43,14 @@ python childes_processor.py extract -h
 The **download** mode allows for corpora to be downloaded from CHILDES. For example, to download the _Warren_ corpus from the _Eng-NA_ collection, run the following:
 
 ```
-python childes_processor.py download Warren Eng-NA -o downloaded
+python childes_processor.py download Eng-NA --corpus Warren -o downloaded
 ```
 
-This will save the utterances to `downloaded/Eng-NA/Warren.csv`. If `-s` is used, the data will be separated by speaker.
+This will save the utterances to `downloaded/Eng-NA/Warren.csv`. If `-s` is used, the data will be separated by speaker. The command can also be run without the corpus provided, downloading all corpora available in the collection:
+
+```
+python childes_processor.py download Eng-NA -o downloaded
+```
 
 ### Extract
 
@@ -68,4 +74,18 @@ This will phonome the adult utterances found at `processed/Eng-NA/adult.txt` and
 
 ```
 python childes_processor.py phonemize processed/Eng-NA/adult.txt en-us -o phonemized/Eng-NA -s
+```
+
+## BNC Processor Usage
+
+The BNC processor script has two modes. The first downloads the phonetic transcripts from AudioBNC and saves both the phonemes (converted to IPA) and the words in two files, `bnc_phonemes.txt` and `bnc_words.txt` respectively. Using the `--split` option, the `bnc_phonemes.txt` file will be split into train, validation and test files using a 90-5-5 split, sequentially:
+
+```
+python bnc_processor.py download --split -o bnc
+```
+
+The second mode is used to create a phonemic transcription from the orthographic transcription produced in `bnc_words.txt` by the `download` command. It is intended to compare the phonetic transcription produced by humans and a phonetic transcription created by the `phonemizer` tool. It also has the same split option:
+
+```
+python bnc_processor.py phonemize bnc/bnc_words.txt -s -o bnc
 ```

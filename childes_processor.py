@@ -6,30 +6,13 @@ import argparse
 from re import T
 from xmlrpc.client import _iso8601_format
 import pandas as pd
-import sys, shutil, os
-import subprocess
-from phonemizer import phonemize
-from phonemizer.separator import Separator
+import shutil, os
 from pathlib import Path
 from aochildes.dataset import AOChildesDataSet
 from aochildes.params import AOChildesParams
 from aochildes.configs import Dirs
 
-# Espeak has some issues with joining IPA symbols together, so we need to add spaces between them
-REPLACE_DICT = {'ɛɹ': 'ɛ ɹ', 
-                'ʊɹ' : 'ʊ ɹ',
-                'əl' : 'ə l',
-                'oːɹ' : 'oː ɹ',
-                'ɪɹ' : 'ɪ ɹ',
-                'ɑːɹ' : 'ɑː ɹ',
-                'ɔːɹ' : 'ɔː ɹ',
-                'aɪɚ' : 'aɪ ɚ',
-                'iə' : 'i ə',
-                'aɪə' : 'aɪ ə',
-                'aɪʊɹ' : 'aɪ ʊ ɹ',
-                'aɪʊ' : 'aɪ ʊ',
-                'dʒ' : 'd̠ʒ',
-                'tʃ' : 't̠ʃ'}
+from src.utils import phonemize_utterances, split_and_save
 
 def download(args):
     """ Downloads utterances from CHILDES using `childespy`"""
@@ -55,7 +38,7 @@ def download(args):
     else:
         if not path.exists():
             path.mkdir(parents=True)
-        out_path = path / f'{args.corpus}.csv'
+        out_path = path / f'{args.collection if args.corpus is None else args.corpus}.csv'
         utts.to_csv(out_path)
         print(f'Saving {len(utts)} utterances to {out_path}')
 
@@ -94,7 +77,7 @@ def extract(args):
 
     # Using the pre-processing from aochildes to extract child and adult utterances
     print('\n--Using AOChildes to extract adult utterances:--')
-    adult_data = AOChildesDataSet(AOChildesParams(collection_names=collection_names, max_days=24))
+    adult_data = AOChildesDataSet(AOChildesParams(collection_names=collection_names, max_days=24)) # AO-CHILDES calls it max_days, but it's now actually months
     adult_utterances = adult_data.load_sentences()
     print(f'--Number of adult utterances: {len(adult_utterances)}--')
 
@@ -134,65 +117,10 @@ def phonemize_file(args):
         args.out_path.parent.mkdir(exist_ok=True)
 
     lines = open(args.path, 'r').readlines()
-
-    print(f'Phonemizing using language {args.language}...')
-    phn = phonemize(
-        lines,
-        language=args.language,
-        backend='espeak',
-        separator=Separator(phone='PHONE_BOUNDARY', word=' ', syllable=''),
-        strip=True,
-        preserve_punctuation=False,
-        language_switch='remove-utterance',
-        words_mismatch='remove',
-        njobs=4)
-    
-    mismatched = len([line for line in phn if line == ''])
-    phn = [line.replace(' ', ' WORD_BOUNDARY ').replace('PHONE_BOUNDARY', ' ') for line in phn if line != ''] # Set the word boundary
-    # Use replace map
-    for key, value in REPLACE_DICT.items():
-        phn = [line.replace(key, value) for line in phn]
-    phn = [line + ' WORD_BOUNDARY \n' for line in phn] # Add newline
-
-    print(f'Removed {mismatched} mismatched or language switched lines')
-
-    # print(f'Phonemizing using language "{args.language}". This may take a few minutes...')
-    # phn = subprocess.check_output(['espeak', '-f', args.path, '-q', '-x', '--ipa', '-v', args.language, '--sep']).decode('utf-8').split('\n')
-    # phn_filtered = []
-    # dropped_lines = 0
-    # for i in range(len(lines)):
-    #     line = phn[i]
-    #     if '(' in line or ')' in line or line == '':
-    #         dropped_lines += 1
-    #         continue
-    #     line = line.replace('  ', ' WORD_BOUNDARY ') # Set the word boundary
-    #     line = line.replace("ˈ", "") # Remove stress marking
-    #     line = line.replace("ˌ", "") # Remove secondary stress marking
-    #     line = line + ' WORD_BOUNDARY \n' # Add newline
-    #     phn_filtered.append(line)
-    # phn = phn_filtered
-
-    # print(f'Dropped {dropped_lines} lines due to mismatch with original text')
+    phn = phonemize_utterances(lines, language=args.language)
 
     if args.split:
-        train_lines = []
-        valid_lines = []
-        test_lines = []
-        # Split the lines 90-5-5 while preserving age-ordering
-        for i, line in enumerate(phn):
-            if i % 20 == 18:
-                valid_lines.append(line)
-            elif i % 20 == 19:
-                test_lines.append(line)
-            else:
-                train_lines.append(line)
-        print(f'Total lines: {len(phn)}')
-        open(args.out_path / 'train.txt', 'w').writelines(train_lines)
-        print(f'Wrote {len(train_lines)} ({round(len(train_lines)/len(phn), 3)*100}%) lines to {args.out_path / "train.txt"}')
-        open(args.out_path / 'valid.txt', 'w').writelines(valid_lines)
-        print(f'Wrote {len(valid_lines)} ({round(len(valid_lines)/len(phn), 3)*100}%) lines to {args.out_path / "valid.txt"}')
-        open(args.out_path / 'test.txt', 'w').writelines(test_lines)
-        print(f'Wrote {len(test_lines)} ({round(len(test_lines)/len(phn), 3)*100}%) lines to {args.out_path / "test.txt"}')
+        split_and_save(phn, args.out_path, sequential=False)
     else:
         open(args.out_path, 'w').writelines(phn)
         print(f'Wrote {len(phn)} lines to {args.out_path}')
@@ -200,8 +128,8 @@ def phonemize_file(args):
 parser = argparse.ArgumentParser(description="Childes Processor")
 subparsers = parser.add_subparsers(help='sub-command help')
 parser_download = subparsers.add_parser('download', help='Download utterances from CHILDES into a CSV')
-parser_download.add_argument('corpus', help='Name of the corpus to download')
-parser_download.add_argument('collection', help='Name of the collection that the corpus is contained within')
+parser_download.add_argument('collection', help='Name of the collection that the corpus is contained within (e.g. Eng-NA)')
+parser_download.add_argument('-c', '--corpus', default=None, help='Name of the corpus to download (e.g. Warren). If not provided, will download from entire collection instead.')
 parser_download.add_argument('-o', '--out_path', default='childes', type=Path, help='Directory to save utterances to')
 parser_download.add_argument('-s', '--separate_by_child', action='store_true', help='Create a separate output file for each child in the corpus')
 parser_download.set_defaults(func=download)

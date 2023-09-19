@@ -7,99 +7,20 @@ A conversion table is used to convert from the BNC phonemes to IPA, according to
 
 """
 
-import os
+import argparse
+from pathlib import Path
 import re
 import requests
 
+from src.utils import phonemize_utterances, convert_bnc_to_ipa, clean_textgrid_words, split_and_save
+
 from tqdm import tqdm
 
-CONVERSION_TABLE = {
-    'P' : 'p',
-    'B' : 'b',
-    'T' : 't',
-    'D' : 'd',
-    'CH' : 't̠ʃ',
-    'JH' : 'd̠ʒ',
-    'K' : 'k',
-    'G' : 'g',
-    'M' : 'm',
-    'N' : 'n',
-    'NG' : 'ŋ',
-    'F' : 'f',
-    'V' : 'v',
-    'TH' : 'θ',
-    'DH' : 'ð',
-    'S' : 's',
-    'SH' : 'ʃ',
-    'ZH' : 'ʒ',
-    'HH' : 'h',
-    'R' : 'r',
-    'L' : 'l',
-    'W' : 'w',
-    'Y' : 'j',
-    'Z' : 'z',
-    'IH' : 'ɪ',
-    'EH' : 'ɛ',
-    'AE' : 'a',
-    'AH0' : 'ə',
-    'AH1' : 'ʌ',
-    'AH2' : 'ʌ',
-    'UH1' : 'ʊ',
-    'UH2' : 'ʊ',
-    'OH': 'ɒ',
-    'UH' : 'ʊ',
-    'IY' : 'i:',
-    'EY' : 'eɪ',
-    'AY' : 'aɪ',
-    'OY' : 'oɪ',
-    'AW' : 'aʊ',
-    'OW' : 'əʊ',
-    'UW' : 'u:',
-    'ER0': 'ɚ',
-    'ER1': 'ə:',
-    'ER2': 'ə',
-    'AA' : 'ɑ:',
-    'AO' : 'ɔ:'
-}
-
-def convert_to_ipa(phones):
-    """Converts a list of phones to IPA."""
-    ipa = []
-    i = 0
-    while i < len(phones):
-        # Deal with dipthongs
-        phone = phones[i].upper()
-        if i != len(phones) - 1 and (phone == 'IH1' or phone == 'IH2') and phones[i+1] == 'AH0':
-            ipa.append('ɪə')
-            i += 1
-        elif phone in CONVERSION_TABLE:
-            ipa.append(CONVERSION_TABLE[phone])
-        elif phone[-1] in ['0','1','2'] and phone[:-1] in CONVERSION_TABLE: # Stressed vowel
-            ipa.append(CONVERSION_TABLE[phone[:-1]])
-        else:
-            raise ValueError('Unknown phone: {}'.format(phone))
-        i += 1
-    return ipa
-
-def edit_distance(line1, line2):
-    # Initialize the matrix
-    matrix = [[0 for _ in range(len(line2) + 1)] for _ in range(len(line1) + 1)]
-    for i in range(len(line1) + 1):
-        matrix[i][0] = i
-    for j in range(len(line2) + 1):
-        matrix[0][j] = j
-    # Compute the matrix
-    for i in range(1, len(line1) + 1):
-        for j in range(1, len(line2) + 1):
-            if line1[i-1] == line2[j-1]:
-                matrix[i][j] = matrix[i-1][j-1]
-            else:
-                matrix[i][j] = min(matrix[i-1][j] + 1, matrix[i][j-1] + 1, matrix[i-1][j-1] + 1)
-    # Return the edit distance
-    return matrix[-1][-1]
+ORTHOGRAPHIC_TRANSCRIPTS_REPO = "http://bnc.phon.ox.ac.uk/filelist-html.txt"
+PHONEMIC_TRANSCRIPTS_REPO = "http://bnc.phon.ox.ac.uk/filelist-textgrid.txt"
 
 # Works through all HTML transcripts from AudioBNC and extracts the orthographic words
-def get_orthographic_utterances(transcript_paths):
+def download_bnc_orthographic_utterances(transcript_paths):
     orthographic_utterances = {}
 
     for path in tqdm(transcript_paths, 'Getting orthographic utterances'):
@@ -130,25 +51,10 @@ def get_orthographic_utterances(transcript_paths):
 
     return orthographic_utterances
 
-# Tries to match the TextGrid words to the orthographic words
-def clean_words(words):
-    word_line = ' '.join([word for word in words if not word in ['sp', '{OOV}', '{LG}', '{GAP_ANONYMIZATION}', '{CG}', '{XX}']])
-    word_line = (
-        word_line.replace(" 'S", "'S")
-        .replace(" 'VE", "'VE")
-        .replace("GON NA", "GONNA")
-        .replace("DUN N","DUN XXXXN")
-        .replace("DUN N NO","DUNNO")
-        .replace(" N IT","NIT")
-        .replace("GOT TA","GOTTA")
-        .replace("WAN NA","WANNA").strip()
-    )
-    return word_line
-
 # Works through all TextGrid files of AudioBNC, extracting the phones and words,
 # aligning them according to the linebreaks in the orthographic transcripts
 # and converting phonemes to IPA
-def get_utterance_from_paths(grid_paths, orthographic_utterances):
+def download_bnc_phonemic_transcriptions(grid_paths, orthographic_utterances):
 
     phone_lines = []
     word_lines = []
@@ -217,10 +123,10 @@ def get_utterance_from_paths(grid_paths, orthographic_utterances):
             # Check for start of new word
             if start_time >= words[current_word_index][1]:
                 if phones_in_word != []:
-                    phone_line = phone_line + ' '.join(convert_to_ipa(phones_in_word)) + ' WORD_BOUNDARY '
+                    phone_line = phone_line + ' '.join(convert_bnc_to_ipa(phones_in_word)) + ' WORD_BOUNDARY '
                     phones_in_word = []
                 # Check if start of new utterances
-                word_line = clean_words([word[0] for word in words[start_word_index : current_word_index]])
+                word_line = clean_textgrid_words([word[0] for word in words[start_word_index : current_word_index]])
                 orthographic_word_line = orthographic_words[orthographic_words_index]
                 if word_line.strip() != '' and word_line.strip() != ' ' and orthographic_words_index < len(orthographic_words) and abs(len(orthographic_word_line) - len(word_line)) < 3 and (orthographic_word_line[0] == word_line[0] and orthographic_word_line[-2:] == word_line[-2:]): # Allow for a bit of leeway
                     phone_lines.append(phone_line)
@@ -229,12 +135,10 @@ def get_utterance_from_paths(grid_paths, orthographic_utterances):
                     phone_line = ''
                     orthographic_words_index += 1
                     start_word_index = current_word_index
-                    if word_line != orthographic_word_line:
-                        not_quite_equal += 1
                     if orthographic_words_index >= len(orthographic_words):
-                        remaining_words = clean_words([word[0] for word in words[current_word_index:]])
+                        remaining_words = clean_textgrid_words([word[0] for word in words[current_word_index:]])
                         if remaining_words != '':
-                            print('Error: Stopping alignment but words remaining: {} in sentence {}, {}'.format(remaining_words, clean_words([word[0] for word in words[-20:]]), orthographic_word_lines[-2:]))
+                            print('Error: Stopping alignment but words remaining: {} in sentence {}, {}'.format(remaining_words, clean_textgrid_words([word[0] for word in words[-20:]]), orthographic_word_lines[-2:]))
                         break
                 current_word_index += 1
             # Ignore pause markers and other non-phones
@@ -244,62 +148,76 @@ def get_utterance_from_paths(grid_paths, orthographic_utterances):
 
         # Add the last utterance
         if phones_in_word != []:
-            phone_line = phone_line + ' '.join(convert_to_ipa(phones_in_word)) + ' WORD_BOUNDARY '
+            phone_line = phone_line + ' '.join(convert_bnc_to_ipa(phones_in_word)) + ' WORD_BOUNDARY '
             phone_lines.append(phone_line)
             word_lines.append(word_line)
             orthographic_word_lines.append(orthographic_word_line)
         
     return phone_lines, word_lines, orthographic_word_lines
 
+
+def download(args):
+
+    # Get orthographic transcripts to align with phonemic transcripts for finding utterance boundaries,
+    # since the phonemic transcripts don't mark them
+    transcript_paths = requests.get(ORTHOGRAPHIC_TRANSCRIPTS_REPO).text.split('\n')        
+    orthographic_utterances = download_bnc_orthographic_utterances(transcript_paths)
+
+    # Get phonemic transcripts and extract utterances in IPA
+    grid_paths = requests.get(PHONEMIC_TRANSCRIPTS_REPO).text.split('\n')
+    phone_lines, word_lines, _ = download_bnc_phonemic_transcriptions(grid_paths, orthographic_utterances)
+
+    if not args.out_dir.is_dir():
+        print('WARNING: A directory must be provided. Using file name as directory name')
+        args.out_dir = args.out_dir.parent / args.out_dir.stem
+    args.out_dir.mkdir(exist_ok=True)
+
+    if args.split:
+        split_and_save(phone_lines, out_path=args.out_dir, sequential=True)
+
+    # Write full phonemic dataset
+    with open(args.out_dir / 'bnc_phonemes.txt', 'w') as f:
+        for line in phone_lines:
+            f.write(line + '\n')
+    print(f'Wrote {len(phone_lines)} lines to {args.out_dir / "bnc.txt"}')
+
+    # Write words
+    with open(args.out_dir / 'bnc_words.txt', 'w') as f:
+        for line in word_lines:
+            f.write(line + '\n')
+    print(f'Wrote {len(word_lines)} lines to bnc_words.txt')
+
+def phonemize_bnc(args):
+    """ Uses phonemizer to phonemize a text. Doesn't remove mistmatched words or language switches. """
+
+    if not args.out_dir.is_dir():
+        print('WARNING: When splitting, a directory must be provided. Using file name as directory name')
+        args.out_dir = args.out_dir.parent / args.out_dir.stem
+    args.out_dir.mkdir(exist_ok=True)
+
+    lines = open(args.path, 'r').readlines()
+    lines = phonemize_utterances(lines, words_mismatch='warn', language_switch='remove-flags')
+
+    if args.split:
+        split_and_save(lines, out_path=args.out_dir, sequential=True)
+    out_path = args.out_dir / 'bnc_ortho_phonemes.txt'
+    open(out_path, 'w').writelines(lines)
+    print(f'Wrote {len(lines)} lines to {out_path}')
+
 if __name__ == '__main__':
 
-    transcripts_repo = "http://bnc.phon.ox.ac.uk/filelist-html.txt"
-    transcript_paths = requests.get(transcripts_repo).text.split('\n')
+    parser = argparse.ArgumentParser(description="BNC Processor")
+    subparsers = parser.add_subparsers(help='sub-command help')
+    parser_download = subparsers.add_parser('download', help='Download utterances from BNC, save phonemes as IPA in "bnc.txt" and saves the words from the phonetic transcriptions in "bnc_words.txt"')
+    parser_download.add_argument('-s', '--split', action='store_true', help='Produce three files according to a train-valid-test split of 90-5-5. Splitting is sequential, not interleaved.')
+    parser_download.add_argument('-o', '--out_dir', default='BNC', type=Path, help='Directory to save utterances to')
+    parser_download.set_defaults(func=download)
 
-    #transcript_paths = ['http://bnc.phon.ox.ac.uk/transcripts-html/KDP.html']
-        
-    # Get orthographic words from each path and show progress bar
-    orthographic_utterances = get_orthographic_utterances(transcript_paths)
-    # Show first 10 utterances
+    parser_phonemize = subparsers.add_parser('phonemize', help='Phonemizes an orthographic transcription, such as the one produced by the download command.')
+    parser_phonemize.add_argument('path', type=Path, help='Text file of orthographic transcriptions, one per line – presumably the "bnc_words.txt" file produced by "download"')
+    parser_phonemize.add_argument('-s', '--split', action='store_true', help='Produce three files according to a train-valid-test split of 90-5-5. Splitting is sequential, not interleaved.')
+    parser_phonemize.add_argument('-o', '--out_dir', default='BNC', type=Path, help='Directory to save utterances to')
+    parser_phonemize.set_defaults(func=phonemize_bnc)
 
-    grid_repo = "http://bnc.phon.ox.ac.uk/filelist-textgrid.txt"
-    grid_paths = requests.get(grid_repo).text.split('\n')
-
-    # Get utterances from each path
-    phone_lines, word_lines, orthographic_word_lines = get_utterance_from_paths(grid_paths, orthographic_utterances)
-
-
-    # Split into train, dev and test
-    train_size = int(len(phone_lines) * 0.8)
-    dev_size = int(len(phone_lines) * 0.1)
-    test_size = len(phone_lines) - train_size - dev_size
-
-    # Write train, dev and test to dataset
-    with open('BNC/train.txt', 'w') as f:
-        for line in phone_lines[:train_size]:
-            f.write(line + '\n')
-    with open('BNC/valid.txt', 'w') as f:
-        for line in phone_lines[train_size:train_size+dev_size]:
-            f.write(line + '\n')
-    with open('BNC/test.txt', 'w') as f:
-        for line in phone_lines[train_size+dev_size:]:
-            f.write(line + '\n')
-
-    # # Write full phonemic dataset
-    # with open('bnc_full.txt', 'w') as f:
-    #     for line in phone_lines:
-    #         f.write(line + '\n')
-
-    # # Write words
-    # with open('bnc_word.txt', 'w') as f:
-    #     for line in word_lines:
-    #         f.write(line + '\n')
-
-    # # Write orthographic words
-    # out_path = 'bnc_orthographic_word.txt'
-    # with open(out_path, 'w') as f:
-    #     for line in orthographic_word_lines:
-    #         f.write(line + '\n')
-            
-
-
+    args = parser.parse_args()
+    args.func(args)

@@ -1,0 +1,149 @@
+,id,gloss,stem,actual_phonology,model_phonology,type,language,num_morphemes,num_tokens,utterance_order,corpus_name,part_of_speech,speaker_code,speaker_name,speaker_role,target_child_name,target_child_age,target_child_sex,media_start,media_end,media_unit,collection_name,collection_id,corpus_id,speaker_id,target_child_id,transcript_id
+1,13150887,hallo,,,,declarative,deu,-2147483648,1,1,Manuela,,MOT,,Mother,,6.427236698905522,male,5.0,6.0,s,German,16,257,18743,18742,30041
+2,13150888,,,,,declarative,deu,-2147483648,0,2,Manuela,,CHI,,Target_Child,,6.427236698905522,male,6.0,7.0,s,German,16,257,18742,18742,30041
+3,13150889,eh,,,,declarative,deu,-2147483648,1,3,Manuela,,CHI,,Target_Child,,6.427236698905522,male,7.0,8.0,s,German,16,257,18742,18742,30041
+4,13150890,hallo,,,,declarative,deu,-2147483648,1,4,Manuela,,MOT,,Mother,,6.427236698905522,male,7.0,8.0,s,German,16,257,18743,18742,30041
+5,13150891,eh,,,,declarative,deu,-2147483648,1,5,Manuela,,CHI,,Target_Child,,6.427236698905522,male,8.0,9.0,s,German,16,257,18742,18742,30041
+6,13150892,,,,,declarative,deu,-2147483648,0,6,Manuela,,CHI,,Target_Child,,6.427236698905522,male,9.0,10.0,s,German,16,257,18742,18742,30041
+7,13150893,ja,,,,declarative,deu,-2147483648,1,7,Manuela,,MOT,,Mother,,6.427236698905522,male,10.0,11.0,s,German,16,257,18743,18742,30041
+8,13150894,ah,,,,declarative,deu,-2147483648,1,8,Manuela,,CHI,,Target_Child,,6.427236698905522,male,11.0,13.0,s,German,16,257,18742,18742,30041
+9,13150895,,,,,declarative,deu,-2147483648,0,9,Manuela,,CHI,,Target_Child,,6.427236698905522,male,13.0,15.0,s,German,16,257,18742,18742,30041
+10,13150896,,,,,declarative,deu,-2147483648,0,10,Manuela,,MOT,,Mother,,6.427236698905522,male,15.0,17.0,s,German,16,257,18743,18742,30041
+11,13150897,hm,,,,declarative,deu,-2147483648,1,11,Manuela,,MOT,,Mother,,6.427236698905522,male,17.0,18.0,s,German,16,257,18743,18742,30041
+12,13150898,da hast ihn,,,,declarative,deu,-2147483648,3,12,Manuela,,MOT,,Mother,,6.427236698905522,male,18.0,19.0,s,German,16,257,18743,18742,30041
+13,13150899,,,,,declarative,deu,-2147483648,0,13,Manuela,,CHI,,Target_Child,,6.427236698905522,male,19.0,20.0,s,German,16,257,18742,18742,30041
+14,13150900,,,,,declarative,deu,-2147483648,0,1,Manuela,,CHI,,Target_Child,,7.164418160537177,male,0.0,3.0,s,German,16,257,18742,18742,30042
+15,13150901,,,,,declarative,deu,-2147483648,0,2,Manuela,,CHI,,Target_Child,,7.164418160537177,male,3.0,8.0,s,German,16,257,18742,18742,30042
+16,13150902,und drauf,,,,declarative,deu,-2147483648,2,1,Manuela,,MOT,,Mother,,10.394463952031868,male,0.0,0.5,s,German,16,257,18743,18742,30043
+17,13150903,,,,,declarative,deu,-2147483648,0,2,Manuela,,CHI,,Target_Child,,10.394463952031868,male,0.5,1.0,s,German,16,257,18742,18742,30043
+18,13150904,,,,,declarative,deu,-2147483648,0,3,Manuela,,MOT,,Mother,,10.394463952031868,male,1.0,3.0,s,German,16,257,18743,18742,30043
+19,13150905,und ab,,,,declarative,deu,-2147483648,2,4,Manuela,,MOT,,Mother,,10.394463952031868,male,3.0,4.0,s,German,16,257,18743,18742,30043
+20,13150906,jetzt machst du,,,,declarative,deu,-2147483648,3,5,Manuela,,MOT,,Mother,,10.394463952031868,male,4.0,6.0,s,German,16,257,18743,18742,30043
+21,13150907,nein du musst hier,,,,declarative,deu,-2147483648,4,6,Manuela,,MOT,,Mother,,10.394463952031868,male,6.0,7.0,s,German,16,257,18743,18742,30043
+22,13150908,guck da,,,,declarative,deu,-2147483648,2,7,Manuela,,MOT,,Mother,,10.394463952031868,male,7.0,8.0,s,German,16,257,18743,18742,30043
+23,13150909,so,,,,declarative,deu,-2147483648,1,8,Manuela,,MOT,,Mother,,10.394463952031868,male,8.0,9.0,s,German,16,257,18743,18742,30043
+24,13150910,,,,,declarative,deu,-2147483648,0,9,Manuela,,CHI,,Target_Child,,10.394463952031868,male,9.0,14.0,s,German,16,257,18742,18742,30043
+25,13150911,,,,,declarative,deu,-2147483648,0,10,Manuela,,CHI,,Target_Child,,10.394463952031868,male,14.0,17.0,s,German,16,257,18742,18742,30043
+26,13150912,oh hier drauf,,,,declarative,deu,-2147483648,3,11,Manuela,,MOT,,Mother,,10.394463952031868,male,17.0,18.0,s,German,16,257,18743,18742,30043
+27,13150913,jawohl,,,,declarative,deu,-2147483648,1,12,Manuela,,MOT,,Mother,,10.394463952031868,male,18.0,18.5,s,German,16,257,18743,18742,30043
+28,13150914,,,,,declarative,deu,-2147483648,0,13,Manuela,,CHI,,Target_Child,,10.394463952031868,male,18.5,19.0,s,German,16,257,18742,18742,30043
+29,13150915,na,,,,declarative,deu,-2147483648,1,14,Manuela,,MOT,,Mother,,10.394463952031868,male,19.0,20.0,s,German,16,257,18743,18742,30043
+30,13150916,probiere es noch mal,,,,declarative,deu,-2147483648,4,15,Manuela,,MOT,,Mother,,10.394463952031868,male,20.0,21.0,s,German,16,257,18743,18742,30043
+31,13150917,,,,,declarative,deu,-2147483648,0,16,Manuela,,CHI,,Target_Child,,10.394463952031868,male,21.0,23.0,s,German,16,257,18742,18742,30043
+32,13150918,,,,,declarative,deu,-2147483648,0,17,Manuela,,MOT,,Mother,,10.394463952031868,male,23.0,24.0,s,German,16,257,18743,18742,30043
+33,13150919,so,,,,declarative,deu,-2147483648,1,18,Manuela,,MOT,,Mother,,10.394463952031868,male,24.0,25.0,s,German,16,257,18743,18742,30043
+34,13150920,prima,,,,declarative,deu,-2147483648,1,19,Manuela,,MOT,,Mother,,10.394463952031868,male,25.0,26.0,s,German,16,257,18743,18742,30043
+35,13150921,prima,,,,declarative,deu,-2147483648,1,20,Manuela,,MOT,,Mother,,10.394463952031868,male,26.0,27.0,s,German,16,257,18743,18742,30043
+36,13150922,,,,,declarative,deu,-2147483648,0,21,Manuela,,CHI,,Target_Child,,10.394463952031868,male,27.0,29.0,s,German,16,257,18742,18742,30043
+37,13150923,noch mal herunter,,,,question,deu,-2147483648,3,22,Manuela,,MOT,,Mother,,10.394463952031868,male,,,None,German,16,257,18743,18742,30043
+38,13150924,da,,,,declarative,deu,-2147483648,1,23,Manuela,,MOT,,Mother,,10.394463952031868,male,29.0,31.0,s,German,16,257,18743,18742,30043
+39,13150925,ach schau mal,,,,declarative,deu,-2147483648,3,24,Manuela,,MOT,,Mother,,10.394463952031868,male,31.0,33.0,s,German,16,257,18743,18742,30043
+40,13150926,,,,,declarative,deu,-2147483648,0,25,Manuela,,CHI,,Target_Child,,10.394463952031868,male,33.0,34.0,s,German,16,257,18742,18742,30043
+41,13150927,da kann man noch eins heruntermachen,,,,declarative,deu,-2147483648,6,26,Manuela,,MOT,,Mother,,10.394463952031868,male,34.0,42.0,s,German,16,257,18743,18742,30043
+42,13150928,zwei,,,,declarative,deu,-2147483648,1,27,Manuela,,MOT,,Mother,,10.394463952031868,male,42.0,43.0,s,German,16,257,18743,18742,30043
+43,13150929,,,,,declarative,deu,-2147483648,0,28,Manuela,,CHI,,Target_Child,,10.394463952031868,male,,,None,German,16,257,18742,18742,30043
+44,13150930,huch,,,,declarative,deu,-2147483648,1,29,Manuela,,MOT,,Mother,,10.394463952031868,male,43.0,44.0,s,German,16,257,18743,18742,30043
+45,13150931,guck das muss hier drauf,,,,declarative,deu,-2147483648,5,30,Manuela,,MOT,,Mother,,10.394463952031868,male,,,None,German,16,257,18743,18742,30043
+46,13150932,,,,,declarative,deu,-2147483648,0,31,Manuela,,CHI,,Target_Child,,10.394463952031868,male,44.0,45.0,s,German,16,257,18742,18742,30043
+47,13150933,ja,,,,declarative,deu,-2147483648,1,32,Manuela,,MOT,,Mother,,10.394463952031868,male,45.0,46.0,s,German,16,257,18743,18742,30043
+48,13150934,ja,,,,declarative,deu,-2147483648,1,33,Manuela,,MOT,,Mother,,10.394463952031868,male,46.0,48.0,s,German,16,257,18743,18742,30043
+49,13150935,,,,,declarative,deu,-2147483648,0,34,Manuela,,MOT,,Mother,,10.394463952031868,male,,,None,German,16,257,18743,18742,30043
+50,13150936,noch mal,,,,declarative,deu,-2147483648,2,35,Manuela,,MOT,,Mother,,10.394463952031868,male,48.0,49.0,s,German,16,257,18743,18742,30043
+51,13150937,,,,,declarative,deu,-2147483648,0,36,Manuela,,CHI,,Target_Child,,10.394463952031868,male,49.0,50.0,s,German,16,257,18742,18742,30043
+52,13150938,gut,,,,declarative,deu,-2147483648,1,37,Manuela,,MOT,,Mother,,10.394463952031868,male,50.0,51.0,s,German,16,257,18743,18742,30043
+53,13150939,so,,,,declarative,deu,-2147483648,1,38,Manuela,,MOT,,Mother,,10.394463952031868,male,51.0,54.0,s,German,16,257,18743,18742,30043
+54,13150940,wollen wir den blauen noch heruntertun,,,,question,deu,-2147483648,6,39,Manuela,,MOT,,Mother,,10.394463952031868,male,54.0,59.0,s,German,16,257,18743,18742,30043
+55,13150941,schau,,,,declarative,deu,-2147483648,1,40,Manuela,,MOT,,Mother,,10.394463952031868,male,,,None,German,16,257,18743,18742,30043
+56,13150942,ha,,,,declarative,deu,-2147483648,1,41,Manuela,,MOT,,Mother,,10.394463952031868,male,59.0,60.0,s,German,16,257,18743,18742,30043
+57,13150943,,,,,declarative,deu,-2147483648,0,42,Manuela,,CHI,,Target_Child,,10.394463952031868,male,60.0,61.0,s,German,16,257,18742,18742,30043
+58,13150944,prima,,,,declarative,deu,-2147483648,1,1,Manuela,,MOT,,Mother,,10.394463952031868,male,0.0,4.0,s,German,16,257,18743,18742,30044
+59,13150945,oh,,,,declarative,deu,-2147483648,1,2,Manuela,,CHI,,Target_Child,,10.394463952031868,male,4.0,11.0,s,German,16,257,18742,18742,30044
+60,13150946,,,,,declarative,deu,-2147483648,0,3,Manuela,,CHI,,Target_Child,,10.394463952031868,male,11.0,13.0,s,German,16,257,18742,18742,30044
+61,13150947,oi,,,,declarative,deu,-2147483648,1,4,Manuela,,MOT,,Mother,,10.394463952031868,male,12.0,13.0,s,German,16,257,18743,18742,30044
+62,13150948,toll,,,,declarative,deu,-2147483648,1,5,Manuela,,MOT,,Mother,,10.394463952031868,male,13.0,14.0,s,German,16,257,18743,18742,30044
+63,13150949,ein turm,,,,declarative,deu,-2147483648,2,6,Manuela,,MOT,,Mother,,10.394463952031868,male,14.0,15.0,s,German,16,257,18743,18742,30044
+64,13150950,da,,,,declarative,deu,-2147483648,1,7,Manuela,,CHI,,Target_Child,,10.394463952031868,male,15.0,16.0,s,German,16,257,18742,18742,30044
+65,13150951,da,,,,declarative,deu,-2147483648,1,8,Manuela,,MOT,,Mother,,10.394463952031868,male,,,None,German,16,257,18743,18742,30044
+66,13150952,ein grossen turm,,,,declarative,deu,-2147483648,3,9,Manuela,,MOT,,Mother,,10.394463952031868,male,16.0,18.0,s,German,16,257,18743,18742,30044
+67,13150953,da,,,,declarative,deu,-2147483648,1,10,Manuela,,MOT,,Mother,,10.394463952031868,male,18.0,19.0,s,German,16,257,18743,18742,30044
+68,13150954,,,,,declarative,deu,-2147483648,0,11,Manuela,,CHI,,Target_Child,,10.394463952031868,male,19.0,22.0,s,German,16,257,18742,18742,30044
+69,13150955,da,,,,declarative,deu,-2147483648,1,12,Manuela,,CHI,,Target_Child,,10.394463952031868,male,22.0,23.0,s,German,16,257,18742,18742,30044
+70,13150956,da,,,,declarative,deu,-2147483648,1,13,Manuela,,MOT,,Mother,,10.394463952031868,male,,,None,German,16,257,18743,18742,30044
+71,13150957,da,,,,declarative,deu,-2147483648,1,14,Manuela,,CHI,,Target_Child,,10.394463952031868,male,23.0,24.0,s,German,16,257,18742,18742,30044
+72,13150958,da,,,,declarative,deu,-2147483648,1,15,Manuela,,MOT,,Mother,,10.394463952031868,male,24.0,25.0,s,German,16,257,18743,18742,30044
+73,13150959,da,,,,declarative,deu,-2147483648,1,16,Manuela,,CHI,,Target_Child,,10.394463952031868,male,,,None,German,16,257,18742,18742,30044
+74,13150960,da,,,,declarative,deu,-2147483648,1,17,Manuela,,MOT,,Mother,,10.394463952031868,male,25.0,27.0,s,German,16,257,18743,18742,30044
+75,13150961,da,,,,declarative,deu,-2147483648,1,18,Manuela,,CHI,,Target_Child,,10.394463952031868,male,,,None,German,16,257,18742,18742,30044
+76,13150962,da,,,,declarative,deu,-2147483648,1,19,Manuela,,CHI,,Target_Child,,10.394463952031868,male,27.0,28.0,s,German,16,257,18742,18742,30044
+77,13150963,da,,,,declarative,deu,-2147483648,1,20,Manuela,,MOT,,Mother,,10.394463952031868,male,,,None,German,16,257,18743,18742,30044
+78,13150964,was machst du jetzt mit dem turm,,,,question,deu,-2147483648,7,21,Manuela,,MOT,,Mother,,10.394463952031868,male,28.0,29.0,s,German,16,257,18743,18742,30044
+79,13150965,da,,,,declarative,deu,-2147483648,1,22,Manuela,,CHI,,Target_Child,,10.394463952031868,male,,,None,German,16,257,18742,18742,30044
+80,13150966,gibst du den jetzt der mama,,,,question,deu,-2147483648,6,23,Manuela,,MOT,,Mother,,10.394463952031868,male,29.0,30.0,s,German,16,257,18743,18742,30044
+81,13150967,darf ich den haben,,,,question,deu,-2147483648,4,24,Manuela,,MOT,,Mother,,10.394463952031868,male,30.0,32.0,s,German,16,257,18743,18742,30044
+82,13150968,,,,,declarative,deu,-2147483648,0,25,Manuela,,CHI,,Target_Child,,10.394463952031868,male,32.0,34.0,s,German,16,257,18742,18742,30044
+83,13150969,darf ich den haben,,,,question,deu,-2147483648,4,26,Manuela,,MOT,,Mother,,10.394463952031868,male,34.0,35.0,s,German,16,257,18743,18742,30044
+84,13150970,bitte,,,,declarative,deu,-2147483648,1,27,Manuela,,MOT,,Mother,,10.394463952031868,male,35.0,38.0,s,German,16,257,18743,18742,30044
+85,13150971,da,,,,declarative,deu,-2147483648,1,28,Manuela,,CHI,,Target_Child,,10.394463952031868,male,38.0,39.0,s,German,16,257,18742,18742,30044
+86,13150972,danke,,,,declarative,deu,-2147483648,1,29,Manuela,,MOT,,Mother,,10.394463952031868,male,39.0,40.0,s,German,16,257,18743,18742,30044
+87,13150973,danke,,,,declarative,deu,-2147483648,1,30,Manuela,,MOT,,Mother,,10.394463952031868,male,40.0,41.0,s,German,16,257,18743,18742,30044
+88,13150974,,,,,declarative,deu,-2147483648,0,1,Manuela,,MOT,,Mother,,10.657303024702765,male,0.0,1.0,s,German,16,257,18743,18742,30045
+89,13150975,,,,,declarative,deu,-2147483648,0,2,Manuela,,CHI,,Target_Child,,10.657303024702765,male,1.0,2.0,s,German,16,257,18742,18742,30045
+90,13150976,komm,,,,declarative,deu,-2147483648,1,3,Manuela,,MOT,,Mother,,10.657303024702765,male,1.0,2.0,s,German,16,257,18743,18742,30045
+91,13150977,,,,,declarative,deu,-2147483648,0,4,Manuela,,CHI,,Target_Child,,10.657303024702765,male,2.0,3.0,s,German,16,257,18742,18742,30045
+92,13150978,upps,,,,declarative,deu,-2147483648,1,5,Manuela,,MOT,,Mother,,10.657303024702765,male,3.0,4.0,s,German,16,257,18743,18742,30045
+93,13150979,,,,,declarative,deu,-2147483648,0,6,Manuela,,MOT,,Mother,,10.657303024702765,male,4.0,5.0,s,German,16,257,18743,18742,30045
+94,13150980,uff,,,,declarative,deu,-2147483648,1,7,Manuela,,MOT,,Mother,,10.657303024702765,male,5.0,6.0,s,German,16,257,18743,18742,30045
+95,13150981,,,,,declarative,deu,-2147483648,0,8,Manuela,,CHI,,Target_Child,,10.657303024702765,male,,,None,German,16,257,18742,18742,30045
+96,13150982,wo ist er,,,,question,deu,-2147483648,3,9,Manuela,,MOT,,Mother,,10.657303024702765,male,6.0,7.0,s,German,16,257,18743,18742,30045
+97,13150983,wo ist er,,,,question,deu,-2147483648,3,10,Manuela,,MOT,,Mother,,10.657303024702765,male,7.0,7.5,s,German,16,257,18743,18742,30045
+98,13150984,wo ist er,,,,question,deu,-2147483648,3,11,Manuela,,MOT,,Mother,,10.657303024702765,male,7.5,8.0,s,German,16,257,18743,18742,30045
+99,13150985,,,,,declarative,deu,-2147483648,0,12,Manuela,,CHI,,Target_Child,,10.657303024702765,male,8.0,9.0,s,German,16,257,18742,18742,30045
+100,13150986,da ja,,,,question,deu,-2147483648,2,13,Manuela,,MOT,,Mother,,10.657303024702765,male,9.0,11.0,s,German,16,257,18743,18742,30045
+101,13150987,,,,,declarative,deu,-2147483648,0,14,Manuela,,MOT,,Mother,,10.657303024702765,male,11.0,12.0,s,German,16,257,18743,18742,30045
+102,13150988,,,,,declarative,deu,-2147483648,0,15,Manuela,,CHI,,Target_Child,,10.657303024702765,male,12.0,13.0,s,German,16,257,18742,18742,30045
+103,13150989,guckuck,,,,declarative,deu,-2147483648,1,1,Manuela,,MOT,,Mother,,10.788722561038215,male,0.0,1.0,s,German,16,257,18743,18742,30046
+104,13150990,ehehheheh,,,,declarative,deu,-2147483648,1,2,Manuela,,CHI,,Target_Child,,10.788722561038215,male,1.0,3.0,s,German,16,257,18742,18742,30046
+105,13150991,ahahajajaaa,,,,declarative,deu,-2147483648,1,3,Manuela,,MOT,,Mother,,10.788722561038215,male,3.0,9.0,s,German,16,257,18743,18742,30046
+106,13150992,adidiadi,,,,declarative,deu,-2147483648,1,4,Manuela,,CHI,,Target_Child,,10.788722561038215,male,9.0,10.0,s,German,16,257,18742,18742,30046
+107,13150993,xxx,,,,declarative,deu,-2147483648,1,5,Manuela,,MOT,,Mother,,10.788722561038215,male,10.0,11.0,s,German,16,257,18743,18742,30046
+108,13150994,aaajajaaaaaaja,,,,declarative,deu,-2147483648,1,6,Manuela,,CHI,,Target_Child,,10.788722561038215,male,11.0,16.0,s,German,16,257,18742,18742,30046
+109,13150995,aaajajaaaaaja,,,,declarative,deu,-2147483648,1,7,Manuela,,MOT,,Mother,,10.788722561038215,male,16.0,17.0,s,German,16,257,18743,18742,30046
+110,13150996,,,,,declarative,deu,-2147483648,0,8,Manuela,,CHI,,Target_Child,,10.788722561038215,male,17.0,20.0,s,German,16,257,18742,18742,30046
+111,13150997,wollen wir noch mal mit dem schwein spielen,,,,question,deu,-2147483648,8,9,Manuela,,MOT,,Mother,,10.788722561038215,male,20.0,22.0,s,German,16,257,18743,18742,30046
+112,13150998,,,,,declarative,deu,-2147483648,0,1,Manuela,,MOT,,Mother,,6.427236698905522,male,0.0,1.0,s,German,16,257,18743,18742,30047
+113,13150999,so,,,,declarative,deu,-2147483648,1,2,Manuela,,MOT,,Mother,,6.427236698905522,male,1.0,3.0,s,German,16,257,18743,18742,30047
+114,13151000,so,,,,declarative,deu,-2147483648,1,3,Manuela,,CHI,,Target_Child,,6.427236698905522,male,3.0,4.0,s,German,16,257,18742,18742,30047
+115,13151001,jetzt ist jemand rausgegangen,,,,declarative,deu,-2147483648,4,4,Manuela,,MOT,,Mother,,6.427236698905522,male,4.0,7.0,s,German,16,257,18743,18742,30047
+116,13151002,jemand rausgegangen,,,,declarative,deu,-2147483648,2,5,Manuela,,CHI,,Target_Child,,6.427236698905522,male,7.0,10.0,s,German,16,257,18742,18742,30047
+117,13151003,und wie heisst du,,,,question,deu,-2147483648,4,6,Manuela,,MOT,,Mother,,6.427236698905522,male,10.0,11.0,s,German,16,257,18743,18742,30047
+118,13151004,sag ich bin der Child,,,,declarative,deu,-2147483648,5,7,Manuela,,MOT,,Mother,,6.427236698905522,male,11.0,15.0,s,German,16,257,18743,18742,30047
+119,13151005,da Child,,,,declarative,deu,-2147483648,2,8,Manuela,,CHI,,Target_Child,,6.427236698905522,male,15.0,17.0,s,German,16,257,18742,18742,30047
+120,13151006,,,,,declarative,deu,-2147483648,0,9,Manuela,,MOT,,Mother,,6.427236698905522,male,17.0,19.0,s,German,16,257,18743,18742,30047
+121,13151007,und was ist das hier,,,,question,deu,-2147483648,5,10,Manuela,,MOT,,Mother,,6.427236698905522,male,19.0,20.0,s,German,16,257,18743,18742,30047
+122,13151008,gross schwein,,,,declarative,deu,-2147483648,2,11,Manuela,,CHI,,Target_Child,,6.427236698905522,male,20.0,21.0,s,German,16,257,18742,18742,30047
+123,13151009,ein grosses schwein,,,,declarative,deu,-2147483648,3,12,Manuela,,MOT,,Mother,,6.427236698905522,male,21.0,23.0,s,German,16,257,18743,18742,30047
+124,13151010,da noch grosses schwein,,,,declarative,deu,-2147483648,4,13,Manuela,,CHI,,Target_Child,,6.427236698905522,male,23.0,25.0,s,German,16,257,18742,18742,30047
+125,13151011,eine grosses schwein,,,,declarative,deu,-2147483648,3,14,Manuela,,CHI,,Target_Child,,6.427236698905522,male,25.0,28.0,s,German,16,257,18742,18742,30047
+126,13151012,da ist noch ein schwein,,,,declarative,deu,-2147483648,5,15,Manuela,,MOT,,Mother,,6.427236698905522,male,28.0,29.0,s,German,16,257,18743,18742,30047
+127,13151013,sollen wir das buch mal umdrehen,,,,question,deu,-2147483648,6,16,Manuela,,MOT,,Mother,,6.427236698905522,male,29.0,31.0,s,German,16,257,18743,18742,30047
+128,13151014,,,,,declarative,deu,-2147483648,0,17,Manuela,,CHI,,Target_Child,,6.427236698905522,male,31.0,33.0,s,German,16,257,18742,18742,30047
+129,13151015,möchtest du mal buch gucken,,,,question,deu,-2147483648,5,18,Manuela,,MOT,,Mother,,6.427236698905522,male,33.0,34.0,s,German,16,257,18743,18742,30047
+130,13151016,mm,,,,declarative,deu,-2147483648,1,19,Manuela,,CHI,,Target_Child,,6.427236698905522,male,34.0,35.0,s,German,16,257,18742,18742,30047
+131,13151017,nein,,,,question,deu,-2147483648,1,20,Manuela,,MOT,,Mother,,6.427236698905522,male,,,None,German,16,257,18743,18742,30047
+132,13151018,da da,,,,declarative,deu,-2147483648,2,21,Manuela,,CHI,,Target_Child,,6.427236698905522,male,35.0,36.0,s,German,16,257,18742,18742,30047
+133,13151019,soll mal das schwein zur seite stellen,,,,question,deu,-2147483648,7,22,Manuela,,MOT,,Mother,,6.427236698905522,male,36.0,38.0,s,German,16,257,18743,18742,30047
+134,13151020,,,,,declarative,deu,-2147483648,0,23,Manuela,,CHI,,Target_Child,,6.427236698905522,male,38.0,40.0,s,German,16,257,18742,18742,30047
+135,13151021,dahin,,,,question,deu,-2147483648,1,24,Manuela,,MOT,,Mother,,6.427236698905522,male,40.0,41.0,s,German,16,257,18743,18742,30047
+136,13151022,gut,,,,declarative,deu,-2147483648,1,25,Manuela,,MOT,,Mother,,6.427236698905522,male,,,None,German,16,257,18743,18742,30047
+137,13151023,da kann das schwein warten ja,,,,question,deu,-2147483648,6,26,Manuela,,MOT,,Mother,,6.427236698905522,male,41.0,43.0,s,German,16,257,18743,18742,30047
+138,13151024,und wir gucken jetzt das buch vom schwein,,,,question,deu,-2147483648,8,27,Manuela,,MOT,,Mother,,6.427236698905522,male,43.0,45.0,s,German,16,257,18743,18742,30047
+139,13151025,,,,,declarative,deu,-2147483648,0,28,Manuela,,CHI,,Target_Child,,6.427236698905522,male,45.0,47.0,s,German,16,257,18742,18742,30047
+140,13151026,guck ma mal hier vorne ob da auch ein schwein ist,,,,declarative,deu,-2147483648,11,29,Manuela,,MOT,,Mother,,6.427236698905522,male,47.0,49.0,s,German,16,257,18743,18742,30047
+141,13151027,nein,,,,declarative,deu,-2147483648,1,30,Manuela,,CHI,,Target_Child,,6.427236698905522,male,49.0,50.0,s,German,16,257,18742,18742,30047
+142,13151028,nein okay,,,,declarative,deu,-2147483648,2,31,Manuela,,MOT,,Mother,,6.427236698905522,male,50.0,51.0,s,German,16,257,18743,18742,30047
+143,13151029,oh was ist das denn hier oh,,,,question,deu,-2147483648,7,32,Manuela,,MOT,,Mother,,6.427236698905522,male,51.0,53.0,s,German,16,257,18743,18742,30047
+144,13151030,was ist das,,,,question,deu,-2147483648,3,33,Manuela,,MOT,,Mother,,6.427236698905522,male,53.0,55.0,s,German,16,257,18743,18742,30047
+145,13151031,heise,,,,declarative,deu,-2147483648,1,34,Manuela,,CHI,,Target_Child,,6.427236698905522,male,55.0,57.0,s,German,16,257,18742,18742,30047
+146,13151032,mäuschen,,,,question,deu,-2147483648,1,35,Manuela,,MOT,,Mother,,6.427236698905522,male,57.0,59.0,s,German,16,257,18743,18742,30047
+147,13151033,ja,,,,declarative,deu,-2147483648,1,36,Manuela,,CHI,,Target_Child,,6.427236698905522,male,59.0,60.0,s,German,16,257,18742,18742,30047
+148,13151034,ja,,,,question,deu,-2147483648,1,37,Manuela,,MOT,,Mother,,6.427236698905522,male,60.0,61.0,s,German,16,257,18743,18742,30047
