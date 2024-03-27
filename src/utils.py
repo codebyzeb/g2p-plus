@@ -67,20 +67,47 @@ CONVERSION_TABLE = {'P' : 'p',
                 'AA' : 'ɑ:',
                 'AO' : 'ɔ:',}
 
-def phonemize_utterances(lines, language='en', words_mismatch='remove', language_switch='remove-utterance'):
+langcodes = { 'basque':'eu', 'cantonese':'yue', 'croatian':'hr', 'danish':'da', 'dutch':'nl',
+              'englishna':'en-us', 'englishuk':'en-gb', 'estonian':'et', 'farsi':'fa-latn', 'french':'fr-fr', 'german':'de', 'greek':'el',
+              'hungarian':'hu', 'icelandic':'is', 'indonesian':'id', 'irish':'ga', 'Italian':'it', 'japanese':'ja', 'korean':'ko',
+              'mandarin':'cmn', 'norwegian':'nb', 'polish':'pl', 'portuguesebr':'pt-br', 'portuguesept':'pt',
+              'romanian':'ro', 'serbian':'sv', 'spanish':'es', 'swedish':'sv', 'turkish':'tr', 'welsh':'cy', 'hebrew' : 'he' }
+
+def phonemize_utterances(lines, language='EnglishNA', words_mismatch='remove', language_switch='remove-utterance'):
     """ Uses phonemizer to phonemize text. Returns a list of phonemized lines. """
 
     print(f'Phonemizing using language "{language}"...')
-    phn = phonemize(
-        lines,
-        language=language,
-        backend='espeak',
-        separator=Separator(phone='PHONE_BOUNDARY', word=' ', syllable=''),
-        strip=True,
-        preserve_punctuation=False,
-        language_switch=language_switch,
-        words_mismatch=words_mismatch,
-        njobs=4)
+    language = language.lower()
+    if language not in langcodes:
+        raise ValueError(f'Language "{language}" not supported. Supported languages: {list(langcodes.keys())}')
+    if language == 'japanese':
+        print('INFO: Japanese phonemization is not supported by espeak. Using the segments backend instead.')
+        phn = []
+        missed_lines = 0
+        for line in lines:
+            try:
+                phn.append(phonemize(
+                    line,
+                    language=language.lower(),
+                    backend='segments',
+                    separator=Separator(phone='PHONE_BOUNDARY', word=' ', syllable=''),
+                    strip=True,
+                    preserve_punctuation=False)) 
+            except ValueError:
+                missed_lines += 1
+        print(f'WARNING: {missed_lines} lines were not phonemized due to errors with the segments file. {len(phn)} lines were phonemized.')
+    else:
+        language = langcodes[language]
+        phn = phonemize(
+            lines,
+            language=language,
+            backend='espeak',
+            separator=Separator(phone='PHONE_BOUNDARY', word=' ', syllable=''),
+            strip=True,
+            preserve_punctuation=False,
+            language_switch=language_switch,
+            words_mismatch=words_mismatch,
+            njobs=4)
     
     mismatched = len([line for line in phn if line == ''])
     phn = [line.replace(' ', ' WORD_BOUNDARY ').replace('PHONE_BOUNDARY', ' ') for line in phn if line != ''] # Set the word boundary
@@ -166,7 +193,12 @@ def split_and_save(lines, out_path, sequential):
             else:
                 train_lines.append(line)
 
+    num_words = sum([line.count('WORD_BOUNDARY') for line in lines])
+    num_phonemes = sum([len(line.split()) for line in lines]) - num_words
+
     print(f'Total lines: {len(lines)}')
+    print(f'Total words: {num_words}')
+    print(f'Total phonemes: {num_phonemes}')
     open(out_path / 'train.txt', 'w').writelines(train_lines)
     print(f'Wrote {len(train_lines)} ({round(len(train_lines)/len(lines), 3)*100}%) lines to {out_path / "train.txt"}')
     open(out_path / 'valid.txt', 'w').writelines(valid_lines)
