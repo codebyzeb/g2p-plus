@@ -49,7 +49,12 @@ def extract(args):
     If the path points to a folder, extracts the child and child-directed utterances in every CSV
     file found in that directory and concatenates them.
     """
-
+    max_age = args.max_age
+    if max_age is None:
+        print('No max age provided, will include all ages')
+    else:
+        print(f'Setting max age to {max_age} months')
+    
     path = args.path
     out_path = args.out_path
     transcripts = path
@@ -77,7 +82,7 @@ def extract(args):
 
     # Using the pre-processing from aochildes to extract child and adult utterances
     print('\n--Using AOChildes to extract adult utterances:--')
-    adult_data = AOChildesDataSet(AOChildesParams(collection_names=collection_names, max_days=24)) # AO-CHILDES calls it max_days, but it's now actually months
+    adult_data = AOChildesDataSet(AOChildesParams(collection_names=collection_names, max_days=max_age)) # AO-CHILDES calls it max_days, but it's now actually months
     adult_utterances = adult_data.load_sentences()
     print(f'--Number of adult utterances: {len(adult_utterances)}--')
 
@@ -86,7 +91,7 @@ def extract(args):
     all_but_target_child = list(all_speakers.keys()) + ['Child']
 
     print('\n--Using AOChildes to extract child utterances:--')
-    child_data = AOChildesDataSet(AOChildesParams(bad_speaker_roles=all_but_target_child, collection_names=collection_names, max_days=24)) # AO-CHILDES calls it max_days, but it's now actually months
+    child_data = AOChildesDataSet(AOChildesParams(bad_speaker_roles=all_but_target_child, collection_names=collection_names, max_days=max_age)) # AO-CHILDES calls it max_days, but it's now actually months
     child_utterances = child_data.load_sentences()
     print(f'--Number of child utterances: {len(child_utterances)}--\n')
 
@@ -137,6 +142,7 @@ parser_download.set_defaults(func=download)
 parser_extract = subparsers.add_parser('extract', help='Extract utterances from a CSV, separating child and child-directed speech')
 parser_extract.add_argument('path', type=Path, help='CSV file of utterances or folder of utterances to extract from')
 parser_extract.add_argument('-o', '--out_path', default='processed', type=Path, help='Directory to save utterances to')
+parser_extract.add_argument('-m', '--max_age', default=None, type=int, help='Maximum age in months to include in the dataset. If not provided, will include all ages.')
 parser_extract.set_defaults(func=extract)
 
 parser_phonemize = subparsers.add_parser('phonemize', help='Takes a txt file of utterances and returns a phonemized file')

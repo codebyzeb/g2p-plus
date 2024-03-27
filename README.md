@@ -21,7 +21,7 @@ If you are using the `phonemize` command from the CHILDES processor, you will ne
 
 ```
 brew install espeak
-export PHONEMIZER_ESPEAK_LIBRARY=/opt/homebrew/lib/libespeak.dylib
+export PHONEMIZER_ESPEAK_LIBRARY=/opt/local/lib/libespeak-ng.dylib
 ```
 
 ## CHILDES Processor Usage
@@ -67,13 +67,22 @@ This will take all the CSVs in the `downloaded/Eng-NA` folder and create two tex
 The **phonemize** mode will take a text file of utterances and convert them into phonemes using IPA. This takes advantage of the *espeak* back-end and the language to phonemize to needs to be specified. For example, to phonemize the child utterances produced by the extract tool, run the following:
 
 ```
-python childes_processor.py phonemize processed/Eng-NA/adult.txt en-us -o phonemized/adult.txt
+python childes_processor.py phonemize processed/Eng-NA/adult.txt EnglishNA -o phonemized/adult.txt
 ```
 
 This will phonome the adult utterances found at `processed/Eng-NA/adult.txt` and phonemize them using the `en-us` backend for espeak, placing the phonemized file into `phonemized/adult.txt`. You can also use the `-s` option to split the utterances using a test-valid-train split of 90-5-5. When doing this, provide a directory instead of a file for the out path. For example:
 
 ```
-python childes_processor.py phonemize processed/Eng-NA/adult.txt en-us -o phonemized/Eng-NA -s
+python childes_processor.py phonemize processed/Eng-NA/adult.txt EnglishNA -o phonemized/Eng-NA -s
+```
+
+Currently supported languages and the associated language codes used:
+```
+{ 'Basque':'eu', 'Cantonese':'yue', 'Croatian':'hr', 'Danish':'da', 'Dutch':'nl',
+'EnglishNA':'en-us', 'EnglishUK':'en-gb', 'Estonian':'et', 'Farsi':'fa-latn', 'French':'fr-fr', 'German':'de', 'Greek':'el',
+'Hungarian':'hu', 'Icelandic':'is', 'Indonesian':'id', 'Irish':'ga', 'Italian':'it', 'Japanese':'ja', 'Korean':'ko',
+'Mandarin':'cmn', 'Norwegian':'nb', 'Polish':'pl', 'PortugueseBR':'pt-br', 'PortuguesePT':'pt',
+'Romanian':'ro', 'Serbian':'sv', 'Spanish':'es', 'Swedish':'sv', 'Turkish':'tr', 'Welsh':'cy' }
 ```
 
 ## BNC Processor Usage
