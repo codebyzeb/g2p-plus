@@ -1,23 +1,6 @@
-""" Utility functions for the project """
+""" Utility functions for the project. """
 
-from phonemizer import phonemize
-from phonemizer.separator import Separator
-
-# Espeak has some issues with joining IPA symbols together, so we need to add spaces between them
-REPLACE_DICT = {'ɛɹ': 'ɛ ɹ', 
-                'ʊɹ' : 'ʊ ɹ',
-                'əl' : 'ə l',
-                'oːɹ' : 'oː ɹ',
-                'ɪɹ' : 'ɪ ɹ',
-                'ɑːɹ' : 'ɑː ɹ',
-                'ɔːɹ' : 'ɔː ɹ',
-                'aɪɚ' : 'aɪ ɚ',
-                'iə' : 'i ə',
-                'aɪə' : 'aɪ ə',
-                'aɪʊɹ' : 'aɪ ʊ ɹ',
-                'aɪʊ' : 'aɪ ʊ',
-                'dʒ' : 'd̠ʒ',
-                'tʃ' : 't̠ʃ'}
+import pandas as pd
 
 # Conversion table from BNC ASCII phonemes to IPA symbols
 CONVERSION_TABLE = {'P' : 'p',
@@ -66,59 +49,6 @@ CONVERSION_TABLE = {'P' : 'p',
                 'ER2': 'ə',
                 'AA' : 'ɑ:',
                 'AO' : 'ɔ:',}
-
-langcodes = { 'basque':'eu', 'cantonese':'yue', 'croatian':'hr', 'danish':'da', 'dutch':'nl',
-              'englishna':'en-us', 'englishuk':'en-gb', 'estonian':'et', 'farsi':'fa-latn', 'french':'fr-fr', 'german':'de', 'greek':'el',
-              'hungarian':'hu', 'icelandic':'is', 'indonesian':'id', 'irish':'ga', 'Italian':'it', 'japanese':'ja', 'korean':'ko',
-              'mandarin':'cmn', 'norwegian':'nb', 'polish':'pl', 'portuguesebr':'pt-br', 'portuguesept':'pt',
-              'romanian':'ro', 'serbian':'sv', 'spanish':'es', 'swedish':'sv', 'turkish':'tr', 'welsh':'cy', 'hebrew' : 'he' }
-
-def phonemize_utterances(lines, language='EnglishNA', words_mismatch='remove', language_switch='remove-utterance'):
-    """ Uses phonemizer to phonemize text. Returns a list of phonemized lines. """
-
-    print(f'Phonemizing using language "{language}"...')
-    language = language.lower()
-    if language not in langcodes:
-        raise ValueError(f'Language "{language}" not supported. Supported languages: {list(langcodes.keys())}')
-    if language == 'japanese':
-        print('INFO: Japanese phonemization is not supported by espeak. Using the segments backend instead.')
-        phn = []
-        missed_lines = 0
-        for line in lines:
-            try:
-                phn.append(phonemize(
-                    line,
-                    language=language.lower(),
-                    backend='segments',
-                    separator=Separator(phone='PHONE_BOUNDARY', word=' ', syllable=''),
-                    strip=True,
-                    preserve_punctuation=False)) 
-            except ValueError:
-                missed_lines += 1
-        print(f'WARNING: {missed_lines} lines were not phonemized due to errors with the segments file. {len(phn)} lines were phonemized.')
-    else:
-        language = langcodes[language]
-        phn = phonemize(
-            lines,
-            language=language,
-            backend='espeak',
-            separator=Separator(phone='PHONE_BOUNDARY', word=' ', syllable=''),
-            strip=True,
-            preserve_punctuation=False,
-            language_switch=language_switch,
-            words_mismatch=words_mismatch,
-            njobs=4)
-    
-    mismatched = len([line for line in phn if line == ''])
-    phn = [line.replace(' ', ' WORD_BOUNDARY ').replace('PHONE_BOUNDARY', ' ') for line in phn if line != ''] # Set the word boundary
-    # Use replace map to fix some issues with espeak
-    for key, value in REPLACE_DICT.items():
-        phn = [line.replace(key, value) for line in phn]
-    phn = [line + ' WORD_BOUNDARY \n' for line in phn] # Add newline
-
-    print(f'Removed {mismatched} mismatched or language switched lines')
-
-    return phn
 
 def convert_bnc_to_ipa(phones):
     """Converts a list of phones to IPA."""
@@ -171,37 +101,22 @@ def edit_distance(line1, line2):
     # Return the edit distance
     return matrix[-1][-1]
 
-def split_and_save(lines, out_path, sequential):
-    """ Splits 95-5-5 and saves to out_path. Either sequential or interleaved. """
-    lines = [line.strip() + '\n' for line in lines if line.strip() != '']
-    train_lines = []
-    valid_lines = []
-    test_lines = []
-    # Split the lines 90-5-5 while preserving age-ordering
+def split_df(df, sequential=False):
+    """ Splits a dataframe 90-5-5 and saves to out_path. Either sequential or interleaved.
+    
+    Note that the DataFrame is likely to be sorted by age, so the split will be age-ordered
+    and if the split is sequential, the validation and test sets will consist of utterances
+    targetted at older children.
+    """
+
+    train_size = int(len(df) * 0.9)
+    dev_size = int(len(df) * 0.05)
     if sequential:
-        train_size = int(len(lines) * 0.9)
-        dev_size = int(len(lines) * 0.05)
-        train_lines = lines[:train_size]
-        valid_lines = lines[train_size:train_size+dev_size]
-        test_lines = lines[train_size+dev_size:]
+        train = df[:train_size]
+        valid = df[train_size:train_size+dev_size]
+        test = df[train_size+dev_size:]
     else:
-        for i, line in enumerate(lines):
-            if i % 20 == 18:
-                valid_lines.append(line)
-            elif i % 20 == 19:
-                test_lines.append(line)
-            else:
-                train_lines.append(line)
-
-    num_words = sum([line.count('WORD_BOUNDARY') for line in lines])
-    num_phonemes = sum([len(line.split()) for line in lines]) - num_words
-
-    print(f'Total lines: {len(lines)}')
-    print(f'Total words: {num_words}')
-    print(f'Total phonemes: {num_phonemes}')
-    open(out_path / 'train.txt', 'w').writelines(train_lines)
-    print(f'Wrote {len(train_lines)} ({round(len(train_lines)/len(lines), 3)*100}%) lines to {out_path / "train.txt"}')
-    open(out_path / 'valid.txt', 'w').writelines(valid_lines)
-    print(f'Wrote {len(valid_lines)} ({round(len(valid_lines)/len(lines), 3)*100}%) lines to {out_path / "valid.txt"}')
-    open(out_path / 'test.txt', 'w').writelines(test_lines)
-    print(f'Wrote {len(test_lines)} ({round(len(test_lines)/len(lines), 3)*100}%) lines to {out_path / "test.txt"}')
+        train = df[df.index % 20 != 18]
+        valid = df[df.index % 20 == 18]
+        test = df[df.index % 20 == 19]
+    return train, valid, test
