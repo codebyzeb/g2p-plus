@@ -79,7 +79,10 @@ def clean(sentence, type):
         return clean_english(sentence, type)
     else:
         sentence = str(sentence)
-        sentence += f' {punctuation_dict[type]}'
+        if not type in punctuation_dict:
+            sentence += '. '
+        else:
+            sentence += f' {punctuation_dict[type]}'
         words = []
         for w in str(sentence).split():
             w = w.lower()
