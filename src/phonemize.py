@@ -51,6 +51,7 @@ def phonemize_utterances(lines, language='EnglishNA', words_mismatch='remove', l
         print(f'WARNING: {missed_lines} lines were not phonemized due to errors with the segments file.')
     else:
         language = langcodes[language]
+        print(f'Using espeak backend with language code "{language}"...')
         phn = phonemize(
             lines,
             language=language,

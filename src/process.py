@@ -116,7 +116,7 @@ def process_childes(path: Path):
     # Load each utterance as a row in original CSV and remove empty rows
     dfs = [pd.read_csv(csv_path, index_col='id', usecols=col2dtype.keys(), dtype=col2dtype) for csv_path in sorted(transcripts.glob('*.csv'))]
     df = pd.concat(dfs)
-    df.drop(df[df['num_tokens'] < 0].index, inplace=True)
+    df.drop(df[df['num_tokens'] <= 0].index, inplace=True)
     print(f'Loaded {len(df)} utterances from {len(dfs)} CSVs.')
     
     # Add a column to indicate whether the speaker is a child
@@ -131,6 +131,9 @@ def process_childes(path: Path):
     # Remove rows with ignore_regex in gloss
     ignore_regex = re.compile(r'(�|www|xxx|yyy)')
     df.drop(df[df['gloss'].apply(lambda x: ignore_regex.findall(str(x)) != [])].index, inplace=True)
+    
+    # Drop null gloss
+    df.dropna(subset=['gloss'], inplace=True)
 
     # Clean each sentence
     df['processed_gloss'] = df.apply(lambda x: clean(x['gloss'], x['type']), axis=1)

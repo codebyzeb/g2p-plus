@@ -3,18 +3,13 @@ Entry point to all the scripts.
 """
 
 import argparse
-from re import T
-from xmlrpc.client import _iso8601_format
 import pandas as pd
-import shutil, os
+import os
 from pathlib import Path
-from aochildes.dataset import AOChildesDataSet
-from aochildes.params import AOChildesParams
-from aochildes.configs import Dirs
 
 from src.utils import split_df
 from src.process import process_childes
-from src.phonemize import phonemize_utterances, character_split_utterance
+from src.phonemize import phonemize_utterances, character_split_utterance, langcodes
 
 def download(args):
     """ Downloads utterances from CHILDES using `childespy`"""
@@ -69,12 +64,13 @@ def process(args):
         num_child = len(df[df['is_child']])
         df = df[~df['is_child']]
         print(f'Removed {num_child} child utterances. Now have {len(df)} adult utterances.')
-        
-    # Phonemize utterances
+
+    # Phonemize utterances]
     df['phonemized_utterance'] = phonemize_utterances(df['processed_gloss'], language=args.language)
     num_empty = len(df[df['phonemized_utterance'] == ''])
     print(f'WARNING: {num_empty} lines were not phonemized due to errors with the segments file. Dropping these.')
     df = df[df['phonemized_utterance'] != '']
+    df['language_code'] = langcodes[args.language.lower()]
     df['character_split_utterance'] = character_split_utterance(df['processed_gloss'])
 
     num_words = sum([line.count('WORD_BOUNDARY') for line in df['phonemized_utterance']])
@@ -82,7 +78,6 @@ def process(args):
     print('Total lines:', len(df))
     print('Total words:', num_words)
     print('Total phonemes:', num_phonemes)
-
 
     # Save dataframe
     out_path.mkdir(exist_ok=True, parents=True)
@@ -136,10 +131,9 @@ parser_download.add_argument('-o', '--out_path', default='childes', type=Path, h
 parser_download.add_argument('-s', '--separate_by_child', action='store_true', help='Create a separate output file for each child in the corpus')
 parser_download.set_defaults(func=download)
 
-# TODO: limit language to certain options or test if ok
 parser_process = subparsers.add_parser('process', help='Processes downloaded CHILDES CSV(s), cleaning utterances, phonemizing utterances and ordering by target child age.')
 parser_process.add_argument('path', type=Path, help='CHILDES CSV file or folder of CSVs to extract from')
-parser_process.add_argument('language', type=str, help='Language used to phonemize')
+parser_process.add_argument('language', type=str, help='Language used to phonemize. Choices: {}'.format(', '.join(langcodes)))
 parser_process.add_argument('-o', '--out_path', default='processed', type=Path, help='Directory where processed datasets will be saved')
 parser_process.add_argument('-k', '--keep_child_utterances', action='store_true', help='Keep the child utterances in the dataset. Otherwise will only store adult utterances.')
 parser_process.add_argument('-m', '--max_age', default=None, type=int, help='Maximum age in months to include. If not provided, will include all ages.')

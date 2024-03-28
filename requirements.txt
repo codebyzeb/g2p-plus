@@ -1,4 +1,2 @@
-# Latest tag for AOCHILDES doesn't include the bug fix that I introduced, so we have to clone from a later commit instead
-aochildes @ https://github.com/UIUCLearningLanguageLab/AOCHILDES/archive/710c610e034fe751cf96acf16106a3baf5943494.zip
 childespy==1.0.1
 phonemizer==3.2.1
