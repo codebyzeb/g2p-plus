@@ -71,6 +71,15 @@ def phonemize_utterances(lines, language='EnglishNA', words_mismatch='remove', l
             phn[i] = phn[i].replace(key, value)
         phn[i] = phn[i] + ' WORD_BOUNDARY'
 
+        # Language-specific fixes
+        if language == 'en-us':
+            phn[i] = phn[i].replace('ææ', 'æ')
+            phn[i] = phn[i].replace('ᵻ', 'ɪ')
+        if language == 'de':
+            phn[i] = phn[i].replace('ɔø', 'ɔ ʏ')
+            phn[i] = phn[i].replace('??', 'ʊr')
+            phn[i] = phn[i].replace(' 1 ', ' ')
+
     return phn
 
 def character_split_utterance(lines):

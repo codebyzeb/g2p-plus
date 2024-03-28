@@ -73,9 +73,13 @@ def process(args):
     df['language_code'] = langcodes[args.language.lower()]
     df['character_split_utterance'] = character_split_utterance(df['processed_gloss'])
 
+    # Print statistics
+    print(f'Total corpora: {len(df["corpus_id"].unique())}')
+    print(f'Total speakers: {len(df["speaker_id"].unique())}')
+    print(f'Total target children: {len(df["target_child_id"].unique())}')
+    print('Total lines:', len(df))
     num_words = sum([line.count('WORD_BOUNDARY') for line in df['phonemized_utterance']])
     num_phonemes = sum([len(line.split()) for line in df['phonemized_utterance']]) - num_words
-    print('Total lines:', len(df))
     print('Total words:', num_words)
     print('Total phonemes:', num_phonemes)
 
