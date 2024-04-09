@@ -86,14 +86,12 @@ def process(args):
     # Save dataframe
     out_path.mkdir(exist_ok=True, parents=True)
     if split:
-        train, valid, test = split_df(df)
+        train, valid = split_df(df)
         train.to_csv(out_path / 'train.csv')
         print(f'Saved train set to {out_path / "train.csv"} with a total of {len(train)} utterances.')
         valid.to_csv(out_path / 'valid.csv')
         print(f'Saved valid set to {out_path / "valid.csv"} with a total of {len(valid)} utterances.')
-        test.to_csv(out_path / 'test.csv')
-        print(f'Saved test set to {out_path / "test.csv"} with a total of {len(test)} utterances.')
-        print(f'Saved train, valid, and test sets to {out_path}')
+        print(f'Saved train and valid sets to {out_path}')
     else:
         df.to_csv(out_path / 'processed.csv')
         print(f'Saved processed dataset to {out_path / "processed.csv"} with a total of {len(df)} utterances.')

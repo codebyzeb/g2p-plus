@@ -102,21 +102,21 @@ def edit_distance(line1, line2):
     return matrix[-1][-1]
 
 def split_df(df, sequential=False):
-    """ Splits a dataframe 90-5-5 and saves to out_path. Either sequential or interleaved.
+    """ Splits a DataFrame into a training set and a 10,000-line validation set.
     
     Note that the DataFrame is likely to be sorted by age, so the split will be age-ordered
-    and if the split is sequential, the validation and test sets will consist of utterances
+    and if the split is sequential, the validation set will consist of utterances
     targetted at older children.
     """
 
-    train_size = int(len(df) * 0.9)
-    dev_size = int(len(df) * 0.05)
+    dev_size = 10_000
     if sequential:
-        train = df[:train_size]
-        valid = df[train_size:train_size+dev_size]
-        test = df[train_size+dev_size:]
+        train = df[:-dev_size]
+        valid = df[-dev_size:]
     else:
-        train = df[df.index % 20 != 18]
-        valid = df[df.index % 20 == 18]
-        test = df[df.index % 20 == 19]
-    return train, valid, test
+        interval = len(df) // dev_size
+        print("Taking every {}th line to get 10,000 lines for validation...".format(interval))
+        valid = df.iloc[::interval]
+        valid = valid[:dev_size]
+        train = df.drop(valid.index)
+    return train, valid

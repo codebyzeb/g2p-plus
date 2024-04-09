@@ -66,7 +66,7 @@ The *process* mode will process downloaded CSVs from CHILDES (those downloaded f
 
 The first required argument is the CSV or folder of CSVs to process. The second argument is the language that will be used for producing the phonetic transcription. To view supported languages, use `-h`. 
 
-The `-k` or `--keep` flag is used to keep child utterances. The `-s` or `--split` flag is used to split the resulting dataset into train, validation and test sets using a 90:5:5 ratio. The `-m` or `--max_age` flag is used to discard all utterances produced when the child's age greater than the provided number of months.
+The `-k` or `--keep` flag is used to keep child utterances. The `-s` or `--split` flag is used to split the resulting dataset into training set and a validation set containin 10,000 utterances. The `-m` or `--max_age` flag is used to discard all utterances produced when the child's age greater than the provided number of months.
 
 For example, to process all downloaded _Eng-NA_ corpora, run the following:
 
@@ -74,7 +74,7 @@ For example, to process all downloaded _Eng-NA_ corpora, run the following:
 python childes_processor.py process childes/downloaded/Eng-NA EnglishNA -o childes/processed/Eng-NA -s
 ```
 
-This will take all the CSVs in the `downloaded/Eng-NA` folder and create three new CSVs, `train.csv`, `valid.csv` and `test.csv` in the `processed/Eng-NA` folder specified containing processed utterances and additional useful information. These datasets contain phonemic transcriptions of each utterance that have been produced using the `en-us` language backend. If the path provided is a CSV instead of a folder, just that CSV will be processed.
+This will take all the CSVs in the `downloaded/Eng-NA` folder and create two new CSVs, `train.csv` and `valid.csv` in the `processed/Eng-NA` folder specified containing processed utterances and additional useful information. These datasets contain phonemic transcriptions of each utterance that have been produced using the `en-us` language backend. If the path provided is a CSV instead of a folder, just that CSV will be processed.
 
 ### Extract
 
