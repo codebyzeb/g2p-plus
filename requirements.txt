@@ -1,2 +1,3 @@
 childespy==1.0.1
 phonemizer==3.2.1
+pinyin-to-ipa==0.0.2

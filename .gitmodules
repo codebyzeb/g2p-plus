@@ -4,3 +4,6 @@
 [submodule "bnc/BNC-dataset"]
 	path = bnc/BNC-dataset
 	url = https://huggingface.co/datasets/transformersegmentation/BNC
+[submodule "data/pingyam"]
+	path = data/pingyam
+	url = https://github.com/kfcd/pingyam.git

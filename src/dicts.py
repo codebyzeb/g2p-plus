@@ -173,3 +173,41 @@ w2string = {
 	'hmhm': 'aha',
 	'uhhuh': 'aha',
 }
+
+cantonese_phoneme_symbol_pairs_map = {
+    # Tones
+    '˧ ˥' : '˧˥',
+    '˨ ˩' : '˨˩',
+    '˩ ˧' : '˩˧',
+    
+    # Long Diphthongs - we add extra-short vowel markers
+    'a ː i' : 'aːĭ', 
+    'u ː i' : 'uːĭ',
+    'ɔ ː i' : 'ɔːĭ',
+    'a ː u' : 'aːŭ',
+    'i ː u' : 'iːŭ',
+    
+    # Dipthongs
+    'o u' : 'ou',
+    'ɐ i'  : 'ɐi',
+    'ɐ u' : 'ɐu',
+    'ɵ y' : 'ɵy',
+    'e i' : 'ei',
+
+    # Long vowels
+    'i ː' : 'iː',
+    'a ː' : 'aː',
+    'ɛ ː' : 'ɛː',
+    'ɔ ː' : 'ɔː',
+    'u ː' : 'uː',
+    'y ː' : 'yː',
+    'œ ː' : 'œː',
+
+    # Aspirated consonants
+    't s ʰ' : 'tsʰ',
+    't s' : 'ts',
+    't ʰ' : 'tʰ',
+    'k ʰ' : 'kʰ',
+    'p ʰ' : 'pʰ',
+    'm ̩ ː' : 'm̩', # Doesn't actually appear in phoible, so we remove vowel length marker
+}

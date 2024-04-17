@@ -9,7 +9,7 @@ from pathlib import Path
 
 from src.utils import split_df
 from src.process import process_childes
-from src.phonemize import phonemize_utterances, character_split_utterance, langcodes
+from src.phonemize import phonemize_mandarin, phonemize_utterances, character_split_utterance, langcodes
 
 def download(args):
     """ Downloads utterances from CHILDES using `childespy`"""
@@ -65,10 +65,11 @@ def process(args):
         df = df[~df['is_child']]
         print(f'Removed {num_child} child utterances. Now have {len(df)} adult utterances.')
 
-    # Phonemize utterances]
-    df['phonemized_utterance'] = phonemize_utterances(df['processed_gloss'], language=args.language)
+    # Phonemize utterances
+    lines = df['stem'] if args.language.lower() in ['cantonese', 'mandarin'] else df['processed_gloss']
+    df['phonemized_utterance'] = phonemize_utterances(lines, language=args.language)
     num_empty = len(df[df['phonemized_utterance'] == ''])
-    print(f'WARNING: {num_empty} lines were not phonemized due to errors with the segments file. Dropping these.')
+    print(f'WARNING: {num_empty} lines were not phonemized successfully. Dropping these.')
     df = df[df['phonemized_utterance'] != '']
     df['language_code'] = langcodes[args.language.lower()]
     df['character_split_utterance'] = character_split_utterance(df['processed_gloss'])

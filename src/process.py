@@ -142,4 +142,12 @@ def process_childes(path: Path):
     # Clean each sentence
     df['processed_gloss'] = df.apply(lambda x: clean(x['gloss'], x['type']), axis=1)
 
+    # Fix some data types
+    df['part_of_speech'] = df['part_of_speech'].astype(str)
+    df['part_of_speech'] = df['part_of_speech'].apply(lambda x: ' ' if x == 'nan' else x)
+    df['stem'] = df['stem'].astype(str)
+    df['stem'] = df['stem'].apply(lambda x: ' ' if x == 'nan' else x)
+    df['target_child_sex'] = df['target_child_sex'].astype(str)
+    df['target_child_sex'] = df['target_child_sex'].apply(lambda x: 'unknown' if x == 'nan' else x)
+
     return df
