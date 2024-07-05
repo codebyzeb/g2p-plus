@@ -7,30 +7,7 @@ from phonemizer import phonemize
 from phonemizer.separator import Separator
 from pinyin_to_ipa import pinyin_to_ipa
 
-from src.dicts import cantonese_phoneme_symbol_pairs_map
-
-# Espeak has some issues with joining IPA symbols together, so we need to add spaces between them
-# TODO: Make sure this is working per language
-REPLACE_DICT = {'ɛɹ': 'ɛ ɹ', 
-                'ʊɹ' : 'ʊ ɹ',
-                'əl' : 'ə l',
-                'oːɹ' : 'oː ɹ',
-                'ɪɹ' : 'ɪ ɹ',
-                'ɑːɹ' : 'ɑː ɹ',
-                'ɔːɹ' : 'ɔː ɹ',
-                'aɪɚ' : 'aɪ ɚ',
-                'iə' : 'i ə',
-                'aɪə' : 'aɪ ə',
-                'aɪʊɹ' : 'aɪ ʊ ɹ',
-                'aɪʊ' : 'aɪ ʊ',
-                'dʒ' : 'd̠ʒ',
-                'tʃ' : 't̠ʃ'}
-
-langcodes = { 'basque':'eu', 'cantonese':'yue', 'croatian':'hr', 'danish':'da', 'dutch':'nl',
-              'englishna':'en-us', 'englishuk':'en-gb', 'estonian':'et', 'farsi':'fa-latn', 'french':'fr-fr', 'german':'de', 'greek':'el',
-              'hungarian':'hu', 'icelandic':'is', 'indonesian':'id', 'irish':'ga', 'Italian':'it', 'japanese':'ja', 'korean':'ko',
-              'mandarin':'cmn-latn-pinyin', 'norwegian':'nb', 'polish':'pl', 'portuguesebr':'pt-br', 'portuguesept':'pt',
-              'romanian':'ro', 'serbian':'sv', 'spanish':'es', 'swedish':'sv', 'turkish':'tr', 'welsh':'cy', 'hebrew' : 'he' }
+from src.dicts import folding, folding_espeak, langcodes
 
 def phonemize_utterances(lines, language='EnglishNA'):
     """ Phonemizes lines using a technique depending on the language. Returning a list of lines with space-separated IPA phonemes.
@@ -41,15 +18,33 @@ def phonemize_utterances(lines, language='EnglishNA'):
     language = language.lower()
     if language not in langcodes:
         raise ValueError(f'Language "{language}" not supported. Supported languages: {list(langcodes.keys())}')
+    langcode = langcodes[language]
 
     if language == 'mandarin':
-        return phonemize_mandarin(lines)
+        utterances = phonemize_mandarin(lines)
     elif language == 'cantonese':
-        return phonemize_cantonese(lines)
+        utterances = phonemize_cantonese(lines)
     elif language == 'japanese':
-        return phonemize_japanese(lines)
+        utterances = phonemize_japanese(lines)
     else:
-        return phonemize_utterances_espeak(lines, language)
+        utterances = phonemize_utterances_espeak(lines, langcode)
+
+    utterances = correct_errors(utterances, langcode)
+    return utterances
+
+def correct_errors(lines, langcode):
+    """ Uses folding dictionaries to correct output produced by the backend phonemizers. """
+
+    if langcode not in folding:
+        print(f'WARNING: No folding dictionary found for language code "{langcode}".')
+        return lines
+
+    for i in range(len(lines)):
+        if lines[i] == '':
+            continue
+        for key, value in folding[langcode].items():
+            lines[i] = lines[i].replace(key, value)
+    return lines
     
 def phonemize_japanese(lines):
     """ Uses phonemizer with segments backend to phonemize Japanese text."""
@@ -76,20 +71,19 @@ def phonemize_japanese(lines):
         if phn[i] == '':
             continue
         phn[i] = phn[i].replace(' ', ' WORD_BOUNDARY ').replace('PHONE_BOUNDARY', ' ')
-        for key, value in REPLACE_DICT.items():
+        for key, value in folding_espeak.items():
             phn[i] = phn[i].replace(key, value)
         phn[i] = phn[i] + ' WORD_BOUNDARY'
 
     return phn
     
-def phonemize_utterances_espeak(lines, language='EnglishNA'):
+def phonemize_utterances_espeak(lines, langcode='en-us'):
     """ Uses phonemizer to phonemize text. Returns a list of phonemized lines. Lines that could not be phonemized are returned as empty strings."""
     
-    language = langcodes[language]
-    print(f'Using espeak backend with language code "{language}"...')
+    print(f'Using espeak backend with language code "{langcode}"...')
     phn = phonemize(
         lines,
-        language=language,
+        language=langcode,
         backend='espeak',
         separator=Separator(phone='PHONE_BOUNDARY', word=' ', syllable=''),
         strip=True,
@@ -102,18 +96,9 @@ def phonemize_utterances_espeak(lines, language='EnglishNA'):
         if phn[i] == '':
             continue
         phn[i] = phn[i].replace(' ', ' WORD_BOUNDARY ').replace('PHONE_BOUNDARY', ' ')
-        for key, value in REPLACE_DICT.items():
+        for key, value in folding_espeak.items():
             phn[i] = phn[i].replace(key, value)
         phn[i] = phn[i] + ' WORD_BOUNDARY'
-
-    # Language-specific fixes
-    if language == 'en-us':
-        phn[i] = phn[i].replace('ææ', 'æ')
-        phn[i] = phn[i].replace('ᵻ', 'ɪ')
-    if language == 'de':
-        phn[i] = phn[i].replace('ɔø', 'ɔ ʏ')
-        phn[i] = phn[i].replace('??', 'ʊr')
-        phn[i] = phn[i].replace(' 1 ', ' ')
 
     return phn
 
@@ -192,15 +177,10 @@ def phonemize_cantonese(lines):
     if broken > 0:
         print(f'WARNING: {broken} lines were not phonemized successfully by jyutping to ipa conversion.')
 
-    # Separate phonemes with spaces
+    # Separate phonemes with spaces and add word boundaries
     for i in range(len(phn)):
-        # Add a space between every character
-        line = phn[i]
-        line = ' '.join(list(line))
-        line = line.replace('_', 'WORD_BOUNDARY')
-        for pair in cantonese_phoneme_symbol_pairs_map:
-            line = line.replace(pair, cantonese_phoneme_symbol_pairs_map[pair])
-        phn[i] = line
+        phn[i] = ' '.join(list(phn[i]))
+        phn[i] = phn[i].replace('_', 'WORD_BOUNDARY')
 
     return phn
 
