@@ -120,13 +120,12 @@ def phonemize_mandarin(lines):
                 syllables = re.findall(r'[a-zA-Z]+[0-9]*', word)
                 syllables = [re.sub(r'[0]', '', syllable) for syllable in syllables]
                 for syllable in syllables:
-                    set = pinyin_to_ipa(syllable)
+                    syll_set = pinyin_to_ipa(syllable)
                     # Convert ordered set into string
-                    syll = ' '.join(set[0])
+                    syll = ' '.join(syll_set[0])
                     # Add space before tone markers ˥˩, ˧˥, ˥ and ˧˩˧ but only if not preceded by a space
                     syll = re.sub(r'(?<!\s)(˥˩|˧˥|˥|˧˩˧)', r' \1', syll)
-                    # Replace ˧˩˧ with	˧˨˧ to match phoible
-                    syll = syll.replace('˧˩˧', '˧˨˧')
+
                     phonemized += syll + ' '
                 phonemized += 'WORD_BOUNDARY '
         except Exception as e:
@@ -139,6 +138,23 @@ def phonemize_mandarin(lines):
 
     return phn
 
+def move_tone_marker_to_after_vowel(syll):
+    """ Move the tone marker from the end of a cantonese syllable to directly after the vowel """
+
+    cantonese_vowel_symbols = "auɔiuːoɐɵyɛœĭŭiʊɪ"
+    cantonese_tone_symbols = "˥˧˨˩"
+    if not syll[-1] in cantonese_tone_symbols:
+        return syll
+    tone_marker = len(syll) - 1
+    # Iterate backwards
+    for i in range(len(syll)-2, -1, -1):
+        if syll[i] in cantonese_tone_symbols:
+            tone_marker = i
+            continue
+        if syll[i] in cantonese_vowel_symbols:
+            return syll[:i+1] + syll[tone_marker:] + syll[i+1:tone_marker]
+    return syll
+        
 def phonemize_cantonese(lines):
     """ Use pingyam database to convert Cantonese from jyutping to IPA. """
 
@@ -167,8 +183,9 @@ def phonemize_cantonese(lines):
                         broken += 1
                         line_broken = True
                 else:
-                    ipa = cantonese_dict[syllable]
-                    phonemized += ipa + ''
+                    syll = cantonese_dict[syllable]
+                    syll = move_tone_marker_to_after_vowel(syll)
+                    phonemized += syll + ''
             phonemized += '_'
         if line_broken:
             phonemized = ''

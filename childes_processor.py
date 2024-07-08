@@ -9,7 +9,7 @@ from pathlib import Path
 
 from src.utils import split_df
 from src.process import process_childes
-from src.phonemize import phonemize_mandarin, phonemize_utterances, character_split_utterance, langcodes
+from src.phonemize import phonemize_utterances, character_split_utterance, langcodes
 
 def download(args):
     """ Downloads utterances from CHILDES using `childespy`"""

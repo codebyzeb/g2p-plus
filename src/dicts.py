@@ -239,15 +239,25 @@ folding = {
         'aɪ' : 'ai̯', # Replace diphthong with more standard representation for indonesian
         'aʊ' : 'au̯', # Replace diphthong with more standard representation for indonesian
 	},
+    
+	'cmn' : {
+
+		# Fix tones to match "Standard Chinese; Mandarin" set
+        '˥ ' : '˦ ',
+        '˥˩ ' : '˦˨ ',
+        '˧˥ ' : '˧˦ ',
+		'˧˩˧ ' : '˧˨˧ ',
+        
+	},
 
 	'yue' : {
 		# Tones
 		'˧ ˥' : '˧˥',
-		'˨ ˩' : '˨˩',
-		'˩ ˧' : '˩˧',
+		'˨ ˩' : '˧˩̰',
+		'˩ ˧' : '˩˧', 
 
 		# Long Diphthongs - we add extra-short vowel markers
-		'a ː i' : 'aːĭ', 
+		'a ː i' : 'aːĭ',
 		'u ː i' : 'uːĭ',
 		'ɔ ː i' : 'ɔːĭ',
 		'a ː u' : 'aːŭ',

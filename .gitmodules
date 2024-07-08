@@ -1,8 +1,8 @@
-[submodule "childes/CHILDES-dataset"]
-	path = childes/CHILDES-dataset
+[submodule "datasets/childes/CHILDES-dataset"]
+	path = datasets/childes/CHILDES-dataset
 	url = https://huggingface.co/datasets/transformersegmentation/CHILDES
-[submodule "bnc/BNC-dataset"]
-	path = bnc/BNC-dataset
+[submodule "datasets/bnc/BNC-dataset"]
+	path = datasets/bnc/BNC-dataset
 	url = https://huggingface.co/datasets/transformersegmentation/BNC
 [submodule "data/pingyam"]
 	path = data/pingyam
