@@ -7,3 +7,9 @@
 [submodule "data/pingyam"]
 	path = data/pingyam
 	url = https://github.com/kfcd/pingyam.git
+[submodule "datasets/babylm/BabyLM-phonemized"]
+	path = datasets/babylm/BabyLM-phonemized
+	url = https://huggingface.co/datasets/transformersegmentation/BabyLM-phonemized
+[submodule "datasets/babylm/BabyLM"]
+	path = datasets/babylm/BabyLM
+	url = https://huggingface.co/datasets/cambridge-climb/BabyLM
