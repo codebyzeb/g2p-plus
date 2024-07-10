@@ -251,10 +251,13 @@ folding = {
 	},
 
 	'yue' : {
-		# Tones
-		'˧ ˥' : '˧˥',
-		'˨ ˩' : '˧˩̰',
-		'˩ ˧' : '˩˧', 
+		# Tones – note that we also remove the space before the tone marker, attaching it to the vowel
+		' ˧ ˥' : '˧˥',
+		' ˨ ˩' : '˧˩̰',
+		' ˩ ˧' : '˩˧', 
+        ' ˨': '˨',
+        ' ˥' : '˥',
+        ' ˧' : '˧',
 
 		# Long Diphthongs - we add extra-short vowel markers
 		'a ː i' : 'aːĭ',
