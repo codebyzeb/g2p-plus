@@ -1,5 +1,6 @@
 """ Phonemize text using the phonemizer library."""
 
+import os
 import re
 import subprocess
 import pandas as pd
@@ -8,6 +9,7 @@ from phonemizer.separator import Separator
 from pinyin_to_ipa import pinyin_to_ipa
 
 from src.dicts import folding, folding_espeak, langcodes
+PINGYAM_PATH = os.path.join(os.path.dirname(__file__), '../data/pingyam/pingyambiu')
 
 def phonemize_utterances(lines, language='EnglishNA', keep_word_boundaries=True):
     """ Phonemizes lines using a technique depending on the language.
@@ -166,7 +168,7 @@ def phonemize_cantonese(lines, keep_word_boundaries=True):
     phn = []
 
     # Load pingyam database
-    cantonese_dict = pd.read_csv('data/pingyam/pingyambiu', sep='\t', header=None)[[5, 6]]
+    cantonese_dict = pd.read_csv(PINGYAM_PATH, sep='\t', header=None)[[5, 6]]
     cantonese_dict.columns = ['ipa', 'jyutping']
     cantonese_dict = cantonese_dict.set_index('jyutping').to_dict()['ipa']
 

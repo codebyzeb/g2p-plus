@@ -5,7 +5,11 @@ Entry point to all the scripts.
 import argparse
 import pandas as pd
 import os
+import sys
 from pathlib import Path
+
+# Add the src directory to the path
+sys.path.append('../..')
 
 from src.utils import split_df
 from src.process import process_childes
@@ -13,8 +17,6 @@ from src.phonemize import phonemize_utterances, character_split_utterance, langc
 
 def download(args):
     """ Downloads utterances from CHILDES using `childespy`"""
-
-    # TODO: Add ability to download from entire collection (e.g. Eng-NA)
 
     print(f'\n\nAttempting to get utterances from the "{args.corpus}" corpus in the "{args.collection}" collection:\n')
     utts = get_utterances(collection=args.collection, corpus=args.corpus)

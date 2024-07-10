@@ -11,6 +11,9 @@ import argparse
 from pathlib import Path
 import re
 import requests
+import sys
+
+sys.path.append('../..')
 
 from src.utils import phonemize_utterances, convert_bnc_to_ipa, clean_textgrid_words, split_and_save
 
