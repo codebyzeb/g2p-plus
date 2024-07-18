@@ -1,6 +1,10 @@
-# CHILDES Processor Usage
+# CHILDES Phonemized Dataset
 
-This directory contains the `childes_processor.py` script which can download, process and phonemize the CHILDES datasets. It also contains the script `create_all_childes` which was used to create the phonemized CHILDES dataset used in the TransformerSegmentation experiments. A copy of the dataset can be found found in `/CHILDES-dataset`.
+The `childes_processor.py` script allows for extracing files from [CHILDES](https://childes.talkbank.org/) and processing them. The `/childes` folder contains example corpora downloaded, processed and extracted from CHILDES. The `/childes/CHILDES-dataset` folder is a repository hosted on Huggingface containing the dataset in an easily loadable format.
+
+This directory contains the `childes_processor.py` script which can download, process and phonemize corpora from [CHILDES](https://childes.talkbank.org/). The `/childes` folder contains example corpora downloaded, processed and extracted from CHILDES. The scripts `/scripts/create_all_childes` which was used to create the phonemized CHILDES dataset used in the TransformerSegmentation experiments. A copy of the dataset can be found found in `/CHILDES-dataset`.
+
+# CHILDES Processor Usage
 
 The `childes_processor.py` has three modes: *download*, *process* and *extract*, allowing the user to download and phonemize the CHILDES dataset. 
 

@@ -1,10 +1,8 @@
 # Corpus Phonemizers
 
-This repository contains scripts for converting a series of corpora to a unified IPA format, with marked word and utterance boundaries. 
+This repository contains scripts for converting various corpora to a unified IPA format, with marked word and utterance boundaries, to prepare them for [training and evaluating small transformer-based language models](https://github.com/codebyzeb/TransformerSegmentation).
 
-The `childes_processor.py` script allows for extracing files from [CHILDES](https://childes.talkbank.org/) and processing them. The `/childes` folder contains example corpora downloaded, processed and extracted from CHILDES. The `/childes/CHILDES-dataset` folder is a repository hosted on Huggingface containing the dataset in an easily loadable format.
-
-The `bnc_processor.py` script extracts and phonemizes [Audio BNC](http://www.phon.ox.ac.uk/AudioBNC). Running this script will convert the Audio BNC phonemic transcriptions to IPA and split the transcriptions into utterances by aligning with the associated orthographic transcriptions. The `/bnc` folder contains example downloaded corpora. The `/bnc/BNC-dataset` folder is a repository hosted on Huggingface containing the dataset in an easily loadable format.
+This code base was initially designed to prepare the CHILDES corpora for these experiments but now also contains the scripts that were used to prepare phonemized versions of the British National Corpus, the BabyLM training data and the BabyLM evaluation data. Each subdirectory in `/datasets` contains a copy of each generated dataset and the scripts used to generate the dataset. In some cases, analysis notebooks and scripts to train tokenizers are also included.
 
 ## Installation
 
