@@ -57,9 +57,9 @@ def clean_english(sentence, type):
             sentence.startswith('you wanna') or \
             sentence.startswith('do you') or \
             sentence.startswith('can you'):
-        sentence += ' ?'
+        sentence += '?'
     else:
-        sentence += f' {punctuation_dict[type]}'
+        sentence += f'{punctuation_dict[type]}' if type in punctuation_dict else '.'
 
     words = []
     for w in str(sentence).split():
@@ -74,23 +74,20 @@ def clean_english(sentence, type):
     return ' '.join(words)
 
 def clean(sentence, type):
-    """ Process a CHILDES sentence. If English, use process_english. Otherwise, simply lowercase, add punctuation and split compounds."""
+    """ Process a CHILDES sentence. Lowercase, add punctuation and split compounds."""
 
-    if type == 'english':
-        return clean_english(sentence, type)
+    sentence = str(sentence)
+    if not type in punctuation_dict:
+        sentence += '. '
     else:
-        sentence = str(sentence)
-        if not type in punctuation_dict:
-            sentence += '. '
-        else:
-            sentence += f' {punctuation_dict[type]}'
-        words = []
-        for w in str(sentence).split():
-            w = w.lower()
-            # split compounds
-            w = w.replace('+', ' ').replace('_', ' ')
-            words.append(w)
-        return ' '.join(words)
+        sentence += f' {punctuation_dict[type]}'
+    words = []
+    for w in str(sentence).split():
+        w = w.lower()
+        # split compounds
+        w = w.replace('+', ' ').replace('_', ' ')
+        words.append(w)
+    return ' '.join(words)
 
 def process_childes(path: Path):
     """ Given a path to a CHILDES CSV file, or a folder of CHILDES CSV files, prepare the data for training, returning a DataFrame.
@@ -139,8 +136,11 @@ def process_childes(path: Path):
     # Drop null gloss
     df.dropna(subset=['gloss'], inplace=True)
 
-    # Clean each sentence
-    df['processed_gloss'] = df.apply(lambda x: clean(x['gloss'], x['type']), axis=1)
+    # Clean each sentence, special cleaning for English
+    if 'eng' in df['language'].iloc[0]:
+        df['processed_gloss'] = df.apply(lambda x: clean_english(x['gloss'], x['type']), axis=1)
+    else:
+        df['processed_gloss'] = df.apply(lambda x: clean(x['gloss'], x['type']), axis=1)
 
     # Fix some data types
     df['part_of_speech'] = df['part_of_speech'].astype(str)

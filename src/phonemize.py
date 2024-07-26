@@ -11,7 +11,7 @@ from pinyin_to_ipa import pinyin_to_ipa
 from src.dicts import folding, folding_espeak, langcodes
 PINGYAM_PATH = os.path.join(os.path.dirname(__file__), '../data/pingyam/pingyambiu')
 
-def phonemize_utterances(lines, language='EnglishNA', keep_word_boundaries=True):
+def phonemize_utterances(lines, language='EnglishNA', keep_word_boundaries=True, allow_possibly_faulty_word_boundaries=False):
     """ Phonemizes lines using a technique depending on the language.
     
     Returning a list of lines with space-separated IPA phonemes, with 'WORD_BOUNDARY' separating words if keep_word_boundaries=True.
@@ -25,18 +25,24 @@ def phonemize_utterances(lines, language='EnglishNA', keep_word_boundaries=True)
     langcode = langcodes[language]
 
     if language == 'mandarin':
-        utterances = phonemize_mandarin(lines, keep_word_boundaries)
+        utterances = _phonemize_mandarin(lines, keep_word_boundaries)
     elif language == 'cantonese':
-        utterances = phonemize_cantonese(lines, keep_word_boundaries)
+        utterances = _phonemize_cantonese(lines, keep_word_boundaries)
     elif language == 'japanese':
-        utterances = phonemize_japanese(lines, keep_word_boundaries)
+        utterances = _phonemize_japanese(lines, keep_word_boundaries)
     else:
-        utterances = phonemize_utterances_espeak(lines, langcode, keep_word_boundaries)
+        utterances = _phonemize_utterances_espeak(lines, langcode, keep_word_boundaries, allow_possibly_faulty_word_boundaries)
 
-    utterances = correct_errors(utterances, langcode)
+    utterances = _correct_errors(utterances, langcode)
     return utterances
 
-def post_process_phonemizer_output(lines, keep_word_boundaries):
+def character_split_utterance(lines):
+    """ Splits the lines into characters, in a similar format to the phonemizer. 
+    Intended for comparison between phonemization and written text.
+    """
+    return [' '.join(['WORD_BOUNDARY' if c == ' ' else c for c in list(line.strip())]) + ' WORD_BOUNDARY' for line in lines]
+
+def _post_process_phonemizer_output(lines, keep_word_boundaries):
     """ Removes phone boundary markers, adds word boundary markers, removes extra spaces and corrects general espeak output. """
 
     for i in range(len(lines)):
@@ -50,7 +56,7 @@ def post_process_phonemizer_output(lines, keep_word_boundaries):
         if keep_word_boundaries:
             lines[i] = lines[i] + ' WORD_BOUNDARY'
 
-def correct_errors(lines, langcode):
+def _correct_errors(lines, langcode):
     """ Uses folding dictionaries to correct output produced by the backend phonemizers. """
 
     if langcode not in folding:
@@ -64,7 +70,7 @@ def correct_errors(lines, langcode):
             lines[i] = lines[i].replace(key, value)
     return lines
     
-def phonemize_japanese(lines, keep_word_boundaries=True):
+def _phonemize_japanese(lines, keep_word_boundaries=True):
     """ Uses phonemizer with segments backend to phonemize Japanese text."""
 
     print('INFO: Japanese phonemization is not supported by espeak. Using the segments backend instead.')
@@ -85,11 +91,11 @@ def phonemize_japanese(lines, keep_word_boundaries=True):
     if missed_lines > 0:
         print(f'WARNING: {missed_lines} lines were not phonemized due to errors with the segments file.')
 
-    post_process_phonemizer_output(phn, keep_word_boundaries=True)
+    _post_process_phonemizer_output(phn, keep_word_boundaries=True)
 
     return phn
     
-def phonemize_utterances_espeak(lines, langcode='en-us', keep_word_boundaries=True):
+def _phonemize_utterances_espeak(lines, langcode='en-us', keep_word_boundaries=True, allow_possibly_faulty_word_boundaries=False):
     """ Uses phonemizer to phonemize text. Returns a list of phonemized lines. Lines that could not be phonemized are returned as empty strings."""
     
     print(f'Using espeak backend with language code "{langcode}"...')
@@ -101,15 +107,15 @@ def phonemize_utterances_espeak(lines, langcode='en-us', keep_word_boundaries=Tr
         strip=True,
         preserve_punctuation=False,
         language_switch='remove-utterance',
-        words_mismatch='remove' if keep_word_boundaries else 'ignore', # Will remove utterances that end up with a different number of words. If we are not keeping word boundaries, this does not matter.
+        words_mismatch='ignore' if allow_possibly_faulty_word_boundaries or not keep_word_boundaries else 'remove', # Will remove utterances that end up with a different number of words. If we are not keeping word boundaries, this does not matter.
         njobs=4)
     
-    post_process_phonemizer_output(phn, keep_word_boundaries)
+    _post_process_phonemizer_output(phn, keep_word_boundaries)
 
     return phn
 
 # TODO: Compare output phonemes to phoible and make sure they match
-def phonemize_mandarin(lines, keep_word_boundaries=True):
+def _phonemize_mandarin(lines, keep_word_boundaries=True):
     """ Uses pinyin to IPA converter to produce phonemic transcripts for pinyin input. """
 
     phn = []
@@ -143,7 +149,7 @@ def phonemize_mandarin(lines, keep_word_boundaries=True):
 
     return phn
 
-def move_tone_marker_to_after_vowel(syll):
+def _move_tone_marker_to_after_vowel(syll):
     """ Move the tone marker from the end of a cantonese syllable to directly after the vowel """
 
     cantonese_vowel_symbols = "auɔiuːoɐɵyɛœĭŭiʊɪ"
@@ -160,7 +166,7 @@ def move_tone_marker_to_after_vowel(syll):
             return syll[:i+1] + syll[tone_marker:] + syll[i+1:tone_marker]
     return syll
         
-def phonemize_cantonese(lines, keep_word_boundaries=True):
+def _phonemize_cantonese(lines, keep_word_boundaries=True):
     """ Use pingyam database to convert Cantonese from jyutping to IPA. """
 
     broken = []
@@ -189,7 +195,7 @@ def phonemize_cantonese(lines, keep_word_boundaries=True):
                         line_broken = True
                 else:
                     syll = cantonese_dict[syllable]
-                    syll = move_tone_marker_to_after_vowel(syll)
+                    syll = _move_tone_marker_to_after_vowel(syll)
                     phonemized += syll + ''
             phonemized += '_'
         if line_broken:
@@ -208,8 +214,3 @@ def phonemize_cantonese(lines, keep_word_boundaries=True):
 
     return phn
 
-def character_split_utterance(lines):
-    """ Splits the lines into characters, in a similar format to the phonemizer. 
-    Intended for comparison between phonemization and written text.
-    """
-    return [' '.join(['WORD_BOUNDARY' if c == ' ' else c for c in list(line.strip()[:-2])]) + ' WORD_BOUNDARY' for line in lines]
