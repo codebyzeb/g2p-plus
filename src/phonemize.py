@@ -46,7 +46,7 @@ def _post_process_phonemizer_output(lines, keep_word_boundaries):
     """ Removes phone boundary markers, adds word boundary markers, removes extra spaces and corrects general espeak output. """
 
     for i in range(len(lines)):
-        if lines[i] == '':
+        if lines[i] == '' or lines[i] == ' ':
             continue
         if keep_word_boundaries:
             lines[i] = lines[i].replace(' ', ' WORD_BOUNDARY ')
