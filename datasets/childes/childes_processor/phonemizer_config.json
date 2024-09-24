@@ -1,0 +1,126 @@
+{
+    "basque" : {
+        "backend": "phonemizer",
+        "language": "eu"
+    },
+    "catalan": {
+        "backend": "phonemizer",
+        "language": "ca"
+    },
+    "cantonese": {
+        "backend": "pingyam",
+        "language": "cantonese"
+    },
+    "croatian": {
+        "backend": "phonemizer",
+        "language": "hr"
+    },
+    "danish": {
+        "backend": "phonemizer",
+        "language": "da"
+    },
+    "dutch": {
+        "backend": "phonemizer",
+        "language": "nl"
+    },
+    "englishna": {
+        "backend": "phonemizer",
+        "language": "en-us"
+    },
+    "englishuk" : {
+        "backend": "phonemizer",
+        "language": "en-gb"
+    },
+    "estonian": {
+        "backend": "phonemizer",
+        "language": "et"
+    },
+    "farsi": {
+        "backend": "phonemizer",
+        "language": "fa-latn"
+    },
+    "french": {
+        "backend": "phonemizer",
+        "language": "fr-fr"
+    },
+    "german": {
+        "backend": "phonemizer",
+        "language": "de"
+    },
+    "greek": {
+        "backend": "phonemizer",
+        "language": "el"
+    },
+    "hungarian": {
+        "backend": "phonemizer",
+        "language": "hu"
+    },
+    "icelandic": {
+        "backend": "phonemizer",
+        "language": "is"
+    },
+    "indonesian": {
+        "backend": "phonemizer",
+        "language": "id"
+    },
+    "irish": {
+        "backend": "phonemizer",
+        "language": "ga"
+    },
+    "italian": {
+        "backend": "phonemizer",
+        "language": "it"
+    },
+    "japanese": {
+        "backend": "phonemizer",
+        "language": "ja"
+    },
+    "korean": {
+        "backend": "phonemizer",
+        "language": "ko"
+    },
+    "norwegian": {
+        "backend": "phonemizer",
+        "language": "nb"
+    },
+    "polish": {
+        "backend": "phonemizer",
+        "language": "pl"
+    },
+    "portuguesebr": {
+        "backend": "phonemizer",
+        "language": "pt-br"
+    },
+    "portuguesept": {
+        "backend": "phonemizer",
+        "language": "pt"
+    },
+    "quechua": {
+        "backend": "phonemizer",
+        "language": "qu"
+    },
+    "romanian": {
+        "backend": "phonemizer",
+        "language": "ro"
+    },
+    "serbian": {
+        "backend": "phonemizer",
+        "language": "sv"
+    },
+    "spanish": {
+        "backend": "phonemizer",
+        "language": "es"
+    },
+    "swedish": {
+        "backend": "phonemizer",
+        "language": "sv"
+    },
+    "turkish": {
+        "backend": "phonemizer",
+        "language": "tr"
+    },
+    "welsh": {
+        "backend": "phonemizer",
+        "language": "cy"
+    }
+}
