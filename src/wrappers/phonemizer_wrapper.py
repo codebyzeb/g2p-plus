@@ -21,6 +21,11 @@ class PhonemizerWrapper(Wrapper):
         'preserve_punctuation': False,
     }
 
+    KWARGS_HELP = {
+        'allow_possibly_faulty_word_boundaries': 'Allow possibly faulty word boundaries (otherwise removes lines with mismatched word boundaries).',
+        'preserve_punctuation': 'Preserve punctuation.',
+    }
+
     @staticmethod
     def supported_languages_message():
         message = 'The PhonemizerWrapper uses the phonemizer library, which supports multiple backends.\n'

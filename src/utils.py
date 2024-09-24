@@ -91,23 +91,3 @@ def edit_distance(line1, line2):
                 matrix[i][j] = min(matrix[i-1][j] + 1, matrix[i][j-1] + 1, matrix[i-1][j-1] + 1)
     # Return the edit distance
     return matrix[-1][-1]
-
-def split_df(df, sequential=False):
-    """ Splits a DataFrame into a training set and a 10,000-line validation set.
-    
-    Note that the DataFrame is likely to be sorted by age, so the split will be age-ordered
-    and if the split is sequential, the validation set will consist of utterances
-    targetted at older children.
-    """
-
-    dev_size = 10_000
-    if sequential:
-        train = df[:-dev_size]
-        valid = df[-dev_size:]
-    else:
-        interval = len(df) // dev_size
-        print("Taking every {}th line to get 10,000 lines for validation...".format(interval))
-        valid = df.iloc[::interval]
-        valid = valid[:dev_size]
-        train = df.drop(valid.index)
-    return train, valid

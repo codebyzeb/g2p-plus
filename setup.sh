@@ -4,3 +4,4 @@ if [ ! -d "env" ]; then
 	pip3 install -r requirements.txt
 fi
 source env/bin/activate
+source .env # Set environment variables, e.g. export PHONEMIZER_ESPEAK_LIBRARY=/path/to/espeak-ng

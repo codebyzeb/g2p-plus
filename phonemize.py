@@ -42,7 +42,7 @@ def phonemize_utterances(lines, backend, language, keep_word_boundaries, verbose
 
     if backend not in WRAPPER_BACKENDS:
         raise ValueError(f'Backend "{backend}" not supported. Supported backends: {list(WRAPPER_BACKENDS.keys())}')
-    wrapper = WRAPPER_BACKENDS[backend](language, verbose, keep_word_boundaries, **wrapper_kwargs)
+    wrapper = WRAPPER_BACKENDS[backend](language=language, keep_word_boundaries=keep_word_boundaries, verbose=verbose, **wrapper_kwargs)
     return wrapper.phonemize(lines)
 
 def character_split_utterances(lines):
@@ -67,11 +67,15 @@ def main():
         # Print supported languages when --help is called
         def format_help(self):
             help_text = super().format_help()
-            help_text += "\nSupported languages for each backend:\n"
+            help_text += "\nBackends:\n"
             for backend in WRAPPER_BACKENDS.keys():
                 help_text += f"\n{backend}:\n"
                 wrapper_class = WRAPPER_BACKENDS[backend]
-                help_text += wrapper_class.supported_languages_message()
+                help_text += "  " + wrapper_class.supported_languages_message().replace('\n', '\n' + ' ' * 2)
+                if len(wrapper_class.KWARGS_HELP) > 0:
+                    help_text += "Additional arguments:\n"
+                    for key, value in wrapper_class.KWARGS_HELP.items():
+                        help_text += f"    {key}: {value}\n"
             help_text += "\n\nExample usage:\n"
             help_text += "  python phonemize.py epitran --language eng-Latn --keep-word-boundaries --verbose < input.txt > output.txt\n"
             return help_text

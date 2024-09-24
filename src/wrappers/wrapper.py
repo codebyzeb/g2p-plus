@@ -8,7 +8,8 @@ class Wrapper(ABC):
     SUPPORTED_LANGUAGES = []
     WRAPPER_KWARGS_TYPES = {}
     WRAPPER_KWARGS_DEFAULTS = {}
-
+    KWARGS_HELP = {}
+    
     @staticmethod
     @abstractmethod
     def supported_languages_message():

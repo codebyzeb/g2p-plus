@@ -129,3 +129,11 @@ dmypy.json
 .pyre/
 
 .DS_Store
+*.u8
+.vscode
+
+datasets/childes/downloaded
+datasets/childes/processed
+datasets/babylm/evaluation_data
+datasets/babylm/evaluation_data_phonemized
+datasets/babylm/BabyLM-original
