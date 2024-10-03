@@ -8,12 +8,12 @@
         "language": "ca"
     },
     "cantonese": {
-        "backend": "pingyam",
-        "language": "cantonese"
+        "backend": "epitran",
+        "language": "yue-Latn"
     },
     "croatian": {
-        "backend": "phonemizer",
-        "language": "hr"
+        "backend": "epitran",
+        "language": "hrv-Latn"
     },
     "danish": {
         "backend": "phonemizer",
@@ -44,24 +44,24 @@
         "language": "fr-fr"
     },
     "german": {
-        "backend": "phonemizer",
-        "language": "de"
+        "backend": "epitran",
+        "language": "deu-Latn"
     },
     "greek": {
         "backend": "phonemizer",
         "language": "el"
     },
     "hungarian": {
-        "backend": "phonemizer",
-        "language": "hu"
+        "backend": "epitran",
+        "language": "hun-Latn"
     },
     "icelandic": {
         "backend": "phonemizer",
         "language": "is"
     },
     "indonesian": {
-        "backend": "phonemizer",
-        "language": "id"
+        "backend": "epitran",
+        "language": "ind-Latn"
     },
     "irish": {
         "backend": "phonemizer",
@@ -72,12 +72,16 @@
         "language": "it"
     },
     "japanese": {
-        "backend": "phonemizer",
+        "backend": "epitran",
         "language": "ja"
     },
     "korean": {
         "backend": "phonemizer",
         "language": "ko"
+    },
+    "mandarin": {
+        "backend": "epitran",
+        "language": "cmn-Hans"
     },
     "norwegian": {
         "backend": "phonemizer",
@@ -104,12 +108,12 @@
         "language": "ro"
     },
     "serbian": {
-        "backend": "phonemizer",
-        "language": "sv"
+        "backend": "epitran",
+        "language": "srp-Latn"
     },
     "spanish": {
-        "backend": "phonemizer",
-        "language": "es"
+        "backend": "epitran",
+        "language": "spa-Latn"
     },
     "swedish": {
         "backend": "phonemizer",

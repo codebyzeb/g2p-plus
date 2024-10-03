@@ -150,6 +150,10 @@ class ChildesProcessor:
         df['target_child_sex'] = df['target_child_sex'].astype(str)
         df['target_child_sex'] = df['target_child_sex'].apply(lambda x: 'unknown' if x == 'nan' else x)
 
+        # Fix transcription errors in Serbian
+        if df['language'].iloc[0] == 'srp':
+            df.drop(df[df['processed_gloss'].str.contains('q')].index, inplace=True)
+
         return df
     
     def phonemize_utterances(self, language: str, keep_word_boundaries: bool = True, verbose: bool = False):
@@ -163,17 +167,19 @@ class ChildesProcessor:
         config = phonemizer_config[language]
         self.logger.info(f'Using phonemizer config: {config}')
 
-        lines = self.df['stem'] if language in ['cantonese', 'mandarin'] else self.df['processed_gloss']
+        backend = config['backend']
+        lang = config['language']
+        lines = self.df['stem'] if lang in ['cantonese', 'yue-Latn', 'cmn-Latn'] else self.df['processed_gloss']
         if 'wrapper_kwargs' in config:
-            self.df['phonemized_utterance'] = phonemize_utterances(lines, config['backend'], config['language'], keep_word_boundaries=keep_word_boundaries, verbose=verbose, **config['wrapper_kwargs'])
+            self.df['phonemized_utterance'] = phonemize_utterances(lines, backend, lang, keep_word_boundaries=keep_word_boundaries, verbose=verbose, **config['wrapper_kwargs'])
         else:
-            self.df['phonemized_utterance'] = phonemize_utterances(lines, config['backend'], config['language'], keep_word_boundaries=keep_word_boundaries, verbose=verbose)
+            self.df['phonemized_utterance'] = phonemize_utterances(lines, backend, lang, keep_word_boundaries=keep_word_boundaries, verbose=verbose)
 
         num_empty = len(self.df[self.df['phonemized_utterance'] == ''])
         self.logger.warning(f'{num_empty} lines were not phonemized successfully. Dropping these.')
         self.df = self.df[self.df['phonemized_utterance'] != '']
         self.df['language_code'] = config['language']
-    
+
     def character_split_utterances(self):
         """ Character split utterances. """
 
