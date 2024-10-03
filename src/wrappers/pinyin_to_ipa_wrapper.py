@@ -40,8 +40,15 @@ class PinyinToIpaWrapper(Wrapper):
                 phonemized = ""
                 broken += 1
 
+            phonemized_utterances.append(phonemized)
+
         if broken > 0:
             self.logger.debug(f'WARNING: {broken} lines were not phonemized successfully by pinyin to ipa conversion.')
+
+        if self.use_folding:
+            phonemized_utterances = self._post_process_pinyin_to_ipa_output(phonemized_utterances)
+        else:
+            self.logger.debug("Skipping folding dictionary post-processing, using uncorrected output from pinyin_to_ipa.")
 
         return phonemized_utterances
 
@@ -53,4 +60,6 @@ class PinyinToIpaWrapper(Wrapper):
                 continue
             for key, value in FOLDING_PINYIN_TO_IPA.items():
                 lines[i] = lines[i].replace(key, value)
+
+        return lines
 

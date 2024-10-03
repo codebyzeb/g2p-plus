@@ -16,7 +16,7 @@ class Wrapper(ABC):
         """ Returns a string with the supported languages for the wrapper. """
         pass
 
-    def __init__(self, language, keep_word_boundaries=True, verbose=False, **wrapper_kwargs):
+    def __init__(self, language, keep_word_boundaries=True, verbose=False, use_folding=True, **wrapper_kwargs):
         """ 
         Initializes the wrapper with the given language and wrapper_kwargs.
         
@@ -24,6 +24,7 @@ class Wrapper(ABC):
             language (str): The language to phonemize.
             keep_word_boundaries (bool): Whether to keep word boundaries.
             verbose (bool): Whether to print debug information.
+            use_folding (bool): Whether to use folding dictionaries to correct the wrapper's output.
             **wrapper_kwargs: Additional keyword arguments.
         
         Raises:
@@ -32,6 +33,7 @@ class Wrapper(ABC):
 
         self.language = language
         self.keep_word_boundaries = keep_word_boundaries
+        self.use_folding = use_folding
         self.logger = logging.getLogger(f"{__name__}.{self.__class__.__name__}")
         self.logger.setLevel(logging.DEBUG if verbose else logging.INFO)
         

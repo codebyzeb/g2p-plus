@@ -12,7 +12,7 @@ WRAPPER_BACKENDS = {
     'pinyin_to_ipa': PinyinToIpaWrapper,
 }
 
-def phonemize_utterances(lines, backend, language, keep_word_boundaries, verbose=False, **wrapper_kwargs):
+def phonemize_utterances(lines, backend, language, keep_word_boundaries, verbose=False, use_folding=True, **wrapper_kwargs):
     """ Phonemizes lines using a specified wrapper and language.
 
     Args:
@@ -21,6 +21,7 @@ def phonemize_utterances(lines, backend, language, keep_word_boundaries, verbose
         language (str): The language to phonemize.
         keep_word_boundaries (bool): Whether to keep word boundaries.
         verbose (bool): Whether to print debug information.
+        use_folding (bool): Whether to use folding dictionaries to correct the wrapper's output.
         **wrapper_kwargs: Additional keyword arguments.
     
     Returns:
@@ -42,7 +43,7 @@ def phonemize_utterances(lines, backend, language, keep_word_boundaries, verbose
 
     if backend not in WRAPPER_BACKENDS:
         raise ValueError(f'Backend "{backend}" not supported. Supported backends: {list(WRAPPER_BACKENDS.keys())}')
-    wrapper = WRAPPER_BACKENDS[backend](language=language, keep_word_boundaries=keep_word_boundaries, verbose=verbose, **wrapper_kwargs)
+    wrapper = WRAPPER_BACKENDS[backend](language=language, keep_word_boundaries=keep_word_boundaries, verbose=verbose, use_folding=use_folding, **wrapper_kwargs)
     return wrapper.phonemize(lines)
 
 def character_split_utterances(lines):
@@ -85,6 +86,7 @@ def main():
     parser.add_argument("language", help="The language to phonemize.")
     parser.add_argument("-k", "--keep-word-boundaries", action="store_true", help="Keep word boundaries in the output.")
     parser.add_argument("-v", "--verbose", action="store_true", help="Print debug information.")
+    parser.add_argument("-u", "--uncorrected", action="store_false", help="Use the wrapper's output without applying a folding dictionary to correct the phoneme sets.")
     parser.add_argument("-i", "--input-file", type=argparse.FileType('r'), default=sys.stdin, help="Input file containing utterances (one per line). If not specified, reads from stdin.")
     parser.add_argument("-o", "--output-file", type=argparse.FileType('w'), default=sys.stdout, help="Output file for phonemized utterances. If not specified, writes to stdout.")
     
@@ -107,6 +109,7 @@ def main():
             args.language,
             args.keep_word_boundaries,
             args.verbose,
+            args.uncorrected,
             **wrapper_kwargs
         )
         

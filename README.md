@@ -38,6 +38,8 @@ The `epitran` backend with English requires Flite to be installed. See instructi
 
 The `phonemize.py` script is the main entry point for converting corpora to a unified IPA format. It supports multiple backends, including [epitran](https://github.com/dmort27/epitran) and [phonemizer](https://github.com/bootphon/phonemizer), each of which supports multiple languages. The help menu (`-h`) describes usage and the languages supported by each backend. The script reads lines from an input file (using `-i`) and saves space-separated IPA phonemes to an output file (using `-o`) or reads/writes to/from STDIN/STDOUT if files are not provided. Word boundaries are provided between words using `-k` using a `WORD_BOUNDARY` token.
 
+For many languages, the underlying transcription tool does not output phoneme sets that match typical phoneme inventories for that language. As such, we have implemented "folding" dictionaries for many languages that attempt to map the output of a backend for a language to a standard phoneme inventory. See `src/dicts.py` for these dictionaries. This "folding" can be turned off using `-u`. 
+
 Example usage:
 
 ```

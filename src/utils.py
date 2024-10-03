@@ -6,7 +6,7 @@ from .dicts import CONVERSION_TABLE
 def move_tone_marker_to_after_vowel(syll):
     """ Move the tone marker from the end of a cantonese syllable to directly after the vowel """
 
-    cantonese_vowel_symbols = "eauɔiuːoɐɵyɛœĭŭiʊɪ"
+    cantonese_vowel_symbols = "eauɔiuːoɐɵyɛœĭŭiʊɪə"
     cantonese_tone_symbols = "˥˧˨˩"
     if not syll[-1] in cantonese_tone_symbols:
         print(syll, syll[-1])
@@ -24,7 +24,7 @@ def move_tone_marker_to_after_vowel(syll):
 def move_tone_marker_to_after_vowel_line(line):
     """ Move the tone marker from the end of a mandarin or cantonese syllable to directly after the vowel """
 
-    vowel_symbols = "eauɔiuːoɐɵyɛœĭŭiʊɪ"
+    vowel_symbols = "eauɔiuːoɐɵyɛœĭŭiʊɪə"
     tone_symbols = ['˥', '˧˥', '˨˩', '˥˩', '˧', '˧˩̰', '˩˧', '˨', '˧˩̰', '˩˧'] 
     last_marker = -1
     line = line.split(' ')

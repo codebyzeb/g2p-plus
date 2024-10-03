@@ -34,8 +34,8 @@ class PhonemizerWrapper(Wrapper):
         message += 'For a list of supported languages, run `espeak-ng --voices` or see https://github.com/espeak-ng/espeak-ng/blob/master/docs/languages.md\n'
         return message
 
-    def __init__(self, language, keep_word_boundaries=True, verbose=False, **wrapper_kwargs):
-        super().__init__(language, keep_word_boundaries, verbose, **wrapper_kwargs)
+    def __init__(self, language, keep_word_boundaries=True, verbose=False, use_folding=True, **wrapper_kwargs):
+        super().__init__(language, keep_word_boundaries, verbose, use_folding, **wrapper_kwargs)
         self.separator = Separator(phone='PHONE_BOUNDARY', word=' ', syllable='')
         self.strip = True
         self.language_switch = 'remove-utterance'
@@ -122,8 +122,12 @@ class PhonemizerWrapper(Wrapper):
     def _post_process_phonemizer_output(self, lines):
         """ Removes phone boundary markers, adds word boundary markers, removes extra spaces and corrects general espeak output. """
 
-        if self.language not in FOLDING_PHONEMIZER:
+        if self.language not in FOLDING_PHONEMIZER and self.use_folding:
             self.logger.debug(f'No folding dictionary found for language code: "{self.language}".')
+        elif self.use_folding:
+            self.logger.debug(f'Applying folding dictionary for language code: "{self.language}".')
+        else:
+            self.logger.debug("Skipping folding dictionary post-processing, using uncorrected output from phonemizer.")
 
         for i in range(len(lines)):
             if lines[i] == '' or lines[i] == ' ':
@@ -131,11 +135,16 @@ class PhonemizerWrapper(Wrapper):
             if self.keep_word_boundaries:
                 lines[i] = lines[i].replace(' ', ' WORD_BOUNDARY ')
             lines[i] = lines[i].replace('PHONE_BOUNDARY', ' ')
-            for key, value in FOLDING_PHONEMIZER['all'].items():
-                lines[i] = lines[i].replace(key, value)
-            if self.language in FOLDING_PHONEMIZER:
-                for key, value in FOLDING_PHONEMIZER[self.language].items():
+
+            if self.use_folding:
+                for key, value in FOLDING_PHONEMIZER['all'].items():
                     lines[i] = lines[i].replace(key, value)
+                if self.language in FOLDING_PHONEMIZER:
+                    lines[i] = ' ' + lines[i] + ' ' # For matching folding dictionary items that end or start with a space
+                    for key, value in FOLDING_PHONEMIZER[self.language].items():
+                        lines[i] = lines[i].replace(key, value)
+                lines[i] = lines[i].strip()
+
             if self.keep_word_boundaries:
                 lines[i] = lines[i] + ' WORD_BOUNDARY'
 

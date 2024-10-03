@@ -64,7 +64,10 @@ class PingyamWrapper(Wrapper):
             phonemized_utterances[i] = ' '.join(list(phonemized_utterances[i]))
             phonemized_utterances[i] = phonemized_utterances[i].replace('_', 'WORD_BOUNDARY' if self.keep_word_boundaries else ' ')
 
-        phonemized_utterances = self._post_process_pingyam_output(phonemized_utterances)
+        if self.use_folding:
+            phonemized_utterances = self._post_process_pingyam_output(phonemized_utterances)
+        else:
+            self.logger.debug("Skipping folding dictionary post-processing, using uncorrected output from pingyam.")
 
         return phonemized_utterances
 
