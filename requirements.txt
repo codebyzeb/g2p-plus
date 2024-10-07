@@ -1,5 +1,6 @@
 childespy==1.0.1
 datasets==2.18.0
+epitran==1.25.1
 matplotlib==3.9.1
 phonemizer==3.2.1
 pinyin-to-ipa==0.0.2

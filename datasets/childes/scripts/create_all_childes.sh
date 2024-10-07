@@ -155,6 +155,11 @@ corpora=("Garmann" "Ringstad")
 download_corpora "Scandinavian" $corpora "Norwegian"
 process_corpus "Norwegian"
 
+# Polish
+corpora=("Szuman" "WeistJarosz")
+download_corpora "Slavic" $corpora "Polish"
+process_corpus "Polish"
+
 # PortugueseBr
 corpora=("AlegreLong" "AlegreX")
 download_corpora "Romance" $corpora "PortugueseBr"
@@ -179,6 +184,11 @@ process_corpus "Romanian"
 corpora=("Aguirre" "BeCaCeSno" "ColMex" "DiezItza" "FernAguado" "Koine" "Linaza" "LlinasOjea" "Marrero" "Montes" "Nieva" "OreaPine" "Ornat" "Remedi" "Romero" "SerraSole" "Shiro" "Vila")
 download_corpora "Spanish" $corpora "Spanish"
 process_corpus "Spanish"
+
+# Spanish
+corpora=("SCECL")
+download_corpora "Slavic" $corpora "Serbian"
+process_corpus "Serbian"
 
 # Swedish
 corpora=("Andren" "Lacerda" "Lund" "StanfordSwedish")

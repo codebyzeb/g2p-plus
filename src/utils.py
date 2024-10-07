@@ -1,54 +1,45 @@
 """ Utility functions for the project. """
 
 import pandas as pd
+from .dicts import CONVERSION_TABLE
 
-# Conversion table from BNC ASCII phonemes to IPA symbols
-CONVERSION_TABLE = {'P' : 'p',
-                'B' : 'b',
-                'T' : 't',
-                'D' : 'd',
-                'CH' : 't̠ʃ',
-                'JH' : 'd̠ʒ',
-                'K' : 'k',
-                'G' : 'g',
-                'M' : 'm',
-                'N' : 'n',
-                'NG' : 'ŋ',
-                'F' : 'f',
-                'V' : 'v',
-                'TH' : 'θ',
-                'DH' : 'ð',
-                'S' : 's',
-                'SH' : 'ʃ',
-                'ZH' : 'ʒ',
-                'HH' : 'h',
-                'R' : 'r',
-                'L' : 'l',
-                'W' : 'w',
-                'Y' : 'j',
-                'Z' : 'z',
-                'IH' : 'ɪ',
-                'EH' : 'ɛ',
-                'AE' : 'a',
-                'AH0' : 'ə',
-                'AH1' : 'ʌ',
-                'AH2' : 'ʌ',
-                'UH1' : 'ʊ',
-                'UH2' : 'ʊ',
-                'OH': 'ɒ',
-                'UH' : 'ʊ',
-                'IY' : 'i:',
-                'EY' : 'eɪ',
-                'AY' : 'aɪ',
-                'OY' : 'oɪ',
-                'AW' : 'aʊ',
-                'OW' : 'əʊ',
-                'UW' : 'u:',
-                'ER0': 'ɚ',
-                'ER1': 'ə:',
-                'ER2': 'ə',
-                'AA' : 'ɑ:',
-                'AO' : 'ɔ:',}
+def move_tone_marker_to_after_vowel(syll):
+    """ Move the tone marker from the end of a cantonese syllable to directly after the vowel """
+
+    cantonese_vowel_symbols = "eauɔiuːoɐɵyɛœĭŭiʊɪə"
+    cantonese_tone_symbols = "˥˧˨˩"
+    if not syll[-1] in cantonese_tone_symbols:
+        print(syll, syll[-1])
+        return syll
+    tone_marker = len(syll) - 1
+    # Iterate backwards
+    for i in range(len(syll)-2, -1, -1):
+        if syll[i] in cantonese_tone_symbols:
+            tone_marker = i
+            continue
+        if syll[i] in cantonese_vowel_symbols:
+            return syll[:i+1] + syll[tone_marker:] + syll[i+1:tone_marker]
+    return syll
+
+def move_tone_marker_to_after_vowel_line(line):
+    """ Move the tone marker from the end of a mandarin or cantonese syllable to directly after the vowel """
+
+    vowel_symbols = "eauɔiuːoɐɵyɛœĭŭiʊɪə"
+    tone_symbols = ['˥', '˧˥', '˨˩', '˥˩', '˧', '˧˩̰', '˩˧', '˨', '˧˩̰', '˩˧'] 
+    last_marker = -1
+    line = line.split(' ')
+    for i in range(len(line)):
+        if line[i] in tone_symbols:
+            for j in range(i-1, last_marker, -1):
+                if line[j] in vowel_symbols or line[j] in tone_symbols:
+                    line[j+1], line[i] = line[i], line[j+1]
+                    break
+            last_marker = i
+    line = ' '.join(line)
+    # Combine tone markers with previous vowel
+    for tone in tone_symbols:
+        line = line.replace(' ' + tone, tone)
+    return line
 
 def convert_bnc_to_ipa(phones):
     """Converts a list of phones to IPA."""
@@ -100,23 +91,3 @@ def edit_distance(line1, line2):
                 matrix[i][j] = min(matrix[i-1][j] + 1, matrix[i][j-1] + 1, matrix[i-1][j-1] + 1)
     # Return the edit distance
     return matrix[-1][-1]
-
-def split_df(df, sequential=False):
-    """ Splits a DataFrame into a training set and a 10,000-line validation set.
-    
-    Note that the DataFrame is likely to be sorted by age, so the split will be age-ordered
-    and if the split is sequential, the validation set will consist of utterances
-    targetted at older children.
-    """
-
-    dev_size = 10_000
-    if sequential:
-        train = df[:-dev_size]
-        valid = df[-dev_size:]
-    else:
-        interval = len(df) // dev_size
-        print("Taking every {}th line to get 10,000 lines for validation...".format(interval))
-        valid = df.iloc[::interval]
-        valid = valid[:dev_size]
-        train = df.drop(valid.index)
-    return train, valid

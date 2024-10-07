@@ -4,6 +4,12 @@ The `childes_processor.py` script allows for extracing files from [CHILDES](http
 
 This directory contains the `childes_processor.py` script which can download, process and phonemize corpora from [CHILDES](https://childes.talkbank.org/). The `/childes` folder contains example corpora downloaded, processed and extracted from CHILDES. The scripts `/scripts/create_all_childes` which was used to create the phonemized CHILDES dataset used in the TransformerSegmentation experiments. A copy of the dataset can be found found in `/CHILDES-dataset`.
 
+## Installation
+
+See [README](../../README.md) for the main installation.
+
+If you are using the `download` command from the CHILDES processor, make sure you have R installed.
+
 # CHILDES Processor Usage
 
 The `childes_processor.py` has three modes: *download*, *process* and *extract*, allowing the user to download and phonemize the CHILDES dataset. 
