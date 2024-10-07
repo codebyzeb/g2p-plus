@@ -12,7 +12,7 @@ from .dicts import w2string, string2w, punctuation_dict, col2dtype
 top_level_dir = Path(__file__).resolve().parents[3]
 sys.path.append(str(top_level_dir))
 
-from phonemize import character_split_utterances, phonemize_utterances
+from corpus_phonemizer import character_split_utterances, phonemize_utterances
 
 PHONEMIZER_CONFIG_PATH = Path(__file__).parent / 'phonemizer_config.json'
 
