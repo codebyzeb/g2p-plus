@@ -1,9 +1,6 @@
 [submodule "datasets/childes/CHILDES-dataset"]
 	path = datasets/childes/CHILDES-dataset
 	url = https://huggingface.co/datasets/transformersegmentation/CHILDES
-[submodule "datasets/bnc/BNC-dataset"]
-	path = datasets/bnc/BNC-dataset
-	url = https://huggingface.co/datasets/transformersegmentation/BNC
 [submodule "data/pingyam"]
 	path = data/pingyam
 	url = https://github.com/kfcd/pingyam.git
@@ -13,3 +10,6 @@
 [submodule "datasets/babylm/BabyLM"]
 	path = datasets/babylm/BabyLM
 	url = https://huggingface.co/datasets/cambridge-climb/BabyLM
+[submodule "datasets/bnc/BNC-datasett"]
+	path = datasets/bnc/BNC-datasett
+	url = https://huggingface.co/datasets/phonemetransformers/BNC
