@@ -10,6 +10,6 @@
 [submodule "datasets/babylm/BabyLM"]
 	path = datasets/babylm/BabyLM
 	url = https://huggingface.co/datasets/cambridge-climb/BabyLM
-[submodule "datasets/bnc/BNC-datasett"]
-	path = datasets/bnc/BNC-datasett
+[submodule "datasets/bnc/BNC-dataset"]
+	path = datasets/bnc/BNC-dataset
 	url = https://huggingface.co/datasets/phonemetransformers/BNC
