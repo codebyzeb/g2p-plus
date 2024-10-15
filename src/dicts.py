@@ -624,11 +624,16 @@ FOLDING_PHONEMIZER = {
 }
     
 FOLDING_PINYIN_TO_IPA = {
-    # Fix tones to match "Standard Chinese; Mandarin" set
-    '˥ ' : '˦ ',
-	'˥˩ ' : '˦˨ ',
-	'˧˥ ' : '˧˦ ',
-	'˧˩˧ ' : '˧˨˧ ',
+    # Fix diphthongs
+    'ou̯' : 'ou',
+    'ei̯' : 'ei',
+    'ai̯' : 'ai',
+    'ʈʂʰ' : 't̠ʃ̺ʰ',
+    'ʈʂ' : 't̠ʃ̺',
+    'au̯' : 'au',
+    'ʂ' : 'ʃ̺',
+    'ɹ̩' : 'ɹ̪̩',
+    'h ' : '',
 }
 
 

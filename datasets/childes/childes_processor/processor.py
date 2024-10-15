@@ -169,7 +169,7 @@ class ChildesProcessor:
 
         backend = config['backend']
         lang = config['language']
-        lines = self.df['stem'] if lang in ['cantonese', 'yue-Latn', 'cmn-Latn'] else self.df['processed_gloss']
+        lines = self.df['stem'] if lang in ['mandarin', 'cantonese', 'yue-Latn', 'cmn-Latn'] else self.df['processed_gloss']
         if 'wrapper_kwargs' in config:
             self.df['phonemized_utterance'] = phonemize_utterances(lines, backend, lang, keep_word_boundaries=keep_word_boundaries, verbose=verbose, **config['wrapper_kwargs'])
         else:

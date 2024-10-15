@@ -80,8 +80,8 @@
         "language": "ko"
     },
     "mandarin": {
-        "backend": "epitran",
-        "language": "cmn-Hans"
+        "backend": "pinyin_to_ipa",
+        "language": "mandarin"
     },
     "norwegian": {
         "backend": "phonemizer",
