@@ -5,7 +5,7 @@ language_to_code = { 'basque':'eu', 'catalan':'ca', 'croatian':'hr', 'danish':'d
 			'englishna':'en-us', 'englishuk':'en-gb', 'estonian':'et', 'farsi':'fa-latn', 'french':'fr-fr', 'german':'de', 'greek':'el',
 			'hungarian':'hu', 'icelandic':'is', 'indonesian':'id', 'irish':'ga', 'italian':'it', 'japanese':'ja', 'korean':'ko',
 			'norwegian':'nb', 'polish':'pl', 'portuguesebr':'pt-br', 'portuguesept':'pt', 'quechua':'qu',
-			'romanian':'ro', 'serbian':'sv', 'spanish':'es', 'swedish':'sv', 'turkish':'tr', 'welsh':'cy', 'hebrew' : 'he'}
+			'romanian':'ro', 'serbian':'sr', 'spanish':'es', 'swedish':'sv', 'turkish':'tr', 'welsh':'cy', 'hebrew' : 'he'}
 
 # Contains language-specific dictionaries to fix errors in the output of the phonemizer library.
 FOLDING_PHONEMIZER = {
@@ -27,6 +27,7 @@ FOLDING_PHONEMIZER = {
 		'tʃ' : 't̠ʃ',
 		'iːː' : 'iː',
 		'ɐɐ' : 'ɐ',
+        '  ' : ' ',
 	},
 	
 	'en-us' : {
@@ -423,6 +424,7 @@ FOLDING_PHONEMIZER = {
         'ɔ ' : 'ɒ̝ ',
         ' y ' : ' ʏ ',
         'ʊː' : 'ʉː',
+        'ʉɪ' : 'uː', # "juice"
     },
 
     'eu' : {
@@ -453,6 +455,7 @@ FOLDING_PHONEMIZER = {
         'o o' : 'o̞',
         ' o ' : ' o̞ ',
         'ɔ' : 'o̞',
+        'yɪ' : 'aɪ',
         # Fix consonants
         'ɾ ' : 'ɾ̪ ',
         'r ' : 'ɾ̪ ', # Shouldn't have r and ɾ
@@ -522,7 +525,8 @@ FOLDING_PHONEMIZER = {
         'k ' : 'kʰ ',
         'kʲ ' : 'kʰ ',
         'ɡʲ ' : 'ɡ ',
-        'lʲ l' : 'l̪ˠ',
+        'lʲ l ' : 'l̪ˠ ',
+        'lʲʲ' : 'l̪ʲ',
         'lʲ' : 'l̪ʲ',
         'l ' : 'l̪ˠ ',
         'b ' : 'bˠ ',
@@ -556,7 +560,7 @@ FOLDING_PHONEMIZER = {
         'ə χ' : 'ə',
         'χ ə' : 'ɡ',
         'n j' : 'n̪ʲ',
-
+        ' ʲ ' : ' ',
     },
 
     'tr' : {
@@ -634,10 +638,13 @@ FOLDING_PINYIN_TO_IPA = {
     'ʂ' : 'ʃ̺',
     'ɹ̩' : 'ɹ̪̩',
     'h ' : '',
+    '  ' : ' ',
 }
 
 
 FOLDING_PINGYAM = {
+    '  ' : ' ',
+
 	# Tones – note that we also remove the space before the tone marker, attaching it to the vowel
 	' ˧ ˥' : '˧˥',
 	' ˨ ˩' : '˧˩̰',
@@ -663,14 +670,14 @@ FOLDING_PINGYAM = {
 	'ɵ y' : 'ɵy',
 	'e i' : 'ei',
 
-	# Long vowels
-	'i ː' : 'iː',
-	'a ː' : 'aː',
-	'ɛ ː' : 'ɛː',
-	'ɔ ː' : 'ɔː',
-	'u ː' : 'uː',
-	'y ː' : 'yː',
-	'œ ː' : 'œː',
+	# Long vowels - remove marker to match inventory
+	'i ː' : 'i',
+	'a ː' : 'a̞',
+	'ɛ ː' : 'ɛ',
+	'ɔ ː' : 'ɔ̽',
+	'u ː' : 'u',
+	'y ː' : 'y',
+	'œ ː' : 'œ̞',
 
 	# Aspirated consonants
 	't s ʰ' : 'tsʰ',
@@ -679,6 +686,12 @@ FOLDING_PINGYAM = {
 	'k ʰ' : 'kʰ',
 	'p ʰ' : 'pʰ',
 	'm ̩ ː' : 'm̩', # Doesn't actually appear in phoible, so we remove vowel length marker
+
+    # Match phoible inventory
+    'ɪ' : 'ɪ̞',
+    'ʊ' : 'ʊ̟',
+    ' ̩' : '̩',
+
 }
 
 FOLDING_EPITRAN = {
@@ -712,13 +725,17 @@ FOLDING_EPITRAN = {
         'ɡ̈' : 'ɡ',
         'g' : 'ɡ',
         'ç' : 'ç', 
+
+        '  ' : ' ',
 	},
     
 	'yue-Latn' : {
         # Join tone markers
         '˧ ˥' : '˧˥',
+        '˨ ˥' : '˨˥',
 		'˨ ˩' : '˧˩̰',
 		'˩ ˧' : '˩˧', 
+        '˨ ˧' : '˨˧',
 		'˨': '˨',
 		'˥' : '˥',
 		'˧' : '˧',
@@ -739,6 +756,10 @@ FOLDING_EPITRAN = {
         # Fix ts
         't s' : 'ts',
         't s ʰ' : 'tsʰ',
+
+        # Fix other
+        '6 ' : '',
+        '8 ' : '',
 	},
     
 	'cmn-Latn' : {
@@ -789,6 +810,22 @@ FOLDING_EPITRAN = {
         'y ' : 'ʏ ',
         'o ' : 'oː ',
         'ø ' : 'øː ',
+
+        # Removing strange output
+        'E' : 'ə',
+        ': ' : '',
+        'q' : 'kʰ', # Caused by transcription error, q is in the orthographic text incorrectly
+        'ˆ' : '', # Caused by transcription error, ˆ is in the orthographic text incorrectly
+        'ä h' : 'ɛː', # Caused by transcription error
+        'D ' : '', 
+        'iː̂' : 'iː',
+        'aː̈' : 'aː',
+        'e̯' : 'ɛ',
+        'uː̈' : 'uː',
+        '̊' : '',
+        '́' : '',
+        'r̥ ' : 'ʀ ',
+        'rˆ ' : 'ʀ ',
     },
 
     'ind-Latn' : {
@@ -832,6 +869,7 @@ FOLDING_EPITRAN = {
         'e' : 'e̞',
         'n̩' : 'n',
         'l̩' : 'l',
+        ' ́' : '',
      },
 
      'hrv-Latn' : {

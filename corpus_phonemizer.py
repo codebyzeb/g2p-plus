@@ -96,8 +96,17 @@ def main():
     wrapper_kwargs = {}
     for arg in unknown:
         if arg.startswith(("--")):
-            key, value = arg.strip('--').split('=')
-            wrapper_kwargs[key] = value
+            try:
+                key, value = arg.strip('--').split('=')
+            except ValueError:
+                print(f"Error: Argument '{arg}' must be in the form '--key=value'.", file=sys.stderr)
+                sys.exit(1)
+            if key in WRAPPER_BACKENDS[args.backend].WRAPPER_KWARGS_TYPES:
+                try:
+                    wrapper_kwargs[key] = WRAPPER_BACKENDS[args.backend].WRAPPER_KWARGS_TYPES[key](value)
+                except ValueError:
+                    print(f"Error: Argument '{key}' must be of type {WRAPPER_BACKENDS[args.backend].WRAPPER_KWARGS_TYPES[key].__name__}. Got '{value}' instead.", file=sys.stderr)
+                    sys.exit(1)
 
     lines = args.input_file.readlines()
     lines = [line.strip() for line in lines]

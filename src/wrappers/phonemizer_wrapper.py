@@ -1,5 +1,6 @@
 """ Wrapper for the phonemizer library. """
 
+import logging
 import os
 import re
 import subprocess
@@ -106,6 +107,7 @@ class PhonemizerWrapper(Wrapper):
         """ Uses phonemizer with the espeak backend to phonemize text. """
         
         self.logger.debug(f'Using espeak backend with language code "{self.language}"...')
+        logging.disable(logging.WARNING)
         phn = phonemize(
             lines,
             language=self.language,
@@ -116,6 +118,7 @@ class PhonemizerWrapper(Wrapper):
             language_switch=self.language_switch,
             words_mismatch=self.words_mismatch,
             njobs=self.njobs)
+        logging.disable(logging.NOTSET)
         
         return phn
 

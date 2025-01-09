@@ -22,7 +22,7 @@ def move_tone_marker_to_after_vowel_line(line):
     """ Move the tone marker from the end of a mandarin or cantonese syllable to directly after the vowel """
 
     vowel_symbols = "eauɔiuːoɐɵyɛœĭŭiʊɪə"
-    tone_symbols = ['˥', '˧˥', '˨˩', '˥˩', '˧', '˧˩̰', '˩˧', '˨', '˧˩̰', '˩˧'] 
+    tone_symbols = ['˥', '˧˥', '˨˩', '˥˩', '˧', '˧˩̰', '˩˧', '˨', '˧˩̰', '˩˧', '˨˧', '˨˥'] 
     last_marker = -1
     line = line.split(' ')
     for i in range(len(line)):

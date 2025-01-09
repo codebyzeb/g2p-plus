@@ -36,6 +36,7 @@ class Wrapper(ABC):
         self.use_folding = use_folding
         self.logger = logging.getLogger(f"{__name__}.{self.__class__.__name__}")
         self.logger.setLevel(logging.DEBUG if verbose else logging.INFO)
+        self.verbose = verbose
         
         self.logger.debug(f'Initializing {self.__class__.__name__} with language "{language}" and wrapper_kwargs "{wrapper_kwargs}"')
 
@@ -54,9 +55,7 @@ class Wrapper(ABC):
         for key, value in self.WRAPPER_KWARGS_DEFAULTS.items():
             if key not in wrapper_kwargs:
                 setattr(self, key, value)
-        
-        self.logger.debug(f'Initialized {self.__class__.__name__} with language "{language}" and wrapper_kwargs "{wrapper_kwargs}"')
-        
+                
     @abstractmethod
     def phonemize(self, lines):
         """ Uses a phonemizer backend to phonemize text. Returns a list of phonemized lines.
