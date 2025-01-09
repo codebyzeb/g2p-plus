@@ -8,8 +8,8 @@
         "language": "ca"
     },
     "cantonese": {
-        "backend": "epitran",
-        "language": "yue-Latn"
+        "backend": "pingyam",
+        "language": "cantonese"
     },
     "croatian": {
         "backend": "epitran",
