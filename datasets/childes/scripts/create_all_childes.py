@@ -16,28 +16,30 @@ MAX_AGE = None
 downloader = ChildesDownloader()
 
 def download_and_process_corpora(collection, corpora, language):
-    if SKIP_DOWNLOAD:
-        return
-    for corpus in corpora:
-        print(f"\n----------\nDOWNLOADING: Corpus: {corpus} in Collection: {collection} for Language: {language}\n----------\n")
-        downloader.download(collection, corpus,
-                            DOWNLOAD_OUT_PATH,
-                            separate_by_child=False)
+    if not SKIP_DOWNLOAD:   
+        for corpus in corpora:
+            print(f"\n----------\nDOWNLOADING: Corpus: {corpus} in Collection: {collection} for Language: {language}\n----------\n")
+            downloader.download(collection, corpus,
+                                DOWNLOAD_OUT_PATH,
+                                separate_by_child=False)
 
-    if language != collection:
-        if (DOWNLOAD_OUT_PATH / language).exists():
-            shutil.rmtree(DOWNLOAD_OUT_PATH / language)
-        os.rename(DOWNLOAD_OUT_PATH / collection, DOWNLOAD_OUT_PATH / language)
-
+        if language != collection:
+            if (DOWNLOAD_OUT_PATH / language).exists():
+                shutil.rmtree(DOWNLOAD_OUT_PATH / language)
+            os.rename(DOWNLOAD_OUT_PATH / collection, DOWNLOAD_OUT_PATH / language)
+    
     if language == "Eng-NA":
-        language = "EnglishNA"
+        phonemize_language = "EnglishNA"
     elif language == "Eng-UK":
-        language = "EnglishUK"
-
+        phonemize_language = "EnglishUK"
+    else:
+        phonemize_language = language
+    
     processor = ChildesProcessor(DOWNLOAD_OUT_PATH / language,
-                                 keep_child_utterances=False,
+                                 keep_child_utterances=KEEP_CHILD_UTTERANCES,
                                  max_age = MAX_AGE)
-    processor.phonemize_utterances(language)
+    
+    processor.phonemize_utterances(phonemize_language)
     processor.character_split_utterances()
     processor.print_statistics()
 
@@ -151,4 +153,3 @@ download_and_process_corpora("Other", ["Aksu", "Altinkamis"], "Turkish")
 
 # Welsh
 download_and_process_corpora("Celtic", ["CIG1", "CIG2"], "Welsh")
-
