@@ -44,6 +44,7 @@ def cleanup_bnc_spoken(text):
 
 def cleanup_aochildes(text):
     text = cleanup_extra_spaces(text)
+    text = text[text.find('\t')+1:]
     return text
 
 def cleanup_cbt(text):
@@ -77,4 +78,5 @@ def cleanup_open_subtitles(text,):
 
 def cleanup_switchboard(text):
     # No start or end tokens because the text seems to be cut.
+    text = text[text.find('\t')+1:]
     return text
