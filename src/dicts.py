@@ -44,6 +44,12 @@ FOLDING_PHONEMIZER = {
         'ɐ' : 'ʌ',
         'ɑː' : 'ɑ',
         'ʔ' : 't',
+
+        # Additional fixes
+        'ɬ' : 'l',
+        'nʲ' : 'n',
+        'ɑ̃' : 'ɑ',
+        'r' : 'ɹ',
 	},
 
 	'en-gb' : {
@@ -57,12 +63,16 @@ FOLDING_PHONEMIZER = {
         'iə' : 'ɪə',
         'ɛ ' : 'e ',
         'a ' : 'æ ',
+        'ɔ ' : 'ɔː',
+        'ɑ̃' : 'ɑː',
+        'r' : 'ɹ',
+        'aː' : 'ɑː',
 	},
 
 	'de' : {
 		# Fix strange espeak output
         'ɔø' : 'ɔ ʏ',
-        '??' : 'ʊ r',
+        '??' : 'ʊ ʀ',
         ' 1 ' : ' ',
 
         # Analysed the output of espeak for German and found that the following replacements are necessary
@@ -82,6 +92,14 @@ FOLDING_PHONEMIZER = {
     'fr-fr' : {
         # Fix strange espeak output
         'ɑː' : 'ɑ',
+
+        # Changes to match Phoible inventory 2269
+        'øː' : 'ø',
+        'iː' : 'i',
+        'yː' : 'y',
+        'aː' : 'a',
+        'oː' : 'o',
+        'œ̃' : 'œ',
     },
 
     'ja' : {
@@ -101,7 +119,11 @@ FOLDING_PHONEMIZER = {
         'ʌʊ' : 'ʌu',
         'eʊ' : 'eː u',
         'ɵ' : 'ʏ',
-        'ɪː' : 'eː'
+        'ɪː' : 'eː',
+
+        'e' : 'ɛ',
+        'ð' : 'd',
+        'a' : 'ã',
      },
 
      'et' : {
@@ -168,14 +190,18 @@ FOLDING_PHONEMIZER = {
         'mʲ' : 'm',
         'fʲ' : 'f',
         'tʲ' : 't',
-        'dʲ' : 'd',
+        'dʲ' : 'd̪',
         'rʲ' : 'r',
         's̻ʲ' : 's̻',
+        'xʲ' : 'x',
+        'z̻ʲ' : 'z̻',
         'tɕʲ' : 'tɕ',
         # Other fixes
-        'ç' : 'xʲ',
+        'ç' : 'x',
         'õ' : 'o',
         'oː' : 'o',
+        'ɹ' : 'r',
+        't ' : 't̪ ',
      },
 
     'sv' : {
@@ -193,6 +219,7 @@ FOLDING_PHONEMIZER = {
         'kː' : 'k',
         't̪ː' : 't̪',
         'ə' : 'e',
+        'ɵː' : 'uː',
     },
 
     'pt' : {
@@ -242,6 +269,9 @@ FOLDING_PHONEMIZER = {
         'o w' : 'o',
         'u w' : 'u',
         'w' : 'o', # Not sure if this is correct, we lose 'kw' sounds but w was also being produced instead of 'o' in cases like "como" which is definitely incorrect
+        
+        'fʲ' : 'f',
+    
     },
 
     'ko' : {
@@ -315,6 +345,8 @@ FOLDING_PHONEMIZER = {
         'əɪ' : 'əi',
         'ɔɪ' : 'ɔi',
         'ç' : 'χ',
+        'ɪuː' : 'ɪu',
+        'ɨ' : 'ɪ',
     },
 
     'is' : {
@@ -796,6 +828,28 @@ FOLDING_EPITRAN = {
 	},
 
     'deu-Latn' : {
+        # Removing strange output
+        'E' : 'ə',
+        'A' : 'a',
+        'Z' : 'z',
+        'I' : 'iː',
+        'Ø' : 'øː',
+        ': ' : '',
+        'q' : 'kʰ', # Caused by transcription error, q is in the orthographic text incorrectly
+        'ˆ' : '', # Caused by transcription error, ˆ is in the orthographic text incorrectly
+        'ä h' : 'ɛː', # Caused by transcription error
+        'D ' : '', 
+        'iː̂' : 'iː',
+        'aː̈' : 'aː',
+        'e̯' : 'ɛ',
+        'uː̈' : 'uː',
+        'uː̂' : 'uː',
+        '̊' : '',
+        '́' : '',
+        'r̥ ' : 'ʀ ',
+        'rˆ ' : 'ʀ ',
+        'oː̈' : 'oː',
+
         # Matching phoible inventory for German
         'r ' : 'ʀ ',
         'd ' : 'd̺ ',
@@ -810,22 +864,7 @@ FOLDING_EPITRAN = {
         'y ' : 'ʏ ',
         'o ' : 'oː ',
         'ø ' : 'øː ',
-
-        # Removing strange output
-        'E' : 'ə',
-        ': ' : '',
-        'q' : 'kʰ', # Caused by transcription error, q is in the orthographic text incorrectly
-        'ˆ' : '', # Caused by transcription error, ˆ is in the orthographic text incorrectly
-        'ä h' : 'ɛː', # Caused by transcription error
-        'D ' : '', 
-        'iː̂' : 'iː',
-        'aː̈' : 'aː',
-        'e̯' : 'ɛ',
-        'uː̈' : 'uː',
-        '̊' : '',
-        '́' : '',
-        'r̥ ' : 'ʀ ',
-        'rˆ ' : 'ʀ ',
+        'ä ' : 'ɛː ',
     },
 
     'ind-Latn' : {
@@ -840,6 +879,18 @@ FOLDING_EPITRAN = {
         '̀' : '',
         '̧' : '',
         'o ' : 'o̞ ',
+        'î' : 'i',
+        'k̈' : 'k',
+        'ê̞' : 'e̞',
+
+        # Match Phoible inventory for Spanish
+        'ɛ' : 'e̞',
+        'ö' : 'o̞',
+        'ü' : 'u',
+        'ä' : 'a',
+        'ï' : 'i',
+        'ë̞' : 'e̞',
+        'ɘ' : 'e̞',
     },
 
     'srp-Latn' : {
@@ -870,6 +921,7 @@ FOLDING_EPITRAN = {
         'n̩' : 'n',
         'l̩' : 'l',
         ' ́' : '',
+        'ä̈' : 'ä',
      },
 
      'hrv-Latn' : {

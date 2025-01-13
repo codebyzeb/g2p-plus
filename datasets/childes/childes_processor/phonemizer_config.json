@@ -72,7 +72,7 @@
         "language": "it"
     },
     "japanese": {
-        "backend": "epitran",
+        "backend": "phonemizer",
         "language": "ja"
     },
     "korean": {
