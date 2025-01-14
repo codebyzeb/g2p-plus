@@ -7,7 +7,7 @@ sys.path.append('./')
 from childes_processor.processor import ChildesProcessor
 from childes_processor.downloader import ChildesDownloader
 
-SKIP_DOWNLOAD = False
+SKIP_DOWNLOAD = True
 KEEP_CHILD_UTTERANCES = True
 DOWNLOAD_OUT_PATH = Path('downloaded')
 PROCESS_OUT_PATH = Path('CHILDES-dataset')
@@ -43,7 +43,7 @@ def download_and_process_corpora(collection, corpora, language):
     processor.character_split_utterances()
     processor.print_statistics()
 
-    processor.save_splits(PROCESS_OUT_PATH / language)
+    processor.save_df(PROCESS_OUT_PATH / language)
 
 # Basque
 download_and_process_corpora("Other", ["Luque", "Soto"], "Basque")
