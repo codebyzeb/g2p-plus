@@ -830,7 +830,7 @@ FOLDING_EPITRAN = {
     'deu-Latn' : {
         # Removing strange output
         'E' : 'ə',
-        'A' : 'a',
+        ' A ' : ' a ',
         'Z' : 'z',
         'I' : 'iː',
         'Ø' : 'øː',
