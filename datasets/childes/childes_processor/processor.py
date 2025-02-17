@@ -176,8 +176,11 @@ class ChildesProcessor:
             self.df['phonemized_utterance'] = phonemize_utterances(lines, backend, lang, keep_word_boundaries=keep_word_boundaries, verbose=verbose)
 
         num_empty = len(self.df[self.df['phonemized_utterance'] == ''])
-        self.logger.warning(f'{num_empty} lines were not phonemized successfully. Dropping these.')
-        self.df = self.df[self.df['phonemized_utterance'] != '']
+        num_empty += len(self.df[self.df['phonemized_utterance'] == 'WORD_BOUNDARY '])
+        if num_empty > 0:
+            self.logger.warning(f'{num_empty} lines were not phonemized successfully. Dropping these.')
+            self.df = self.df[self.df['phonemized_utterance'] != '']
+            self.df = self.df[self.df['phonemized_utterance'] != 'WORD_BOUNDARY ']
         self.df['language_code'] = config['language']
 
     def character_split_utterances(self):
