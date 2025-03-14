@@ -1,6 +1,6 @@
 # G2P+
 
-> NOTICE (March 14 2025): This library is currently being refactored in order to create a stream-lined 
+> NOTICE (March 14 2025): This library is currently being refactored. This should be completed by April.
 
 This repository contains scripts for converting various corpora to a unified IPA format, with marked word and utterance boundaries, to prepare them for [training and evaluating small transformer-based language models](https://github.com/codebyzeb/PhonemeTransformers).
 
