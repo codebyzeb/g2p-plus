@@ -36,7 +36,7 @@ class PingyamWrapper(Wrapper):
         message = 'The PingyamWrapper uses the pingyam library, which only supports `cantonese`.\n'
         return message
     
-    def _phonemize(self, lines):
+    def _transcribe(self, lines):
         """ 
         Converts Cantonese text from Jyutping to IPA phonemes using the pingyam library.
 
@@ -47,7 +47,7 @@ class PingyamWrapper(Wrapper):
             lines (list[str]): List of Jyutping text strings to convert.
 
         Returns:
-            list[str]: List of phonemized strings where each phoneme is separated by
+            list[str]: List of transcribed strings where each phoneme is separated by
                         spaces. Failed conversions return empty strings.
 
         Notes:
@@ -55,7 +55,7 @@ class PingyamWrapper(Wrapper):
             - Word boundaries are added based on the `keep_word_boundaries` attribute.
         """
         broken = 0
-        phonemized_utterances = []
+        transcribed_utterances = []
 
         # Load pingyam database
         cantonese_dict = pd.read_csv(PINGYAM_PATH, sep='\t', header=None)[[5, 6]]
@@ -65,9 +65,9 @@ class PingyamWrapper(Wrapper):
         # Convert jyutping to IPA
         for line in lines:
             if line.strip() == '':
-                phonemized_utterances.append('')
+                transcribed_utterances.append('')
                 continue
-            phonemized = ''
+            transcribed = ''
             words = line.split(' ')
             line_broken = False
             for word in words:
@@ -80,23 +80,23 @@ class PingyamWrapper(Wrapper):
                     else:
                         syll = cantonese_dict[syllable]
                         syll = _move_tone_marker_to_after_vowel(syll)
-                        phonemized += syll + ''
-                phonemized += '_'
+                        transcribed += syll + ''
+                transcribed += '_'
             if line_broken:
-                phonemized = ''
-            phonemized_utterances.append(phonemized)
+                transcribed = ''
+            transcribed_utterances.append(transcribed)
 
         if broken > 0:
-            self.logger.debug(f'WARNING: {broken} lines were not phonemized successfully by jyutping to ipa conversion.')
+            self.logger.debug(f'WARNING: {broken} lines were not transcribed successfully by jyutping to ipa conversion.')
         
         # Separate phonemes with spaces and add word boundaries
         # The spaces between multi-character phonemes are fixed by the folding dictionary, which
         # also attaches tone markers to the vowels
-        for i in range(len(phonemized_utterances)):
-            phonemized_utterances[i] = ' '.join(list(phonemized_utterances[i]))
-            phonemized_utterances[i] = phonemized_utterances[i].replace('_', 'WORD_BOUNDARY' if self.keep_word_boundaries else ' ')
+        for i in range(len(transcribed_utterances)):
+            transcribed_utterances[i] = ' '.join(list(transcribed_utterances[i]))
+            transcribed_utterances[i] = transcribed_utterances[i].replace('_', 'WORD_BOUNDARY' if self.keep_word_boundaries else ' ')
 
-        return phonemized_utterances
+        return transcribed_utterances
     
 def _move_tone_marker_to_after_vowel(syll):
     """ 

@@ -3,7 +3,7 @@
 This module provides the main functionality for converting text (graphemes) to 
 phonetic transcriptions using various G2P backends. It includes:
 
-- phonemize_utterances(): Core function for converting text to phonemes
+- transcribe_utterances(): Core function for converting text to phonemes
 - character_split_utterances(): Utility for character-level text splitting
 - Command-line interface for easy text-to-phoneme conversion
 
@@ -11,9 +11,9 @@ The module supports multiple G2P backends (e.g., Epitran, Phonemizer) and langua
 with configurable options for word boundaries and phoneme set normalization.
 
 Example Usage:
-    >>> from g2p_plus.main import phonemize_utterances
+    >>> from g2p_plus.main import transcribe_utterances
     >>> text = ['hello there!']
-    >>> phonemes = phonemize_utterances(text, 'phonemizer', 'en-us', True)
+    >>> phonemes = transcribe_utterances(text, 'phonemizer', 'en-us', True)
     >>> print(phonemes[0])
     'h ə l oʊ WORD_BOUNDARY ð ɛ ɹ WORD_BOUNDARY'
 """
@@ -23,22 +23,22 @@ import sys
 
 from g2p_plus.wrappers import WRAPPER_BACKENDS
 
-def phonemize_utterances(lines, backend, language, keep_word_boundaries, verbose=False, use_folding=True, **wrapper_kwargs):
-    """ Phonemizes text lines into phonetic transcriptions using a specified backend.
+def transcribe_utterances(lines, backend, language, keep_word_boundaries, verbose=False, use_folding=True, **wrapper_kwargs):
+    """ Transcribes text lines into phonetic transcriptions using a specified backend.
 
     Args:
         lines (list of str): Lines of text to convert to phonemes.
         backend (str): The G2P backend to use (e.g. 'epitran', 'espeak').
-        language (str): Language code for phonemization (format depends on backend).
+        language (str): Language code for transcription (format depends on backend).
         keep_word_boundaries (bool): If True, inserts 'WORD_BOUNDARY' between words.
         verbose (bool, optional): Print debug information. Defaults to False.
         use_folding (bool, optional): Apply folding dictionaries to normalize phoneme sets. Defaults to True.
         **wrapper_kwargs: Additional backend-specific arguments.
     
     Returns:
-        list of str: Phonemized lines, where each line contains space-separated IPA phonemes.
+        list of str: Transcribed lines, where each line contains space-separated IPA phonemes.
             Words are separated by 'WORD_BOUNDARY' if keep_word_boundaries=True.
-            Lines that fail to phonemize are returned as empty strings.
+            Lines that fail to transcribe are returned as empty strings.
 
     Raises:
         ValueError: If backend is not supported
@@ -48,7 +48,7 @@ def phonemize_utterances(lines, backend, language, keep_word_boundaries, verbose
 
     Examples:
         >>> lines = ['hello there!']
-        >>> phonemize_utterances(lines, 'phonemizer', 'en-us', True)
+        >>> transcribe_utterances(lines, 'phonemizer', 'en-us', True)
         ['h ə l oʊ WORD_BOUNDARY ð ɛ ɹ WORD_BOUNDARY']
     """
 
@@ -61,7 +61,7 @@ def character_split_utterances(lines):
     """ Splits text lines into space-separated characters with word boundaries.
 
     This function provides a character-level representation that mirrors the format
-    of phonemized output, making it useful for alignment and comparison tasks.
+    of transcribed output, making it useful for alignment and comparison tasks.
 
     Args:
         lines (list of str): Lines of text to split into characters.
@@ -85,7 +85,7 @@ def main():
 
     Command-line Arguments:
         backend: The G2P backend to use
-        language: Language code for phonemization
+        language: Language code for transcription
         -k/--keep-word-boundaries: Keep word boundary markers
         -v/--verbose: Print debug information
         -u/--uncorrected: Skip phoneme set normalization (folding dictionaries)
@@ -118,14 +118,14 @@ def main():
             help_text += "  python phonemize.py epitran --language eng-Latn --keep-word-boundaries --verbose < input.txt > output.txt\n"
             return help_text
 
-    parser = argparse.ArgumentParser(description="Phonemize utterances using a specified backend and language.", formatter_class=CustomHelpFormatter)
-    parser.add_argument("backend", choices=WRAPPER_BACKENDS.keys(), help="The backend to use for phonemization.")
-    parser.add_argument("language", help="The language to phonemize.")
+    parser = argparse.ArgumentParser(description="Transcribe utterances using a specified backend and language.", formatter_class=CustomHelpFormatter)
+    parser.add_argument("backend", choices=WRAPPER_BACKENDS.keys(), help="The backend to use for G2P transcription.")
+    parser.add_argument("language", help="The language code to use for G2P conversion (specific to the backend).")
     parser.add_argument("-k", "--keep-word-boundaries", action="store_true", help="Keep word boundaries in the output.")
     parser.add_argument("-v", "--verbose", action="store_true", help="Print debug information.")
     parser.add_argument("-u", "--uncorrected", action="store_false", help="Use the wrapper's output without applying a folding dictionary to correct the phoneme sets.")
     parser.add_argument("-i", "--input-file", type=argparse.FileType('r'), default=sys.stdin, help="Input file containing utterances (one per line). If not specified, reads from stdin.")
-    parser.add_argument("-o", "--output-file", type=argparse.FileType('w'), default=sys.stdout, help="Output file for phonemized utterances. If not specified, writes to stdout.")
+    parser.add_argument("-o", "--output-file", type=argparse.FileType('w'), default=sys.stdout, help="Output file for transcribed utterances. If not specified, writes to stdout.")
     
     args, unknown = parser.parse_known_args()
 
@@ -149,7 +149,7 @@ def main():
     lines = [line.strip() for line in lines]
 
     try:
-        phonemized_lines = phonemize_utterances(
+        transcribed_lines = transcribe_utterances(
             lines,
             args.backend,
             args.language,
@@ -159,7 +159,7 @@ def main():
             **wrapper_kwargs
         )
         
-        for line in phonemized_lines:
+        for line in transcribed_lines:
             args.output_file.write(line + '\n')
     
     except ValueError as e:

@@ -1,12 +1,12 @@
 """ 
 Wrapper for converting text to IPA phonemes using the phonemizer library.
 
-This wrapper provides access to multiple phonemization backends:
+This wrapper provides access to multiple transcription backends:
 - espeak-ng: Supports 100+ languages and accents
-- segments: Used specifically for Japanese phonemization
+- segments: Used specifically for Japanese transcription
 
 The wrapper handles stress markers, word boundaries, and various configuration
-options for fine-tuning the phonemization process.
+options for fine-tuning the transcription process.
 """
 
 import logging
@@ -25,7 +25,7 @@ class PhonemizerWrapper(Wrapper):
     """
     Wrapper for the phonemizer library's text-to-phoneme conversion.
 
-    This wrapper supports multiple phonemization backends and provides various
+    This wrapper supports multiple transcription backends and provides various
     configuration options. It uses espeak-ng for most languages and the segments
     backend specifically for Japanese.
 
@@ -49,8 +49,8 @@ class PhonemizerWrapper(Wrapper):
 
     KWARGS_HELP = {
         'allow_possibly_faulty_word_boundaries': 'Allow possibly faulty word boundaries (otherwise removes lines with mismatched word boundaries).',
-        'preserve_punctuation': 'Preserve punctuation in the phonemized output.',
-        'with_stress': 'Include stress markers in the phonemized output.',
+        'preserve_punctuation': 'Preserve punctuation in the transcribed output.',
+        'with_stress': 'Include stress markers in the transcribed output.',
     }
 
     @staticmethod
@@ -122,7 +122,7 @@ class PhonemizerWrapper(Wrapper):
             self.logger.error('Phonemizer requires espeak-ng to be installed. Please install espeak-ng.')
             return []
         
-    def _phonemize(self, lines):
+    def _transcribe(self, lines):
         """ 
         Converts text to phonemes using the appropriate backend.
 
@@ -133,25 +133,25 @@ class PhonemizerWrapper(Wrapper):
             lines (list[str]): Text strings to convert to phonemes
 
         Returns:
-            list[str]: Phonemized versions of input lines
+            list[str]: Transcribed versions of input lines
         """
         if self.language == 'ja':
-            phonemized_lines = self._phonemize_japanese(lines)
+            transcribed_lines = self._transcribe_japanese(lines)
         else:
-            phonemized_lines = self._phonemize_utterances(lines)
-        return phonemized_lines
+            transcribed_lines = self._transcribe_utterances(lines)
+        return transcribed_lines
 
-    def _phonemize_japanese(self, lines):
+    def _transcribe_japanese(self, lines):
         """ 
-        Phonemizes Japanese text using the segments backend.
+        Transcribes Japanese text using the segments backend.
 
         Args:
-            lines (list[str]): Japanese text strings to phonemize
+            lines (list[str]): Japanese text strings to transcribe
 
         Returns:
-            list[str]: Phonemized Japanese text
+            list[str]: Transcribed Japanese text
         """
-        self.logger.debug('Using the segments backend to phonemize Japanese text.')
+        self.logger.debug('Using the segments backend to transcribe Japanese text.')
         phn = []
         missed_lines = 0
         for line in lines:
@@ -167,19 +167,19 @@ class PhonemizerWrapper(Wrapper):
                 missed_lines += 1
                 phn.append('')
         if missed_lines > 0:
-            self.logger.debug(f'{missed_lines} lines were not phonemized due to errors with the segments file.')
+            self.logger.debug(f'{missed_lines} lines were not transcribed due to errors with the segments file.')
 
         return phn
     
-    def _phonemize_utterances(self, lines):
+    def _transcribe_utterances(self, lines):
         """ 
-        Phonemizes text using the espeak-ng backend.
+        Transcribes text using the espeak-ng backend.
 
         Args:
-            lines (list[str]): Text strings to phonemize
+            lines (list[str]): Text strings to transcribe
 
         Returns:
-            list[str]: Phonemized text strings
+            list[str]: Transcribed text strings
         """
         self.logger.debug(f'Using espeak backend with language code "{self.language}"...')
         logging.disable(logging.WARNING)
@@ -200,10 +200,10 @@ class PhonemizerWrapper(Wrapper):
 
     def _post_process_line(self, line):
         """
-        Post-processes phonemized output to handle word boundaries and spacing.
+        Post-processes transcribed output to handle word boundaries and spacing.
 
         Args:
-            line (str): Phonemized line to process
+            line (str): Transcribed line to process
 
         Returns:
             str: Processed line with proper word boundaries and spacing

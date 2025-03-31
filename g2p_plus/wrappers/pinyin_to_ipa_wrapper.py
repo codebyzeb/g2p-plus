@@ -34,10 +34,10 @@ class Pinyin_To_IpaWrapper(Wrapper):
         Returns:
             str: Message indicating this wrapper only supports Mandarin Chinese
         """
-        message = 'The PinyinToIpaWrapper uses the pinyin_to_ipa library, which only supports `mandarin`.\n'
+        message = 'The Pinyin_To_IpaWrapper uses the pinyin_to_ipa library, which only supports `mandarin`.\n'
         return message
     
-    def _phonemize(self, lines):
+    def _transcribe(self, lines):
         """ 
         Converts pinyin text to IPA phonemes.
 
@@ -49,26 +49,26 @@ class Pinyin_To_IpaWrapper(Wrapper):
             lines (list[str]): List of pinyin text strings to convert
 
         Returns:
-            list[str]: List of phonemized strings where each phoneme is separated by
+            list[str]: List of transcribed strings where each phoneme is separated by
                       spaces. Failed conversions return empty strings.
 
         Examples:
             With keep_word_boundaries=True:
-                Input: "ni3 hao3"
-                Output: "n i ˨˩˦ WORD_BOUNDARY x aʊ̯ ˨˩˦ WORD_BOUNDARY"
+                Input: "shu4ye4 li3mian4 dui4"
+                Output: "ʃ̺ u˥˩ j e˥˩ WORD_BOUNDARY l i˧˩˧ m j ɛ˥˩ n WORD_BOUNDARY t w ei˥˩ WORD_BOUNDARY"
 
             With keep_word_boundaries=False:
-                Input: "ni3 hao3"
-                Output: "n i ˨˩˦ x aʊ̯ ˨˩˦"
+                Input: "shu4ye4 li3mian4 dui4"
+                Output: "ʃ̺ u˥˩ j e˥˩ l i˧˩˧ m j ɛ˥˩ n t w ei˥˩"
         """
-        phonemized_utterances = []
+        transcribed_utterances = []
         broken = 0
         for line in lines:
             if line.strip() == '':
-                phonemized_utterances.append('')
+                transcribed_utterances.append('')
                 continue
 
-            phonemized = ""
+            transcribed = ""
             words = line.split(' ')
             try:
                 for word in words:
@@ -80,19 +80,19 @@ class Pinyin_To_IpaWrapper(Wrapper):
                     for syllable in syllables:
                         syll_set = pinyin_to_ipa(syllable)
                         syll = ' '.join(syll_set[0])
-                        phonemized += syll + ' '
+                        transcribed += syll + ' '
                     
                     if self.keep_word_boundaries:
-                        phonemized += 'WORD_BOUNDARY '
+                        transcribed += 'WORD_BOUNDARY '
             except Exception as e:
-                phonemized = ""
+                transcribed = ""
                 broken += 1
 
-            phonemized_utterances.append(phonemized)
+            transcribed_utterances.append(transcribed)
 
         if broken > 0:
-            self.logger.debug(f'WARNING: {broken} lines were not phonemized successfully by pinyin to ipa conversion.')
+            self.logger.debug(f'WARNING: {broken} lines were not transcribed successfully by pinyin to ipa conversion.')
         
-        return phonemized_utterances
+        return transcribed_utterances
 
 

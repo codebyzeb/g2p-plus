@@ -45,7 +45,7 @@ class Wrapper(ABC):
         Initializes a new G2P wrapper instance.
         
         Args:
-            language (str): The language code for phonemization (e.g. 'en', 'fr')
+            language (str): The language code for transcription (e.g. 'en', 'fr')
             keep_word_boundaries (bool): If True, marks word boundaries in output
             verbose (bool): If True, enables detailed logging output
             use_folding (bool): If True, applies post-processing rules from folding dictionaries
@@ -94,17 +94,17 @@ class Wrapper(ABC):
             lines (list[str]): List of text strings to convert to phonemes
 
         Returns:
-            list[str]: The phonemized versions of the input lines, with each phoneme
+            list[str]: The transcribed versions of the input lines, with each phoneme
                       separated by spaces. Empty strings indicate lines that could not
                       be processed.
         """
 
-        phonemized_lines = self._phonemize(lines)
-        for i, line in enumerate(phonemized_lines):
+        transcribed_lines = self._transcribe(lines)
+        for i, line in enumerate(transcribed_lines):
             if line == '' or line == ' ':
                 continue
-            phonemized_lines[i] = self._post_process_line(line)
-        return phonemized_lines
+            transcribed_lines[i] = self._post_process_line(line)
+        return transcribed_lines
 
     def check_language_support(self, language):
         """ 
@@ -131,15 +131,15 @@ class Wrapper(ABC):
         return self.SUPPORTED_LANGUAGES
 
     @abstractmethod
-    def _phonemize(self, lines):
+    def _transcribe(self, lines):
         """ 
-        Core phonemization method that must be implemented by each wrapper.
+        Core transcription method that must be implemented by each wrapper.
         
         Args:
             lines (list[str]): List of text strings to convert to phonemes
             
         Returns:
-            list[str]: Phonemized versions of the input lines. Each phoneme should be
+            list[str]: Transcribed versions of the input lines. Each phoneme should be
                       separated by spaces. If keep_word_boundaries is True, 'WORD_BOUNDARY'
                       should be inserted between words.
 
@@ -156,10 +156,10 @@ class Wrapper(ABC):
 
     def _post_process_line(self, line):
         """ 
-        Applies folding dictionary rules to a phonemized line.
+        Applies folding dictionary rules to a transcribed line.
 
         Args:
-            line (str): A phonemized line to post-process
+            line (str): A transcribed line to post-process
 
         Returns:
             str: The post-processed line with folding rules applied
@@ -173,7 +173,7 @@ class Wrapper(ABC):
 
     def _get_folding_dictionaries(self):
         """
-        Loads folding dictionaries for post-processing phonemized output.
+        Loads folding dictionaries for post-processing transcribed output.
 
         The method loads two types of dictionaries if they exist:
         1. A main dictionary for the backend (backend_name.csv)
@@ -210,7 +210,10 @@ class Wrapper(ABC):
             with open(dict_path, 'r') as f:
                 next(f)
                 for line in f:
-                    key, value = line.strip().split(',')
+                    # Very important not to strip the line, as the keys may contain leading or trailing spaces
+                    # which are significant for the folding process
+                    line = line.replace('\n', '')
+                    key, value = line.split(',')
                     dict[key] = value
             dicts.append(dict)
 
