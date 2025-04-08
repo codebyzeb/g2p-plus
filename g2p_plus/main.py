@@ -116,6 +116,8 @@ def main():
                         help_text += f"    {key}: {value}\n"
             help_text += "\n\nExample usage:\n"
             help_text += "  python phonemize.py epitran --language eng-Latn --keep-word-boundaries --verbose < input.txt > output.txt\n"
+            help_text += "\nRecommended backends for each language:\n"
+            help_text += "  https://github.com/codebyzeb/g2p-plus/blob/main/RECOMMENDED.md\n"
             return help_text
 
     parser = argparse.ArgumentParser(description="Transcribe utterances using a specified backend and language.", formatter_class=CustomHelpFormatter)

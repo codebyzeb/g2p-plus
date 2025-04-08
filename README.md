@@ -12,6 +12,11 @@ It leverages four existing G2P tools (two statistical tools and two pronunciatio
 | [pinyin-to-ipa](https://github.com/stefantaubert/pinyin-to-ipa)         | 1 (Mandarin)     |
 | [pingyam](https://github.com/kfcd/pingyam/blob/master/pingyambiu)           | 1 (Cantonese)     |
 
+G2P+ ensures that regardless of the backend chosen, the output is in a unified format. Each utterance is output using phonemes represented in IPA, separated by spaces, possibly with `WORD_BOUNDARY` tokens to separate words. The phonemes symbols match those in [Phoible](https://phoible.org/).
+
+In addition to a unified format, we ensure that the phoneme inventories produced by G2P+ align with established phoneme inventories in Phoible. This is done using dedicated **folding maps**. Read [FOLDING.md](https://github.com/codebyzeb/g2p-plus/blob/main/FOLDING.md) for an overview of implemented folding maps and for details on how to contribute your own.
+
+Read more about G2P+ in [our paper](https://arxiv.org/abs/2504.03036).
 
 ## Installation
 
@@ -86,6 +91,9 @@ The wrapper specific arguments are as follows:
 - `--with_stress` (for `phonemizer`): Includes stress markers in the transcribed output.
 - `--split_tones` (for `pingyam` and `pinyin-to-ipa`): Separates tones as separate phonemes instead of attaching them to the vowel.
 
+### Recommended pairings
+
+Many languages are covered by multiple backends. See `RECOMMENDED.md` for a recommendation which backends to use for certain languages.
 
 ## Attribution
 
